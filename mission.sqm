@@ -107,7 +107,7 @@ randomSeed=10095693;
 class ScenarioData
 {
 	author="Diwako and Gruppe Adler";
-	overviewText="TvT game mode - artillery vs. sound directionfinders vs. hinter-killer-teams";
+	overviewText="TvT game mode - artillery vs. sound directionfinders vs. hunter-killer-teams";
 	overViewPicture="pics\SnS_loadpic.paa";
 	onLoadMission="Be aware that sound needs time to travel from the shooter to your directionfinders." \n "You won't see all bearing lines for all events instantaneously.";
 	loadScreen="pics\SnS_loadpic.paa";

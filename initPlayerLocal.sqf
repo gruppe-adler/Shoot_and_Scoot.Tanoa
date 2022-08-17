@@ -2,3 +2,13 @@ params ["_player", "_didJIP"];
 enableSaving [false, false];
 // This will show the sound ranging to all players
 _player setVariable ["arsr_receptionAllowed", true, true];
+
+
+// Prevent use of enemy UAV terminals
+["loadout", {
+    params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
+    private _removeUavTerminal = ["O_UavTerminal", "B_UavTerminal"] select ((side group _unit) isNotEqualTo blufor);
+    if (_removeUavTerminal in (str _newUnitLoadout)) then {
+        _unit setUnitLoadout _oldUnitLoadout;
+    };
+}] call CBA_fnc_addPlayerEventHandler;

@@ -153,7 +153,7 @@ private _indexBlue = _colors findIf {_x isEqualTo "ColorBlue"};
     "SLIDER",
     ["Listener max listening distance", "Value in meters, how far can listener vehicle detect shots"],
     ["Mission", "ARSR - Listener"],
-    [0, 10000, 10000, 0],
+    [0, 20000, 10000, 0],
     true
 ] call CBA_fnc_addSetting;
 

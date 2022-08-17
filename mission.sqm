@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=920;
+		nextID=922;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2135.8181,28.661499,3453.0723};
-		dir[]={0.11808956,-0.70442891,-0.69988197};
-		up[]={0.11720017,0.70977455,-0.69461089};
-		aside[]={-0.98606241,-1.4901161e-008,-0.16637614};
+		pos[]={2119.571,16.596539,3371.4998};
+		dir[]={0.21871881,-0.56005728,-0.79907298};
+		up[]={0.14786024,0.82844889,-0.54019666};
+		aside[]={-0.9645316,5.3812983e-008,-0.26400861};
 	};
 };
 binarizationWanted=0;
@@ -450,6 +450,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
 						name="B_test_DF_west";
 						textures="CHDSZ";
 					};
@@ -839,6 +840,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
 						name="B_test_DF_east";
 						textures="CHDSZ";
 					};
@@ -1663,6 +1665,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
 								textures="CHDSZ";
 							};
 							id=15;
@@ -2051,6 +2054,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
 								textures="CHDKZ";
 							};
 							id=24;
@@ -4220,6 +4224,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
 						name="O_test_DF_west";
 						textures="CHDKZ";
 					};
@@ -4609,6 +4614,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
 						name="O_test_DF_east";
 						textures="CHDKZ";
 					};

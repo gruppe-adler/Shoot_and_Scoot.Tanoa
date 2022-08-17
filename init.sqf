@@ -5,6 +5,9 @@
 ["UK3CB_CHD_W_B_Gaz66_Radio", "initPost",{
     params ["_veh"];
     _veh setVariable ["arsr_side", blufor];
+    if (local _veh) then {
+        _veh setVariable ["arsr_enabled", false, true];  // disable directionfinding at start (when mast is not raised)
+    };
 }, false, [], true]call CBA_fnc_addClassEventHandler;
 
 
@@ -12,5 +15,8 @@
 ["UK3CB_CHD_O_Gaz66_Radio", "initPost",{
     params ["_veh"];
     _veh setVariable ["arsr_side", opfor];
+    if (local _veh) then {
+        _veh setVariable ["arsr_enabled", false, true];  // disable directionfinding at start (when mast is not raised)
+    };
 }, false, [], true]call CBA_fnc_addClassEventHandler;
 

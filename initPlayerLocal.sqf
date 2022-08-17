@@ -12,3 +12,11 @@ _player setVariable ["arsr_receptionAllowed", true, true];
         _unit setUnitLoadout _oldUnitLoadout;
     };
 }] call CBA_fnc_addPlayerEventHandler;
+
+
+// prevent map markers because this would be too easy 
+// --> we want to foster teamplay through radio comms instead
+0 enableChannel false;  // disable  global   channel
+1 enableChannel false;  // disable  side     channel
+2 enableChannel false;  // disable  command  channel
+3 enableChannel false;  // disable  group    channel

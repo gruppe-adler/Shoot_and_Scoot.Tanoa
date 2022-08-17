@@ -2,3 +2,7 @@ class CfgFunctions {
     createShortcuts = 1;
     #include "scripts\arsr\funcs.hpp"
 };
+
+
+// respawn behaviour (also done in mission.sqm)
+respawnOnStart = 0;

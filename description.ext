@@ -1,6 +1,7 @@
 class CfgFunctions {
     createShortcuts = 1;
-    #include "scripts\arsr\funcs.hpp"
+    #include "scripts\arsr\funcs.hpp"		// enable sound directionfinder
+    #include "scripts\stomper\funcs.hpp"	// enable sitting on Stomper UGV
 };
 
 

@@ -59,7 +59,7 @@ diw_stomper_sitPosition = [
             {},
             _forEachIndex,
             _menuPosition,
-            1.5
+            2.5	// distance to show sitting menu point
         ] call ace_interact_menu_fnc_createAction;
         [_type, 0, _menuType, _sitAction] call ace_interact_menu_fnc_addActionToClass;
     } forEach diw_stomper_sitPosition;

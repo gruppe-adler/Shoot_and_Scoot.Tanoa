@@ -1,7 +1,7 @@
 version=54;
 name="OPFOR supply station";
 author="Bernhard";
-category="EdSubcat_Military";
+category="Shoot and Scoot";
 requiredAddons[]=
 {
 	"A3_Weapons_F_Ammoboxes",

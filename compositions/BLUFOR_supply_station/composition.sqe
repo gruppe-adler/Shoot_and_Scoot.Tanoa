@@ -15,14 +15,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.21777344,2.069937,2.300293};
-					angles[]={0,0.88602841,0};
+					position[]={0.21728516,2.069937,2.2998047};
+					angles[]={0,0.88603383,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					disableSimulation=1;
 				};
 				id=1476;
 				type="CamoNet_wdl_big_F";
@@ -36,14 +35,8 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
+								singleType="BOOL";
+								value=1;
 							};
 						};
 					};
@@ -55,13 +48,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=0;
 							};
 						};
@@ -128,13 +115,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
+								singleType="STRING";
 								value="[[[[],[]],[[],[]],[[""ToolKit""],[10]],[[],[]]],false]";
 							};
 						};
@@ -168,13 +149,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=1;
 							};
 						};
@@ -207,13 +182,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=1;
 							};
 						};
@@ -246,13 +215,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=1;
 							};
 						};
@@ -285,13 +248,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=1;
 							};
 						};
@@ -324,13 +281,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=1;
 							};
 						};
@@ -364,13 +315,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
+								singleType="BOOL";
 								value=1;
 							};
 						};
@@ -403,13 +348,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
+								singleType="ARRAY";
 								class value
 								{
 									items=2;
@@ -417,13 +356,7 @@ class items
 									{
 										class data
 										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
+											singleType="ARRAY";
 											class value
 											{
 												items=71;
@@ -431,13 +364,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_kordCarryTripod";
 													};
 												};
@@ -445,13 +372,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_kordCarryTripodLow";
 													};
 												};
@@ -459,13 +380,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_metis_carry";
 													};
 												};
@@ -473,13 +388,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_kornet_carry";
 													};
 												};
@@ -487,13 +396,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_ags30_carry";
 													};
 												};
@@ -501,13 +404,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_usf3_tow_carry";
 													};
 												};
@@ -515,13 +412,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_gref3_dshkm_carry";
 													};
 												};
@@ -529,13 +420,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_kord_carry";
 													};
 												};
@@ -543,13 +428,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_usf3_m2_carry";
 													};
 												};
@@ -557,13 +436,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_m220CarryTripod";
 													};
 												};
@@ -571,13 +444,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_usf3_m252_carry";
 													};
 												};
@@ -585,13 +452,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_m3CarryTripod";
 													};
 												};
@@ -599,13 +460,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_m3CarryTripodLow";
 													};
 												};
@@ -613,13 +468,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_dragon_super";
 													};
 												};
@@ -627,13 +476,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_usf3_mk19_carry";
 													};
 												};
@@ -641,13 +484,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_staticMortarCarry";
 													};
 												};
@@ -655,13 +492,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_carryMortarBaseplate";
 													};
 												};
@@ -669,13 +500,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_nsv_carry";
 													};
 												};
@@ -683,13 +508,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_sag30CarryTripod";
 													};
 												};
@@ -697,13 +516,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_spg9CarryTripod";
 													};
 												};
@@ -711,13 +524,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_spg9_carry";
 													};
 												};
@@ -725,13 +532,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_spg9m_carry";
 													};
 												};
@@ -739,13 +540,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_staticM2ShieldCarry";
 													};
 												};
@@ -753,13 +548,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_staticAACarry";
 													};
 												};
@@ -767,13 +556,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_staticATCarry";
 													};
 												};
@@ -781,13 +564,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_staticGMGCarry";
 													};
 												};
@@ -795,13 +572,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_csw_staticHMGCarry";
 													};
 												};
@@ -809,13 +580,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_fgm148";
 													};
 												};
@@ -823,13 +588,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_fim92";
 													};
 												};
@@ -837,13 +596,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_M136";
 													};
 												};
@@ -851,13 +604,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_M136_hedp";
 													};
 												};
@@ -865,13 +612,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_M136_hp";
 													};
 												};
@@ -879,13 +620,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_maaws";
 													};
 												};
@@ -893,13 +628,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_m72a7";
 													};
 												};
@@ -907,13 +636,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_MRAWS_green_rail_F";
 													};
 												};
@@ -921,13 +644,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_MRAWS_olive_rail_F";
 													};
 												};
@@ -935,13 +652,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_MRAWS_sand_rail_F";
 													};
 												};
@@ -949,13 +660,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_MRAWS_green_F";
 													};
 												};
@@ -963,13 +668,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_MRAWS_olive_F";
 													};
 												};
@@ -977,13 +676,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_MRAWS_sand_F";
 													};
 												};
@@ -991,13 +684,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_O_Vorona_brown_F";
 													};
 												};
@@ -1005,13 +692,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_O_Vorona_green_F";
 													};
 												};
@@ -1019,13 +700,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_smaw";
 													};
 												};
@@ -1033,13 +708,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_smaw_green";
 													};
 												};
@@ -1047,13 +716,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_NLAW_F";
 													};
 												};
@@ -1061,13 +724,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_panzerfaust60";
 													};
 												};
@@ -1075,13 +732,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_m80";
 													};
 												};
@@ -1089,13 +740,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_rpg18";
 													};
 												};
@@ -1103,13 +748,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_rpg26";
 													};
 												};
@@ -1117,13 +756,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_RPG32_F";
 													};
 												};
@@ -1131,13 +764,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_RPG32_ghex_F";
 													};
 												};
@@ -1145,13 +772,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_RPG32_green_F";
 													};
 												};
@@ -1159,13 +780,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_RPG7_F";
 													};
 												};
@@ -1173,13 +788,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_rpg75";
 													};
 												};
@@ -1187,13 +796,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_rpg7";
 													};
 												};
@@ -1201,13 +804,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_rshg2";
 													};
 												};
@@ -1215,13 +812,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="UK3CB_Blowpipe";
 													};
 												};
@@ -1229,13 +820,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_I_Titan_F";
 													};
 												};
@@ -1243,13 +828,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_I_Titan_eaf_F";
 													};
 												};
@@ -1257,13 +836,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_O_Titan_ghex_F";
 													};
 												};
@@ -1271,13 +844,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_O_Titan_F";
 													};
 												};
@@ -1285,13 +852,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_B_Titan_olive_F";
 													};
 												};
@@ -1299,13 +860,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_B_Titan_F";
 													};
 												};
@@ -1313,13 +868,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_B_Titan_tna_F";
 													};
 												};
@@ -1327,13 +876,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_O_Titan_short_F";
 													};
 												};
@@ -1341,13 +884,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_O_Titan_short_ghex_F";
 													};
 												};
@@ -1355,13 +892,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_I_Titan_short_F";
 													};
 												};
@@ -1369,13 +900,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_B_Titan_short_F";
 													};
 												};
@@ -1383,13 +908,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="launch_B_Titan_short_tna_F";
 													};
 												};
@@ -1397,13 +916,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="rhs_weap_igla";
 													};
 												};
@@ -1411,13 +924,7 @@ class items
 												{
 													class data
 													{
-														class type
-														{
-															type[]=
-															{
-																"STRING"
-															};
-														};
+														singleType="STRING";
 														value="ace_compat_rhs_afrf3_2b14_carry";
 													};
 												};
@@ -1428,13 +935,7 @@ class items
 									{
 										class data
 										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
+											singleType="SCALAR";
 											value=1;
 										};
 									};
@@ -1450,13 +951,7 @@ class items
 						{
 							class data
 							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
+								singleType="STRING";
 								value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 							};
 						};

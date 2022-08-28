@@ -59,7 +59,7 @@ force ace_csw_ammoHandling = 0;
 // Artillery Sound Ranging
 force arsr_allowPlacedExplosives = false;
 force arsr_approxymationMarker = false;
-force arsr_artilleryBaseClassesSetting = "[""RHS_M119_WD""], [""rhssaf_army_o_d30""], [""APC_Wheeled_01_mortar_base_lxWS""], [""B_D_APC_Wheeled_01_mortar_lxWS""], [""B_T_APC_Wheeled_01_mortar_lxWS""]";
+force arsr_artilleryBaseClassesSetting = "[""RHS_M119_WD""], [""rhssaf_army_o_d30""], [""APC_Wheeled_01_mortar_base_lxWS""], [""B_D_APC_Wheeled_01_mortar_lxWS""], [""B_T_APC_Wheeled_01_mortar_lxWS""], [""O_Mortar_01_F""], [""B_Mortar_01_F""], [""B_T_Mortar_01_F""], [""B_D_Mortar_01_lxWS""]";
 force force arsr_autoDeleteMarkerTime = 40;	// in seconds
 force force arsr_drawStyle = 1;
 force arsr_explosivesAddSide = true;
@@ -73,5 +73,6 @@ arsr_markerColor = "Default";
 force arsr_speedOfSound = 343;
 force arsr_vicEngineOff = true;
 force arsr_vicStationary = true;
+
 
 

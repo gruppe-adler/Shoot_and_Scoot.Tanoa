@@ -52,6 +52,9 @@ force ace_weather_windSimulation = false;
 
 force TFAR_takingRadio = 0;
 
+// ACE Crew Served Weapons
+force ace_csw_ammoHandling = 0;
+
 
 // Artillery Sound Ranging
 force arsr_allowPlacedExplosives = false;

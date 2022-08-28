@@ -11,7 +11,7 @@ force ace_repair_engineerSetting_fullRepair = 1;
 force ace_repair_engineerSetting_repair = 0;
 force ace_repair_fullRepairLocation = 0;
 
-force ace_map_BFT_Enabled = true;
+force ace_map_BFT_Enabled = true;	// do be set to false before release
 force ace_map_BFT_Interval = 3;
 force ace_map_mapShowCursorCoordinates = true;
 
@@ -54,6 +54,10 @@ force TFAR_takingRadio = 0;
 
 // ACE Crew Served Weapons
 force ace_csw_ammoHandling = 0;
+
+
+// ACE Logistics
+force ace_rearm_supply = 1;
 
 
 // Artillery Sound Ranging

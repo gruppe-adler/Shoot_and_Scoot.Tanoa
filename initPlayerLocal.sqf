@@ -5,6 +5,13 @@ enableSaving [false, false];
 // _player setVariable ["arsr_receptionAllowed", true];
 
 
+
+// allow U menu for easier team management
+["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
+
+
+
+
 // Prevent use of enemy UAV terminals
 ["loadout", {
     params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];

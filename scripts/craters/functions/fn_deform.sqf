@@ -19,7 +19,6 @@ if (_heightDiff <= -1) then {
             if (_newHeight < -0.25) then {
                 private _newPos = _posASL vectorAdd [_xDif, _yDif, 0];
                 _newPos set [2, (getTerrainHeight _newPos) + _newHeight];
-                // _terrainDeform pushBack (_newPos vectorAdd [0, 0, (getTerrainHeight _newPos) _newHeight]);
                 _terrainDeform pushBack _newPos;
             };
         };

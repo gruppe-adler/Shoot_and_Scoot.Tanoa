@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=134;
+		nextID=140;
 	};
 	class Camera
 	{
-		pos[]={6956.3608,12.754238,7223.9785};
-		dir[]={0.082157262,-0.49992067,-0.86217821};
-		up[]={0.047423374,0.86606139,-0.49767897};
-		aside[]={-0.9955011,1.939527e-007,-0.094862223};
+		pos[]={2121.4116,42.894684,3347.792};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -4775,31 +4775,35 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2121.9482,16.074715,3366.2756};
+				position[]={2121.948,16.074713,3366.2759};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="this addAction [""Teleport to base"", {player setPos (getPos O_flag_north)}]";
+				name="O_flag_south";
 			};
 			id=504;
 			type="Flag_CSAT_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2120.834,16.708122,3413.5796};
+				position[]={2120.834,16.708122,3413.5801};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="this addAction [""Teleport to base"", {player setPos (getPos B_flag_north)}]";
+				name="B_flag_south";
 			};
 			id=505;
 			type="Flag_NATO_F";
-			atlOffset=9.5367432e-007;
 		};
 		class Item54
 		{
@@ -7590,6 +7594,8 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				init="this addAction [""Teleport to base"", {player setPos (getPos O_flag_south)}]";
+				name="O_flag_north";
 			};
 			id=784;
 			type="Flag_CSAT_F";
@@ -7599,16 +7605,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6934.4043,6.6368046,7206.0679};
+				position[]={6934.4038,6.6368046,7206.0679};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="this addAction [""Teleport to base"", {player setPos (getPos B_flag_south)}]";
+				name="B_flag_north";
 			};
 			id=797;
 			type="Flag_NATO_F";
-			atlOffset=-2.3841858e-007;
 		};
 		class Item67
 		{

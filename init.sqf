@@ -20,3 +20,11 @@
     };
 }, false, [], true]call CBA_fnc_addClassEventHandler;
 
+
+// nerf Darter's sensors to be more TvT friendly
+["UAV_01_base_F", "init",{
+    params ["_vehicle"];
+    _vehicle disableTIEquipment true;
+    _vehicle disableNVGEquipment true;
+}, true, [], true] call CBA_fnc_addClassEventHandler;
+

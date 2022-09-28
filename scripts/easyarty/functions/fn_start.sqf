@@ -16,7 +16,13 @@ easyarty_pfh = [{
 	if (_solution isEqualTo []) exitwith {
 		hintSilent "No solution found. Please try another range card setting!";
 	};
-	hintSilent format ["=== SOLUTION ===\nDISTANCE: %1\nELEVATION: %2\nAZIMUTH: %3\n", _solution select 2, _solution select 0, _solution select 1];
+	hintSilent format [
+		"=== SOLUTION ===\nDISTANCE: %1\nTOF: %2sec\nELEVATION: %3\nAZIMUTH: %4\n", 
+		_solution select 2,
+		_solution select 3, 
+		_solution select 0,
+		_solution select 1
+	];
 }, 1] call CBA_fnc_addPerFrameHandler;
 
 easyarty_running = true;

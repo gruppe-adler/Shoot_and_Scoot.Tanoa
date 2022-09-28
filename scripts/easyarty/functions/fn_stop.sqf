@@ -1,7 +1,7 @@
-if (!easyArtyRunning) exitWith {};
+if (!easyarty_running) exitWith {};
 
-easyArtyPfh call CBA_fnc_removePerFrameHandler;
-(findDisplay 12 displayCtrl 51) ctrlRemoveEventHandler ["Draw", easyArtyDisplayEh];
+easyarty_pfh call CBA_fnc_removePerFrameHandler;
+(findDisplay 12 displayCtrl 51) ctrlRemoveEventHandler ["Draw", easyarty_displayEh];
 deleteMarker "target_loc";
 
-easyArtyRunning = false;
+easyarty_running = false;

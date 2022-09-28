@@ -1,10 +1,11 @@
-if (isDedicated) exitWith {};
-easyArtyRunning = false;
-easyArtyPfh = -1;
-easyArtyDisplayEh = -1;
+if !(hasinterface) exitWith {};
+
+easyarty_running = false;
+easyarty_pfh = -1;
+easyarty_displayEh = -1;
 
 private _spacerAction = [
-    "spacerEasyArty",
+    "easyarty_spacer",
     "Easy Arty",
     "",
     {},
@@ -12,53 +13,57 @@ private _spacerAction = [
 ] call ace_interact_menu_fnc_createAction;
 
 private _startAction = [
-    "startEasyArty",
+    "easyarty_start",
     "Start calculate",
     "",
     {[] spawn easyarty_fnc_start;},
-    {!easyArtyRunning}    
+    {!easyarty_running}    
 ] call ace_interact_menu_fnc_createAction;
 
 private _stopAction = [
-    "stopEasyArty",
+    "easyarty_stop",
     "Stop calculation",
     "",
     {[] call easyarty_fnc_stop;},
-    {easyArtyRunning}    
+    {easyarty_running}    
 ] call ace_interact_menu_fnc_createAction;
 
-private _assignPosAction = [
-    "assingPosEasyArty",
+private _newTargetAction = [
+    "easyarty_newTarget",
     "Assign new target",
     "",
     {[] spawn easyarty_fnc_setTargetPos;},
-    {easyArtyRunning}    
+    {easyarty_running}    
 ] call ace_interact_menu_fnc_createAction;
 
 [
-    player,
+    "Man",
     1,
     ["ACE_SelfActions"],
-    _spacerAction
-] call ace_interact_menu_fnc_addActionToObject;
+    _spacerAction,
+    true
+] call ace_interact_menu_fnc_addActionToClass;
 
 [
-    player,
+    "Man",
     1,
-    ["ACE_SelfActions", "spacerEasyArty"],
-    _startAction
-] call ace_interact_menu_fnc_addActionToObject;
+    ["ACE_SelfActions", "easyarty_spacer"],
+    _startAction,
+    true
+] call ace_interact_menu_fnc_addActionToClass;
 
 [
-    player,
+    "Man",
     1,
-    ["ACE_SelfActions", "spacerEasyArty"],
-    _stopAction
-] call ace_interact_menu_fnc_addActionToObject;
+    ["ACE_SelfActions", "easyarty_spacer"],
+    _stopAction,
+    true
+] call ace_interact_menu_fnc_addActionToClass;
 
 [
-    player,
+    "Man",
     1,
-    ["ACE_SelfActions", "spacerEasyArty"],
-    _assignPosAction
-] call ace_interact_menu_fnc_addActionToObject;
+    ["ACE_SelfActions", "easyarty_spacer"],
+    _newTargetAction,
+    true
+] call ace_interact_menu_fnc_addActionToClass;

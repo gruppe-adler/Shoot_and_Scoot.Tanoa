@@ -4,15 +4,14 @@ params ["_targetPos", "_vehicle"];
 
 private _az = (_vehicle getDir _targetPos) * DEGREE_TO_MIL_FACTOR;
 
-_distanceToTarget = _vehicle distance artyTarget;
-_distanceRounded = _distanceToTarget - _distanceToTarget % 100;
-_distanceFactor = _distanceToTarget % 100 * -0.01; //used to scale later
+private _distanceToTarget = _vehicle distance artyTarget;
+private _distanceRounded = _distanceToTarget - _distanceToTarget % 100;
+private _distanceFactor = _distanceToTarget % 100 * -0.01; //used to scale later
 
 (ace_artillerytables_magModeData select ace_artillerytables_lastCharge) params [["_muzzleVelocity", -1], ["_airFriction", 0]];
-_elevMin = 10;
-_elevMax = 75;
-_lastElevMode = true; //always shoot high for now
-
+private _elevMin = 10;
+private _elevMax = 75;
+private _lastElevMode = param [0, ace_artillerytables_lastElevationMode];
 private _ret = "ace_artillerytables" callExtension ["start", [_muzzleVelocity,_airFriction,_elevMin,_elevMax,_lastElevMode]];
 private _status = 0;
 private _result = [];
@@ -25,7 +24,7 @@ while { _status != 3 } do {
 	};
 };
 
-_resultLength = count _result;
+private _resultLength = count _result;
 
 if (_resultLength < 3) exitWith {[]};
 

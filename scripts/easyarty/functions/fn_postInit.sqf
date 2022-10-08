@@ -9,7 +9,7 @@ private _spacerAction = [
     "Easy Arty",
     "",
     {},
-    {true}
+    {[player, "ACE_artilleryTable"] call BIS_fnc_hasItem}
 ] call ace_interact_menu_fnc_createAction;
 
 private _startAction = [

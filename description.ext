@@ -1,10 +1,24 @@
 class CfgFunctions {
     createShortcuts = 1;
-    #include "scripts\arsr\funcs.hpp"		// enable sound directionfinder
-    #include "scripts\stomper\funcs.hpp"	// enable sitting on Stomper UGV
-    #include "scripts\craters\funcs.hpp"	// terrain deformation on artillery impacts
+    #include "scripts\arsr\funcs.hpp"                   // enable sound directionfinder
+    #include "scripts\stomper\funcs.hpp"                // enable sitting on Stomper UGV
+    #include "scripts\craters\funcs.hpp"                // terrain deformation on artillery impacts
+    #include "scripts\grad-loadout\CfgFunctions.hpp"    // Gruppe Adler loadout handling
 };
 
 
 // respawn behaviour (also done in mission.sqm)
 respawnOnStart = 0;
+
+
+// configuration of grad-loadout
+class Loadouts {
+    baseDelay = 10;
+    perPlayerDelay = 1;
+    handleRadios = 0;
+    resetLoadout = 1;
+    randomizationMode = 0;
+    customGear = 300;
+    customGearAllowedCategories[] = {"uniform","vest"};
+};
+

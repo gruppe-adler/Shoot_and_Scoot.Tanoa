@@ -564,7 +564,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""tf_range"", 50000]; " \n "};";
 						name="B_test_DF_west";
 						textures="CHDSZ";
 					};
@@ -816,7 +816,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""tf_range"", 50000]; " \n "};";
 						name="B_test_DF_east";
 						textures="CHDSZ";
 					};
@@ -1151,7 +1151,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""tf_range"", 50000]; " \n "};";
 						name="O_test_DF_west";
 						textures="CHDKZ";
 					};
@@ -1403,7 +1403,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""arsr_enabled"", true]; " \n "};";
+						init="this spawn { " \n "waitUntil {time > 1}; " \n "[_this, 1] spawn rhs_fnc_gaz66_radioDeploy; " \n "_this setVariable [""mission_errected"", true]; " \n "_this setVariable [""tf_range"", 50000]; " \n "};";
 						name="O_test_DF_east";
 						textures="CHDKZ";
 					};

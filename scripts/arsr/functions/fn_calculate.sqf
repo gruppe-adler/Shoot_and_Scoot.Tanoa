@@ -44,7 +44,7 @@ private _time = time;
 
     }, [_originatorPos, _x, _time], _soundDelay] call CBA_fnc_waitAndExecute;
 } foreach (arsr_listeners select {
-    _x getVariable ["arsr_enabled", true] && { // listener is actively listening
+    ((_x getVariable ["tf_range",0]) == 50000) && { // listener is actively listening
     // check if the firing vehicle is not on the same side as the listener
     (_artySide isNotEqualTo (_x getVariable ["arsr_side", sideLogic]))
 }});

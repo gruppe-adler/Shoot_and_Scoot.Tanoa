@@ -4,15 +4,9 @@ author="Bernhard";
 category="Shoot and Scoot";
 requiredAddons[]=
 {
-	"A3_Weapons_F_Ammoboxes",
 	"A3_Air_F_Heli_Heli_Transport_04",
-	"ace_refuel",
-	"ace_repair",
-	"ace_cargo",
 	"ace_rearm",
-	"A3_Props_F_Enoch_Military_Camps",
-	"A3_Structures_F_Exp_Military_Camonets",
-	"A3_Structures_F_Kart_Signs_Companies",
+	"ace_cargo",
 	"rhsusf_c_m252",
-	"A3_Structures_F_Heli_Ind_Machines"
+	"A3_Props_F_Enoch_Military_Camps"
 };

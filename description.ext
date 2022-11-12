@@ -1,3 +1,5 @@
+#define MODULES_DIRECTORY scripts
+
 class CfgFunctions {
     createShortcuts = 1;
     #include "scripts\arsr\funcs.hpp"                   // enable sound directionfinder

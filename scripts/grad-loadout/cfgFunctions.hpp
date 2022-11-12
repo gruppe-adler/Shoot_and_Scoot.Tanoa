@@ -1,5 +1,5 @@
 #ifndef MODULES_DIRECTORY
-    #define MODULES_DIRECTORY modules
+    #define MODULES_DIRECTORY scripts
 #endif
 
 class GRAD_Loadout {

@@ -66,7 +66,7 @@ class NATO_Apex_Pacific {
             nvgoggles = ""; // "NVGoggles_tna_F";
             addItemsToUniform[] = {
                 LIST_1("FirstAidKit"),
-                LIST_2("30Rnd_65x39_caseless_khaki_mag")
+                LIST_2("30Rnd_65x39_caseless_khaki_mag"),
 
                 GRAD_FACTIONS_MEDICITEMS_INF_LIST
             };

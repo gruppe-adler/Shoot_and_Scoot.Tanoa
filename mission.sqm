@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2084.8101,51.741581,3490.0227};
-		dir[]={0.34118104,-0.48945567,-0.80256468};
-		up[]={0.19149171,0.87201744,-0.45044756};
-		aside[]={-0.92033046,-3.6558777e-007,-0.39124572};
+		pos[]={2118.2219,17.923515,3372.041};
+		dir[]={0.63155144,-0.45126951,-0.63048393};
+		up[]={0.31936735,0.89238369,-0.31882796};
+		aside[]={-0.7065134,-4.7017238e-008,-0.7077089};
 	};
 };
 binarizationWanted=0;
@@ -76,12 +76,13 @@ addons[]=
 	"ace_attach",
 	"ace_chemlights",
 	"ace_laserpointer",
-	"ace_optics",
+	"A3_Weapons_F_Mark",
 	"A3_Characters_F_Exp_Vests",
 	"A3_Characters_F_Heads",
 	"ace_explosives",
 	"A3_Weapons_F_Explosives",
 	"A3_Weapons_F_Orange",
+	"ace_optics",
 	"A3_Weapons_F_Exp_Rifles_CTAR",
 	"A3_Weapons_F_Pistols_Rook40",
 	"A3_Weapons_F_Exp_LongRangeRifles_DMR_07",
@@ -93,7 +94,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=42;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -354,10 +355,10 @@ class AddonsMetaData
 		};
 		class Item37
 		{
-			className="ace_optics";
-			name="ACE3 - Optics";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
+			className="A3_Weapons_F_Mark";
+			name="Arma 3 Marksmen - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item38
 		{
@@ -374,6 +375,13 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item40
+		{
+			className="ace_optics";
+			name="ACE3 - Optics";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item41
 		{
 			className="A3_Characters_F_Kart";
 			name="Arma 3 Karts - Characters and Clothing";
@@ -7959,7 +7967,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="TFAR_anprc152";
-							gps="ItemGPS";
+							gps="B_UavTerminal";
 							goggles="G_Aviator";
 							headgear="H_MilCap_tna_F";
 						};
@@ -8067,7 +8075,12 @@ class Mission
 							};
 							class binocular
 							{
-								name="Binocular";
+								name="Laserdesignator_03";
+								class primaryMuzzleMag
+								{
+									name="Laserbatteries";
+									ammoLeft=1;
+								};
 							};
 							class uniform
 							{
@@ -8166,11 +8179,22 @@ class Mission
 							{
 								typeName="TFAR_rt1523g_bwmod";
 								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="Laserbatteries";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="TFAR_anprc152";
+							gps="ItemGPS";
 							headgear="H_HelmetB_Enh_tna_F";
 						};
 					};
@@ -10575,7 +10599,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="TFAR_fadak";
-							gps="ItemGPS";
+							gps="O_UavTerminal";
 							goggles="G_Squares";
 							headgear="H_MilCap_ghex_F";
 						};
@@ -10683,7 +10707,12 @@ class Mission
 							};
 							class binocular
 							{
-								name="Binocular";
+								name="Laserdesignator_02_ghex_F";
+								class primaryMuzzleMag
+								{
+									name="Laserbatteries";
+									ammoLeft=1;
+								};
 							};
 							class uniform
 							{
@@ -10691,7 +10720,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										name="30Rnd_580x42_Mag_F";
@@ -10701,6 +10730,12 @@ class Mission
 									class Item1
 									{
 										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="Laserbatteries";
 										count=1;
 										ammoLeft=1;
 									};

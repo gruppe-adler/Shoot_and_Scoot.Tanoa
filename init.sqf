@@ -36,6 +36,6 @@
 
 // apply grad-loadout
 // ["BLU_F", "NATO_Apex_Pacific"] call GRAD_Loadout_fnc_FactionSetLoadout;
-["BLU_F", "us_marines_w"] call GRAD_Loadout_fnc_FactionSetLoadout;
+["BLU_T_F", "us_marines_w"] call GRAD_Loadout_fnc_FactionSetLoadout;
 // ["OPF_F", grad_missionsettings_loadoutFactionOpf] call GRAD_Loadout_fnc_FactionSetLoadout;
 // ["IND_F", grad_missionsettings_loadoutFactionInd] call GRAD_Loadout_fnc_FactionSetLoadout;

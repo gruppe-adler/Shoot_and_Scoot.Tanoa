@@ -79,7 +79,7 @@ if (count _loadoutHierarchy == 0) then {
 #endif
 #ifdef DEBUG_MODE_FULL
 if (_unit == player) then {
-    INFO_1("complete loadout config for player: %1", _loadoutHierarchy);
+    INFO_1("complete loadout config for player: %1", player);
 };
 #endif
 

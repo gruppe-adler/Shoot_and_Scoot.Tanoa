@@ -8,7 +8,7 @@ if (GVAR(Chosen_Prefix) != "") then {
     _configPath = _configPath >> GVAR(Chosen_Prefix);
 };
 
-TRACE_1("applying loadout from mission config file %1 to %2 ...", _configPath, _unit);
+TRACE_2("applying loadout from mission config file %1 to %2 ...", _configPath, _unit);
 
 private _loadoutHash = [_unit, _configPath] call FUNC(GetUnitLoadoutFromConfig);
 [_loadoutHash, _unit] call FUNC(randomizeLoadout);

@@ -3,6 +3,7 @@ class CfgFunctions {
     #include "scripts\arsr\funcs.hpp"		// enable sound directionfinder
     #include "scripts\stomper\funcs.hpp"	// enable sitting on Stomper UGV
     #include "scripts\craters\funcs.hpp"	// terrain deformation on artillery impacts
+    #include "scripts\easyarty\funcs.hpp"   // easy azimuth and elevation calculation
 };
 
 

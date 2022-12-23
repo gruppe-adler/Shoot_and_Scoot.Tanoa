@@ -40,6 +40,14 @@ force ace_medical_treatment_holsterRequired = 0;
 force ace_medical_treatment_locationEpinephrine = 0;
 force ace_medical_treatment_medicEpinephrine = 0;
 force ace_medical_treatment_medicIV = 1;
+force ace_medical_treatment_allowSelfIV = 1;  // Medics can Self-IV
+
+// usage of PAKs
+force ace_medical_treatment_consumePAK = 1;   // PAKs are consumable items
+force ace_medical_treatment_medicPAK = 1;     // Medics can use PAKs
+force ace_medical_treatment_allowSelfPAK = 1; // Medics can Self-PAK
+force ace_medical_treatment_locationPAK = 0;  // allow to use PAK anywhere
+
 
 force ace_finger_enabled = true;
 

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3064;
+		nextID=3066;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=189;
+		nextID=195;
 	};
 	class Camera
 	{
-		pos[]={2118.2219,17.923515,3372.041};
-		dir[]={0.63155144,-0.45126951,-0.63048393};
-		up[]={0.31936735,0.89238369,-0.31882796};
-		aside[]={-0.7065134,-4.7017238e-008,-0.7077089};
+		pos[]={2137.4321,31.33371,3411.6941};
+		dir[]={-0.80638516,-0.55076784,0.21578991};
+		up[]={-0.53205949,0.83462566,0.14238071};
+		aside[]={0.25853479,1.0905205e-006,0.96609896};
 	};
 };
 binarizationWanted=0;
@@ -80,13 +80,15 @@ addons[]=
 	"A3_Characters_F_Exp_Vests",
 	"A3_Characters_F_Heads",
 	"ace_explosives",
-	"A3_Weapons_F_Explosives",
-	"A3_Weapons_F_Orange",
+	"ace_trenches",
+	"ace_logistics_wirecutter",
 	"ace_optics",
 	"A3_Weapons_F_Exp_Rifles_CTAR",
 	"A3_Weapons_F_Pistols_Rook40",
 	"A3_Weapons_F_Exp_LongRangeRifles_DMR_07",
 	"A3_Weapons_F_Exp_Rifles_CTARS",
+	"A3_Weapons_F_Explosives",
+	"A3_Weapons_F_Orange",
 	"A3_Characters_F_Kart",
 	"A3_Characters_F_Orange_Headgear"
 };
@@ -94,7 +96,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=42;
+		items=44;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -369,19 +371,33 @@ class AddonsMetaData
 		};
 		class Item39
 		{
-			className="A3_Weapons_F_Orange";
-			name="Arma 3 Orange - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="ace_trenches";
+			name="ACE3 - Trenches";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
 		};
 		class Item40
+		{
+			className="ace_logistics_wirecutter";
+			name="ACE3 - Logistics Wire Cutter";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item41
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
+		class Item42
+		{
+			className="A3_Weapons_F_Orange";
+			name="Arma 3 Orange - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item43
 		{
 			className="A3_Characters_F_Kart";
 			name="Arma 3 Karts - Characters and Clothing";
@@ -418,7 +434,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -455,7 +471,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -8835,27 +8851,11 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Kitbag_rgr_BTEng_F";
+								typeName="B_AssaultPack_tna_F";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="SatchelCharge_Remote_Mag";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="DemoCharge_Remote_Mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										name="ToolKit";
@@ -8863,7 +8863,12 @@ class Mission
 									};
 									class Item1
 									{
-										name="MineDetector";
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACE_wirecutter";
 										count=1;
 									};
 								};
@@ -12771,6 +12776,7 @@ class Mission
 					};
 					id=3062;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12807,6 +12813,7 @@ class Mission
 			{
 			};
 			id=2928;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12911,6 +12918,7 @@ class Mission
 					};
 					id=3063;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12947,6 +12955,7 @@ class Mission
 			{
 			};
 			id=2931;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0

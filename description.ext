@@ -1,10 +1,34 @@
+#define MODULES_DIRECTORY scripts
+
 class CfgFunctions {
     createShortcuts = 1;
-    #include "scripts\arsr\funcs.hpp"		// enable sound directionfinder
-    #include "scripts\stomper\funcs.hpp"	// enable sitting on Stomper UGV
-    #include "scripts\craters\funcs.hpp"	// terrain deformation on artillery impacts
+    #include "scripts\arsr\funcs.hpp"                   // enable sound directionfinder
+    #include "scripts\stomper\funcs.hpp"                // enable sitting on Stomper UGV
+    #include "scripts\craters\funcs.hpp"                // terrain deformation on artillery impacts
+    #include "scripts\grad-loadout\CfgFunctions.hpp"    // Gruppe Adler loadout handling
 };
 
 
 // respawn behaviour (also done in mission.sqm)
 respawnOnStart = 0;
+
+
+// configuration of grad-loadout
+class Loadouts {
+    baseDelay = 10;         // base delay in seconds before applying loadouts on mission start
+    perPlayerDelay = 1;     // random delay between 0 and (number of players) * perPlayerDelay is added to baseDelay/
+    handleRadios = 1;       // 0/1 - Sets if loadouts will contain radios. Set this to 0 if you plan on using TFAR's automatic radio distribution for example.
+    resetLoadout = 1;       // 0/1 - Sets if a unit's default loadout will be cleared before GRAD Loadout is applied. Set this to 0 if you plan to only replace a factions uniforms for example.
+    randomizationMode = 0;  // 0/1/2/3 - Sets randomization mode (if supported by loadout). 0 to disable, 1 to enable, 2 to enable for players only, 3 to enable for AI only.
+    
+	// gear customization by players themselves
+	customGear = -1;        // -1 means to keep this disabled for now
+	// customGear = 300;       // time in seconds that players can access the customGear interface after last loadout application
+    // customGear = "(_this select 0) distance2D (getMarkerPos 'respawn_west') < 100";   // players can access the customGear interface while closer than 100 to the BLUFOR respawn marker
+    // customGearAllowedCategories[] = {"uniform","vest"};  // sets allowed categories that can be customized
+
+	class Faction {
+        #include "scripts\grad-factions-tvt\loadouts.hpp"	// add loadout definition for the 2 factions
+    };
+};
+

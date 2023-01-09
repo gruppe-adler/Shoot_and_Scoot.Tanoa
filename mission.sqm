@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3066;
+		nextID=3067;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=195;
+		nextID=201;
 	};
 	class Camera
 	{
-		pos[]={2137.4321,31.33371,3411.6941};
-		dir[]={-0.80638516,-0.55076784,0.21578991};
-		up[]={-0.53205949,0.83462566,0.14238071};
-		aside[]={0.25853479,1.0905205e-006,0.96609896};
+		pos[]={2125.0723,26.345968,3393.7734};
+		dir[]={0.27944481,-0.44166893,-0.85262012};
+		up[]={0.13756399,0.89715904,-0.41972661};
+		aside[]={-0.95033103,1.477747e-007,-0.31146902};
 	};
 };
 binarizationWanted=0;
@@ -8948,7 +8948,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2097.208,12.951439,3446.8591};
+						position[]={2097.4861,12.951439,3446.8425};
 					};
 					side="West";
 					flags=7;
@@ -9157,7 +9157,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2100.0168,12.951439,3447.2588};
+						position[]={2099.6777,12.951439,3447.321};
 					};
 					side="West";
 					flags=5;
@@ -9311,7 +9311,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2104.0271,12.951439,3448.573};
+						position[]={2105.1313,12.951439,3448.7229};
 					};
 					side="West";
 					flags=7;
@@ -9674,7 +9674,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2090.303,12.951439,3444.604};
+						position[]={2091.6748,12.951439,3445.1721};
 					};
 					side="West";
 					flags=7;
@@ -10046,7 +10046,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="TL@DF-1";
+						description="UAV@Sensor-1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10163,7 +10163,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="DF-1";
+							value="Sensor-1";
 						};
 					};
 				};
@@ -10191,7 +10191,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="TL@DF-2";
+						description="UAV@Sensor-2";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10308,7 +10308,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="DF-2";
+							value="Sensor-2";
 						};
 					};
 				};
@@ -10336,7 +10336,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="TL@DF-3";
+						description="UAV@Sensor-3";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10453,7 +10453,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="DF-3";
+							value="Sensor-3";
 						};
 					};
 				};
@@ -12562,7 +12562,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2158.5488,12.062125,3364.9937};
+						position[]={2158.5491,12.062124,3364.9941};
 						angles[]={0,5.7765164,0};
 					};
 					side="East";
@@ -12571,7 +12571,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="TL@DF-1";
+						description="UAV@Sensor-1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12683,7 +12683,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="DF-1";
+							value="Sensor-1";
 						};
 					};
 				};
@@ -12702,7 +12702,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2161.1436,12.06144,3366.5972};
+						position[]={2161.144,12.06144,3366.5972};
 						angles[]={0,5.7765164,0};
 					};
 					side="East";
@@ -12711,7 +12711,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="TL@DF-2";
+						description="UAV@Sensor-2";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12825,7 +12825,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="DF-2";
+							value="Sensor-2";
 						};
 					};
 				};
@@ -12844,7 +12844,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2163.4185,12.06144,3368.322};
+						position[]={2163.418,12.06144,3368.322};
 						angles[]={0,5.7765164,0};
 					};
 					side="East";
@@ -12853,7 +12853,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="TL@DF-3";
+						description="UAV@Sensor-3";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12967,7 +12967,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="DF-3";
+							value="Sensor-3";
 						};
 					};
 				};

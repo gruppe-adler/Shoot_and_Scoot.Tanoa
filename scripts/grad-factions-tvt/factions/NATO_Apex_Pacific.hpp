@@ -44,14 +44,14 @@ class NATO_Apex_Pacific {
         addItemsToUniform[] = {
             MEDICITEMS_BASE,
             LIST_2("ACE_Chemlight_HiWhite"),
-            // "ACE_Flashlight_MX991",
-            "ACE_MapTools"
+            LIST_2("Chemlight_green"),
+            // LIST_1("ACE_Flashlight_MX991"),
+            LIST_1("ACE_MapTools")
           };
         addItemsToVest[] = {
             LIST_2("16Rnd_9x21_Mag"),
             LIST_1("SmokeShell"),
-            LIST_1("SmokeShellGreen"),
-            LIST_2("Chemlight_green")
+            LIST_1("SmokeShellGreen")
         };
         addItemsToBackpack[] = {};
     };
@@ -73,7 +73,7 @@ class NATO_Apex_Pacific {
             };
         };
 
-        // squad leader
+        // squad leader (hunter-killer)
         class Soldier_SL_F: Soldier_F {
             backpack = "TFAR_rt1523g_bwmod";
             binoculars = "Laserdesignator_03";
@@ -110,7 +110,6 @@ class NATO_Apex_Pacific {
         // marksman
         class soldier_M_F: Soldier_F {
             primaryWeapon = "arifle_MXM_khk_F";
-            primaryWeaponMagazine = "30Rnd_65x39_caseless_khaki_mag";
             primaryWeaponOptics = "optic_SOS_khk_F";
             primaryWeaponUnderbarrel = "bipod_01_F_khk"
         };
@@ -131,15 +130,31 @@ class NATO_Apex_Pacific {
             };
         };
         
-        // artillery gunner
+        // artillery gunner (base class for non-hunter-killer)
         class Support_Mort_F {
             primaryWeapon = "arifle_MXC_khk_Holo_Pointer_F";
             primaryWeaponMagazine = "30Rnd_65x39_caseless_khaki_mag";
             primaryWeaponOptics = "optic_Holosight_khk_F";
             goggles = "G_Tactical_Clear";
             addItemsToVest[] = {
-                LIST_5("30Rnd_65x39_caseless_khaki_mag")
+                LIST_5("30Rnd_65x39_caseless_khaki_mag"),
+                LIST_1("ACE_artilleryTable")                
             };
         };       
+        
+        // artillery leader
+        class Soldier_TL_F: Support_Mort_F {
+            backpack = "TFAR_rt1523g_bwmod";
+        };        
+        
+        // sensor operator (UAV and directionfinder)
+        class Soldier_UAV_F: Support_Mort_F {
+            headgear = "H_MilCap_tna_F";
+            gps = "B_UavTerminal";
+            addItemsToVest[] = {
+                LIST_5("30Rnd_65x39_caseless_khaki_mag"),
+                LIST_3("ACE_UAVBattery")
+            };
+        };        
     };
 };

@@ -156,5 +156,10 @@ class NATO_Apex_Pacific {
                 LIST_3("ACE_UAVBattery")
             };
         };        
+        
+        // commander
+        class Officer_F: Soldier_UAV_F {
+            backpack = "TFAR_rt1523g_bwmod";
+        };        
     };
 };

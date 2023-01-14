@@ -1,0 +1,79 @@
+<match>
+  <company side="blufor" natosymbol="hq" callsign="NATO" vehicletype="" reserved-for="">
+    <slot shortcode="CMD" description="Commander (+UAV)" reserved-for=""/>
+    <slot shortcode="2IC" description="2nd in command (+UAV)" reserved-for="tbd"/>
+    <platoon natosymbol="uav" callsign="Recon" vehicletype="">
+      <squad side="" natosymbol="uav" callsign="Sensor-1" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
+        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+      </squad>
+      <squad side="" natosymbol="uav" callsign="Sensor-2" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
+        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+      </squad>
+    </platoon>
+    <platoon natosymbol="art" callsign="Artillery" vehicletype="">
+      <squad side="" natosymbol="art" callsign="Arti-1" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"/>
+        <slot shortcode="GNR" description="Artillery Gunner" reserved-for="tbd"/>
+      </squad>
+      <squad side="" natosymbol="art" callsign="Arti-2" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"     reserved-for="tbd"/>
+        <slot shortcode="GNR" description="Artillery Gunner" reserved-for="tbd"/>
+      </squad>
+    </platoon>
+    <platoon natosymbol="inf" callsign="Hunter Killer Teams" vehicletype="">
+      <squad side="" natosymbol="inf" callsign="Hunter-1" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"/>
+        <slot shortcode="DMR" description="Marksman"/>
+        <slot shortcode="ENG" description="Engineer"/>
+        <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
+      </squad>
+      <squad side="" natosymbol="inf" callsign="Hunter-2" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
+        <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/>
+        <slot shortcode="ENG" description="Engineer"          reserved-for="tbd"/>
+        <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
+      </squad>
+    </platoon>
+  </company>
+  
+  <company side="opfor" natosymbol="hq" callsign="CSAT" vehicletype="" reserved-for="">
+    <slot shortcode="CMD" description="Commander (+UAV)" reserved-for=""/>
+    <slot shortcode="2IC" description="2nd in command (+UAV)" reserved-for="tbd"/>
+    <platoon natosymbol="uav" callsign="Recon" vehicletype="">
+      <squad side="" natosymbol="uav" callsign="Sensor-1" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
+        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+      </squad>
+      <squad side="" natosymbol="uav" callsign="Sensor-2" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
+        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+      </squad>
+    </platoon>
+    <platoon natosymbol="art" callsign="Artillery" vehicletype="">
+      <squad side="" natosymbol="art" callsign="Arti-1" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"/>
+        <slot shortcode="GNR" description="Artillery Gunner" reserved-for="tbd"/>
+      </squad>
+      <squad side="" natosymbol="art" callsign="Arti-2" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"     reserved-for="tbd"/>
+        <slot shortcode="GNR" description="Artillery Gunner" reserved-for="tbd"/>
+      </squad>
+    </platoon>
+    <platoon natosymbol="inf" callsign="Hunter Killer Teams" vehicletype="">
+      <squad side="" natosymbol="inf" callsign="Hunter-1" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"/>
+        <slot shortcode="DMR" description="Marksman"/>
+        <slot shortcode="ENG" description="Engineer"/>
+        <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
+      </squad>
+      <squad side="" natosymbol="inf" callsign="Hunter-2" vehicletype="">
+        <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
+        <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/>
+        <slot shortcode="ENG" description="Engineer"          reserved-for="tbd"/>
+        <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
+      </squad>
+    </platoon>
+  </company>
+</match>

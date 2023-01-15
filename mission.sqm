@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3067;
+		nextID=3079;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2138.6082,14.060429,3359.9241};
-		dir[]={-0.38054895,-0.29212528,-0.87740833};
-		up[]={-0.11623827,0.95638001,-0.26800343};
-		aside[]={-0.91742635,0,0.39790556};
+		pos[]={2102.0864,37.950001,3484.5474};
+		dir[]={0.20233858,-0.34965819,-0.91477042};
+		up[]={0.075516641,0.93687582,-0.34140906};
+		aside[]={-0.97640359,7.7961886e-008,-0.21597134};
 	};
 };
 binarizationWanted=0;
@@ -58,7 +58,6 @@ addons[]=
 	"rhsusf_c_m252",
 	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Supplies_F_Heli_Slingload",
-	"UK3CB_Factions_CHD_B",
 	"A3_Static_F_Mortar_01",
 	"A3_Static_F_Exp_Mortar_01",
 	"A3_Weapons_F_Exp",
@@ -89,7 +88,8 @@ addons[]=
 	"A3_Weapons_F_Explosives",
 	"A3_Weapons_F_Orange",
 	"A3_Characters_F_Kart",
-	"A3_Characters_F_Orange_Headgear"
+	"A3_Characters_F_Orange_Headgear",
+	"UK3CB_Factions_CHD_B"
 };
 class AddonsMetaData
 {
@@ -414,9 +414,9 @@ dlcs[]=
 	"RHS_SAF",
 	"Heli",
 	"Contact",
-	"UK3CB_Factions",
 	"Mark",
-	"Kart"
+	"Kart",
+	"UK3CB_Factions"
 };
 randomSeed=10095693;
 class ScenarioData
@@ -433,7 +433,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -470,7 +470,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -2843,7 +2843,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6948.6123,2.8161528,7201.6763};
-						angles[]={0,0.011536626,0};
+						angles[]={0,0.011536625,0};
 					};
 					side="West";
 					flags=6;
@@ -2852,7 +2852,7 @@ class Mission
 					};
 					id=757;
 					type="B_UAV_AI";
-					atlOffset=0.15471387;
+					atlOffset=2.3841858e-007;
 				};
 			};
 			class Attributes
@@ -2888,7 +2888,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6953.312,4.7493391,7159.9922};
-				angles[]={0,0.011536626,0};
+				angles[]={0,0.011536625,0};
 			};
 			side="West";
 			flags=6;
@@ -2978,7 +2978,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6942.2524,2.8161528,7201.2729};
-						angles[]={0,0.011536626,0};
+						angles[]={0,0.011536625,0};
 					};
 					side="West";
 					flags=6;
@@ -2987,7 +2987,7 @@ class Mission
 					};
 					id=799;
 					type="B_UAV_AI";
-					atlOffset=0.15471387;
+					atlOffset=2.3841858e-007;
 				};
 			};
 			class Attributes
@@ -3023,7 +3023,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6946.9468,4.7493391,7159.6885};
-				angles[]={0,0.011536626,0};
+				angles[]={0,0.011536625,0};
 			};
 			side="West";
 			flags=6;
@@ -3078,7 +3078,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6935.8472,2.8161528,7201.0469};
-						angles[]={0,0.011536626,0};
+						angles[]={0,0.011536625,0};
 					};
 					side="West";
 					flags=6;
@@ -3087,7 +3087,7 @@ class Mission
 					};
 					id=802;
 					type="B_UAV_AI";
-					atlOffset=0.15471387;
+					atlOffset=2.3841858e-007;
 				};
 			};
 			class Attributes
@@ -3123,7 +3123,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6940.5386,4.7493391,7159.5625};
-				angles[]={0,0.011536626,0};
+				angles[]={0,0.011536625,0};
 			};
 			side="West";
 			flags=6;
@@ -3178,7 +3178,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11827.228,7.0061779,13050.829};
-						angles[]={0,0.2775597,6.2824869};
+						angles[]={0,0.27755967,6.2824864};
 					};
 					side="East";
 					flags=6;
@@ -3187,7 +3187,7 @@ class Mission
 					};
 					id=805;
 					type="O_UAV_AI";
-					atlOffset=0.054739475;
+					atlOffset=9.5367432e-007;
 				};
 			};
 			class Attributes
@@ -3223,7 +3223,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11827.208,9.0941544,13050.063};
-				angles[]={0,0.2775597,6.2824869};
+				angles[]={0,0.27755967,6.2824864};
 			};
 			side="East";
 			flags=6;
@@ -3278,7 +3278,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11839.364,6.9967999,13044.46};
-						angles[]={0,0.2775597,6.2824869};
+						angles[]={0,0.27755967,6.2824864};
 					};
 					side="East";
 					flags=6;
@@ -3287,7 +3287,6 @@ class Mission
 					};
 					id=808;
 					type="O_UAV_AI";
-					atlOffset=0.045361519;
 				};
 			};
 			class Attributes
@@ -3322,7 +3321,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11838.629,9.0853367,13046.66};
-				angles[]={0,0.2775597,6.2824869};
+				angles[]={0,0.27755967,6.2824864};
 			};
 			side="East";
 			flags=6;
@@ -5260,16 +5259,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={21539.938,1.0515869,22631.58};
-						angles[]={0,0.2775597,6.2824869};
+						angles[]={0,0.27755967,6.2824864};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 					};
 					id=819;
 					type="O_UAV_AI";
-					atlOffset=62.850147;
 				};
 			};
 			class Attributes
@@ -5304,7 +5302,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11833.32,9.0894346,13048.148};
-				angles[]={0,0.2775597,6.2824869};
+				angles[]={0,0.27755967,6.2824864};
 			};
 			side="East";
 			flags=6;
@@ -5392,7 +5390,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5584,7 +5582,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5616,7 +5614,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5648,7 +5646,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5680,7 +5678,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5712,7 +5710,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5744,7 +5742,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5776,7 +5774,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5808,7 +5806,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5840,7 +5838,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5873,7 +5871,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5906,7 +5904,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5939,7 +5937,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -5972,7 +5970,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6005,7 +6003,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6038,7 +6036,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6071,7 +6069,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6104,7 +6102,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6137,7 +6135,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6170,7 +6168,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6203,7 +6201,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6236,7 +6234,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6269,7 +6267,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6302,7 +6300,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6335,7 +6333,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6368,7 +6366,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6401,7 +6399,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6434,7 +6432,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6467,7 +6465,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -6500,7 +6498,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7051,16 +7049,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6976.4019,4.5700769,7182.5811};
-				angles[]={0,6.2464418,0};
+				position[]={6957.0889,4.8361511,7194.3804};
+				angles[]={0,0.014520892,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 			};
-			id=1736;
-			type="UK3CB_CHD_B_Ural_Open";
+			id=1912;
+			type="B_T_LSV_01_unarmed_F";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7072,7 +7070,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7105,7 +7103,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7138,7 +7136,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7171,7 +7169,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7204,7 +7202,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7253,7 +7251,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7302,7 +7300,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7351,7 +7349,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7400,7 +7398,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -7449,7 +7447,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,10,4,4,4,4,12]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal""],[10,10,7]],[[""O_UAV_01_backpack_F""],[7]]],false]";
+							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_580x42_Mag_F"",""100Rnd_580x42_Mag_F"",""HandGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellYellow"",""SmokeShellOrange"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""16Rnd_9x21_Mag""],[16,4,10,4,4,4,4,11,4,4,4,4,12]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};

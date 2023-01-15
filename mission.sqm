@@ -7072,336 +7072,6 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item120
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6966.752,4.5700769,7182.3711};
-				angles[]={0,6.2464418,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1737;
-			type="UK3CB_CHD_B_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item121
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6948.9673,4.5700769,7182.3628};
-				angles[]={0,0.040603817,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1738;
-			type="UK3CB_CHD_B_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item122
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6940.3726,4.5700769,7182.8647};
-				angles[]={0,0.040603817,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1739;
-			type="UK3CB_CHD_B_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item123
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6957.7241,4.5700769,7182.0752};
-				angles[]={0,0.014548479,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1740;
-			type="UK3CB_CHD_B_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item124
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11805.735,8.8600769,13082.402};
-				angles[]={0,0.27148595,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1741;
-			type="UK3CB_CHD_O_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item125
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11823.767,8.8600769,13077.907};
-				angles[]={0,0.27148595,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1742;
-			type="UK3CB_CHD_O_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item126
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11832.554,8.8600769,13075.651};
-				angles[]={0,0.27148595,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1743;
-			type="UK3CB_CHD_O_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item127
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11797.411,8.8600769,13084.334};
-				angles[]={0,0.27148595,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1744;
-			type="UK3CB_CHD_O_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item128
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11815.301,8.8600769,13080.248};
-				angles[]={0,0.27148595,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1745;
-			type="UK3CB_CHD_O_Ural_Open";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item129
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6957.0889,4.8361511,7194.3804};
-				angles[]={0,0.014520892,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1912;
-			type="B_T_LSV_01_unarmed_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
 							value="[[[[""FirstAidKit""],[10]],[[""30Rnd_65x39_caseless_khaki_mag"",""100Rnd_65x39_caseless_khaki_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal""],[10,10,7]],[[""B_UAV_01_backpack_F""],[7]]],false]";
 						};
 					};
@@ -7409,7 +7079,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item130
+		class Item120
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7442,7 +7112,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item131
+		class Item121
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7475,7 +7145,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item132
+		class Item122
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7508,7 +7178,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item133
+		class Item123
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7541,7 +7211,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item134
+		class Item124
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7557,7 +7227,7 @@ class Mission
 			id=1921;
 			type="O_Mortar_01_F";
 		};
-		class Item135
+		class Item125
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7590,7 +7260,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item136
+		class Item126
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7606,7 +7276,7 @@ class Mission
 			id=1923;
 			type="O_Mortar_01_F";
 		};
-		class Item137
+		class Item127
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7639,7 +7309,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item138
+		class Item128
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7655,7 +7325,7 @@ class Mission
 			id=1925;
 			type="O_Mortar_01_F";
 		};
-		class Item139
+		class Item129
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7688,7 +7358,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item140
+		class Item130
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7704,7 +7374,7 @@ class Mission
 			id=1927;
 			type="O_Mortar_01_F";
 		};
-		class Item141
+		class Item131
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7737,7 +7407,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item142
+		class Item132
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7753,7 +7423,7 @@ class Mission
 			id=1929;
 			type="O_Mortar_01_F";
 		};
-		class Item143
+		class Item133
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7786,7 +7456,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item144
+		class Item134
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7801,7 +7471,7 @@ class Mission
 			id=1933;
 			type="B_T_Mortar_01_F";
 		};
-		class Item145
+		class Item135
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7816,7 +7486,7 @@ class Mission
 			id=1934;
 			type="B_T_Mortar_01_F";
 		};
-		class Item146
+		class Item136
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7831,7 +7501,7 @@ class Mission
 			id=1935;
 			type="B_T_Mortar_01_F";
 		};
-		class Item147
+		class Item137
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7846,7 +7516,7 @@ class Mission
 			id=1936;
 			type="B_T_Mortar_01_F";
 		};
-		class Item148
+		class Item138
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7861,7 +7531,7 @@ class Mission
 			id=1937;
 			type="B_T_Mortar_01_F";
 		};
-		class Item149
+		class Item139
 		{
 			dataType="Group";
 			side="West";
@@ -8043,7 +7713,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item150
+		class Item140
 		{
 			dataType="Group";
 			side="West";
@@ -8935,7 +8605,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item151
+		class Item141
 		{
 			dataType="Group";
 			side="West";
@@ -9298,7 +8968,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item152
+		class Item142
 		{
 			dataType="Group";
 			side="West";
@@ -9661,7 +9331,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item153
+		class Item143
 		{
 			dataType="Group";
 			side="West";
@@ -10024,7 +9694,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item154
+		class Item144
 		{
 			dataType="Group";
 			side="West";
@@ -10169,7 +9839,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item155
+		class Item145
 		{
 			dataType="Group";
 			side="West";
@@ -10314,7 +9984,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item156
+		class Item146
 		{
 			dataType="Group";
 			side="West";
@@ -10459,7 +10129,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item157
+		class Item147
 		{
 			dataType="Group";
 			side="East";
@@ -10664,7 +10334,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item158
+		class Item148
 		{
 			dataType="Group";
 			side="East";
@@ -11405,7 +11075,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item159
+		class Item149
 		{
 			dataType="Group";
 			side="East";
@@ -11778,7 +11448,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item160
+		class Item150
 		{
 			dataType="Group";
 			side="East";
@@ -12151,7 +11821,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item161
+		class Item151
 		{
 			dataType="Group";
 			side="East";
@@ -12526,7 +12196,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item162
+		class Item152
 		{
 			dataType="Group";
 			side="East";
@@ -12666,7 +12336,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item163
+		class Item153
 		{
 			dataType="Group";
 			side="East";
@@ -12808,7 +12478,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item164
+		class Item154
 		{
 			dataType="Group";
 			side="East";
@@ -12950,7 +12620,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item165
+		class Item155
 		{
 			dataType="Group";
 			side="Civilian";
@@ -13127,6 +12797,341 @@ class Mission
 						{
 							singleType="STRING";
 							value="Admins";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item156
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6966.752,4.7964897,7182.3711};
+				angles[]={0,6.2464418,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3069;
+			type="UK3CB_CHD_B_Ural_Ammo";
+			atlOffset=-2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item157
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6948.9673,4.7964897,7182.3628};
+				angles[]={0,0.040603817,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3070;
+			type="UK3CB_CHD_B_Ural_Ammo";
+			atlOffset=-2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6940.3726,4.7964897,7182.8647};
+				angles[]={0,0.040603817,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3071;
+			type="UK3CB_CHD_B_Ural_Ammo";
+			atlOffset=-2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item159
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6957.7241,4.7964897,7182.0752};
+				angles[]={0,0.014548479,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3072;
+			type="UK3CB_CHD_B_Ural_Ammo";
+			atlOffset=-2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6976.4019,4.7964897,7182.5811};
+				angles[]={0,6.2464418,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3073;
+			type="UK3CB_CHD_B_Ural_Ammo";
+			atlOffset=-2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11832.554,9.0864897,13075.651};
+				angles[]={0,0.27148595,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3074;
+			type="UK3CB_CHD_O_Ural_Ammo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11805.735,9.0864897,13082.402};
+				angles[]={0,0.27148595,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3075;
+			type="UK3CB_CHD_O_Ural_Ammo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11823.767,9.0864897,13077.907};
+				angles[]={0,0.27148595,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3076;
+			type="UK3CB_CHD_O_Ural_Ammo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item164
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11797.411,9.0864897,13084.334};
+				angles[]={0,0.27148595,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3077;
+			type="UK3CB_CHD_O_Ural_Ammo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item165
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11815.301,9.0864897,13080.248};
+				angles[]={0,0.27148595,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3078;
+			type="UK3CB_CHD_O_Ural_Ammo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[4,1]]],false]";
 						};
 					};
 				};

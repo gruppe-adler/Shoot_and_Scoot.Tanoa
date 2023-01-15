@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=201;
+		nextID=207;
 	};
 	class Camera
 	{
-		pos[]={2125.0723,26.345968,3393.7734};
-		dir[]={0.27944481,-0.44166893,-0.85262012};
-		up[]={0.13756399,0.89715904,-0.41972661};
-		aside[]={-0.95033103,1.477747e-007,-0.31146902};
+		pos[]={2138.6082,14.060429,3359.9241};
+		dir[]={-0.38054895,-0.29212528,-0.87740833};
+		up[]={-0.11623827,0.95638001,-0.26800343};
+		aside[]={-0.91742635,0,0.39790556};
 	};
 };
 binarizationWanted=0;
@@ -85,7 +85,6 @@ addons[]=
 	"ace_optics",
 	"A3_Weapons_F_Exp_Rifles_CTAR",
 	"A3_Weapons_F_Pistols_Rook40",
-	"A3_Weapons_F_Exp_LongRangeRifles_DMR_07",
 	"A3_Weapons_F_Exp_Rifles_CTARS",
 	"A3_Weapons_F_Explosives",
 	"A3_Weapons_F_Orange",
@@ -434,7 +433,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -471,7 +470,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -10597,7 +10596,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="TFAR_mr3000_rhs";
+								typeName="UK3CB_B_O_Assault_camo_Radio";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -10691,10 +10690,10 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="arifle_CTAR_blk_ARCO_Pointer_F";
-								optics="optic_Arco_blk_F";
+								name="arifle_CTAR_ghex_F";
+								optics="optic_Arco_ghex_F";
 								flashlight="acc_pointer_IR";
-								firemode="arifle_CTAR_blk_ARCO_Pointer_F:Single";
+								firemode="arifle_CTAR_ghex_F:Single";
 								class primaryMuzzleMag
 								{
 									name="30Rnd_580x42_Mag_F";
@@ -10728,21 +10727,21 @@ class Mission
 									items=3;
 									class Item0
 									{
-										name="30Rnd_580x42_Mag_F";
-										count=3;
-										ammoLeft=30;
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="SmokeShell";
+										name="Laserbatteries";
 										count=1;
 										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="Laserbatteries";
-										count=1;
-										ammoLeft=1;
+										name="30Rnd_580x42_Mag_F";
+										count=3;
+										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -10764,57 +10763,57 @@ class Mission
 									items=8;
 									class Item0
 									{
-										name="30Rnd_580x42_Mag_Tracer_F";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
-									{
 										name="16Rnd_9x21_Mag";
 										count=2;
 										ammoLeft=17;
 									};
-									class Item2
+									class Item1
 									{
 										name="HandGrenade";
 										count=2;
 										ammoLeft=1;
 									};
-									class Item3
+									class Item2
 									{
 										name="O_IR_Grenade";
 										count=2;
 										ammoLeft=1;
 									};
-									class Item4
+									class Item3
 									{
 										name="SmokeShellRed";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="SmokeShellOrange";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item6
+									class Item5
 									{
 										name="SmokeShellYellow";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item7
+									class Item6
 									{
 										name="Chemlight_red";
 										count=2;
 										ammoLeft=1;
 									};
+									class Item7
+									{
+										name="30Rnd_580x42_Mag_Tracer_F";
+										count=2;
+										ammoLeft=30;
+									};
 								};
 							};
 							class backpack
 							{
-								typeName="TFAR_mr3000_rhs";
+								typeName="UK3CB_B_O_Assault_camo_Radio";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -10879,13 +10878,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="srifle_DMR_07_blk_DMS_F";
-								optics="optic_dms";
-								firemode="srifle_DMR_07_blk_DMS_F:Single";
+								name="arifle_CTARS_ghex_F";
+								optics="optic_DMS_ghex_F";
+								firemode="arifle_CTARS_ghex_F:FullAuto";
 								class primaryMuzzleMag
 								{
-									name="20Rnd_650x39_Cased_Mag_F";
-									ammoLeft=20;
+									name="30Rnd_580x42_Mag_F";
+									ammoLeft=30;
 								};
 							};
 							class handgun
@@ -10901,16 +10900,6 @@ class Mission
 							{
 								typeName="U_O_T_Soldier_F";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="20Rnd_650x39_Cased_Mag_F";
-										count=4;
-										ammoLeft=20;
-									};
-								};
 								class ItemCargo
 								{
 									items=1;
@@ -10927,38 +10916,32 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=6;
+									items=5;
 									class Item0
-									{
-										name="20Rnd_650x39_Cased_Mag_F";
-										count=5;
-										ammoLeft=20;
-									};
-									class Item1
 									{
 										name="16Rnd_9x21_Mag";
 										count=2;
 										ammoLeft=17;
 									};
-									class Item2
+									class Item1
 									{
 										name="HandGrenade";
 										count=2;
 										ammoLeft=1;
 									};
-									class Item3
+									class Item2
 									{
 										name="SmokeShell";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item4
+									class Item3
 									{
 										name="SmokeShellRed";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="Chemlight_red";
 										count=2;
@@ -10996,11 +10979,11 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="arifle_CTARS_blk_Pointer_F";
-								firemode="arifle_CTARS_blk_Pointer_F:FullAuto";
+								name="arifle_CTARS_ghex_F";
+								firemode="arifle_CTARS_ghex_F:FullAuto";
 								class primaryMuzzleMag
 								{
-									name="100Rnd_580x42_Mag_F";
+									name="100Rnd_580x42_ghex_Mag_F";
 									ammoLeft=100;
 								};
 							};
@@ -11052,33 +11035,33 @@ class Mission
 									items=5;
 									class Item0
 									{
-										name="100Rnd_580x42_Mag_F";
-										count=5;
-										ammoLeft=100;
-									};
-									class Item1
-									{
 										name="16Rnd_9x21_Mag";
 										count=1;
 										ammoLeft=17;
 									};
-									class Item2
+									class Item1
 									{
 										name="HandGrenade";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item3
+									class Item2
 									{
 										name="SmokeShellRed";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item4
+									class Item3
 									{
 										name="Chemlight_red";
 										count=2;
 										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="100Rnd_580x42_Mag_F";
+										count=5;
+										ammoLeft=100;
 									};
 								};
 							};
@@ -11251,13 +11234,18 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="arifle_CTAR_blk_ACO_Pointer_F";
+								name="arifle_CTAR_GL_ghex_F";
 								optics="optic_ACO_grn";
-								firemode="arifle_CTAR_blk_ACO_Pointer_F:Single";
+								firemode="arifle_CTAR_GL_ghex_F:Single";
 								class primaryMuzzleMag
 								{
 									name="30Rnd_580x42_Mag_F";
 									ammoLeft=30;
+								};
+								class secondaryMuzzleMag
+								{
+									name="1Rnd_HE_Grenade_shell";
+									ammoLeft=1;
 								};
 							};
 							class handgun
@@ -11275,14 +11263,8 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="SmokeShell";
 										count=1;
@@ -11311,48 +11293,42 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_HarnessO_ghex_F";
+								typeName="V_HarnessOGL_ghex_F";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=7;
+									items=6;
 									class Item0
-									{
-										name="30Rnd_580x42_Mag_F";
-										count=3;
-										ammoLeft=30;
-									};
-									class Item1
 									{
 										name="16Rnd_9x21_Mag";
 										count=2;
 										ammoLeft=17;
 									};
-									class Item2
+									class Item1
 									{
 										name="HandGrenade";
 										count=2;
 										ammoLeft=1;
 									};
-									class Item3
+									class Item2
 									{
 										name="SmokeShellRed";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item4
+									class Item3
 									{
 										name="SmokeShellOrange";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="SmokeShellYellow";
 										count=1;
 										ammoLeft=1;
 									};
-									class Item6
+									class Item5
 									{
 										name="Chemlight_red";
 										count=2;
@@ -11362,7 +11338,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Carryall_ghex_OTEng_F";
+								typeName="B_FieldPack_ghex_F";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -11376,7 +11352,7 @@ class Mission
 									class Item1
 									{
 										name="DemoCharge_Remote_Mag";
-										count=2;
+										count=1;
 										ammoLeft=1;
 									};
 								};

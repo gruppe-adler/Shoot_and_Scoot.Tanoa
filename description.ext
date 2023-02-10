@@ -5,6 +5,7 @@ class CfgFunctions {
     #include "scripts\arsr\funcs.hpp"                   // enable sound directionfinder
     #include "scripts\stomper\funcs.hpp"                // enable sitting on Stomper UGV
     #include "scripts\craters\funcs.hpp"                // terrain deformation on artillery impacts
+    #include "scripts\lgshells\funcs.hpp"               // fix for unreliable vanilla laser guided shells
     #include "scripts\grad-loadout\CfgFunctions.hpp"    // Gruppe Adler loadout handling
 };
 

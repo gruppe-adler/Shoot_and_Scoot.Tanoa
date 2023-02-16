@@ -1,12 +1,29 @@
 
 if !(hasInterface) exitWith {};
 
+
+
+// set the randomly generated laser code as default settings for both sides
+switch (side player) do
+{
+    case west: { ACE_DEFAULT_LASER_CODE = laserCode_bluefor };
+    case east: { ACE_DEFAULT_LASER_CODE = laserCode_opfor };
+};
+systemChat ("players ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
+diag_log   ("players ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
+
+
+
+
 [player, 5] spawn BIS_fnc_traceBullets;   // colored tracers
 
-laserCode = 1111;
+laserCode = ACE_DEFAULT_LASER_CODE;
 laserMaxDetectionRange = 9000;
 laserWavelength = [1550, 1550];
 seekerCone = 90;  // in degree
+
+
+
 
 
 // unregister shell firing event handler when getting out of a vehicle

@@ -9,20 +9,15 @@ switch (side player) do
     case west: { ACE_DEFAULT_LASER_CODE = laserCode_bluefor };
     case east: { ACE_DEFAULT_LASER_CODE = laserCode_opfor };
 };
-systemChat ("players ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
-diag_log   ("players ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
+systemChat ("player's ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
+diag_log   ("player's ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
 
 
-
-
-[player, 5] spawn BIS_fnc_traceBullets;   // colored tracers
 
 laserCode = ACE_DEFAULT_LASER_CODE;
 laserMaxDetectionRange = 9000;
 laserWavelength = [1550, 1550];
 seekerCone = 120;  // in degree
-
-
 
 
 
@@ -37,6 +32,10 @@ player addEventHandler ["GetOutMan", {
 // register shell firing event handler when getting into a vehicle
 lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
   params ["_unit", "_role", "_vehicle", "_turret"];
+  
+  is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current player is a Zeus
+  if (is_Zeus) then { [player, 5] spawn BIS_fnc_traceBullets };  // colored tracers
+  
   _vehicle addEventHandler ["Fired", {
       params ["_shooter", "", "", "", "", "", "_projectile"];
       testorino = _projectile;
@@ -49,9 +48,10 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
                   {
                       private _projectile = _this#0#1;                    
                       private _shooter = _this#0#0;
+                      
                       if (!alive _projectile) exitWith {
                           [_this#1] call CBA_fnc_removePerFrameHandler;
-                          systemChat "terminated";
+                          if (is_Zeus) then { systemChat "terminated" };
                       };
                       private _result = [
                           getPosASL _projectile, 
@@ -64,8 +64,8 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
                       ] call ace_laser_fnc_seekerFindLaserSpot;
                       
                       private _spot = _result#0;
-                      if (isNil "_spot") exitWith { systemChat "no spot" };
-                      systemChat "tracking";
+                      if (isNil "_spot") exitWith { if (is_Zeus) then { systemChat "no spot" } };
+                      if (is_Zeus) then { systemChat "tracking" };
                       
                       private _frameTime = time - (_projectile getVariable ["lastFrameTime", time]);
                       _projectile setVariable ["lastFrameTime", time];

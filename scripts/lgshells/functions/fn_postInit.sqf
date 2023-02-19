@@ -20,7 +20,7 @@ diag_log   ("players ACE_DEFAULT_LASER_CODE=" + str ACE_DEFAULT_LASER_CODE);
 laserCode = ACE_DEFAULT_LASER_CODE;
 laserMaxDetectionRange = 9000;
 laserWavelength = [1550, 1550];
-seekerCone = 90;  // in degree
+seekerCone = 120;  // in degree
 
 
 
@@ -81,7 +81,7 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
                       private _angleX = asin (_vectorModelSpace # 0);
                       private _angleY = asin (_vectorModelSpace # 2);
 
-                      _turnRate = 3 * _frameTime;  // turn rate should be between 2 and 4
+                      _turnRate = 8 * _frameTime;  // turn rate is dependant on projectile velocity
                       _projectile setDir (getDir _projectile) + (_angleX min _turnRate  max -_turnRate );
                       if(((-_angleY) > 45)) then {
                           [_projectile, _pitch + (_angleY  min _turnRate  max -_turnRate), 0] call BIS_fnc_setPitchBank;

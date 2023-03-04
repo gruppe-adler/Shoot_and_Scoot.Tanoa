@@ -1,6 +1,22 @@
 params ["_originatorPos", ["_artySide", sideLogic]];
 private _time = time;
 
+// Check if a vehicle has at least one crew member alive
+// Returns true if at least one crew member is alive, false otherwise
+// @param vehicleObject: Object - The vehicle to check
+// @return Boolean
+fnc_listenerOperatorNearby = {
+    
+    private _aliveCrew = (crew _this) select { alive _x };
+    private _numAliveCrew = count _aliveCrew;
+    
+    is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current player is a Zeus
+    if (is_Zeus) then { systemChat (str(_this) + " _numAliveCrew=" + str(_numAliveCrew)) }; // debug message
+    
+    _numAliveCrew > 0
+};
+
+
 {
     private _distance =  _x distance _originatorPos;
     private _soundDelay = if (arsr_speedOfSound > 0) then {
@@ -45,6 +61,6 @@ private _time = time;
     }, [_originatorPos, _x, _time], _soundDelay] call CBA_fnc_waitAndExecute;
 } foreach (arsr_listeners select {
     ((_x getVariable ["tf_range",0]) == 50000) && { // listener is actively listening
-    // check if the firing vehicle is not on the same side as the listener
-    (_artySide isNotEqualTo (_x getVariable ["arsr_side", sideLogic]))
-}});
+    (_artySide isNotEqualTo (_x getVariable ["arsr_side", sideLogic])) && { // check if the firing vehicle is not on the same side as the listener
+    (_x call fnc_listenerOperatorNearby) // listener station has an operator nearby
+}}});

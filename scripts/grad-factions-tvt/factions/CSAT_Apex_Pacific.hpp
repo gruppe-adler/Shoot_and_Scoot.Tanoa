@@ -94,13 +94,15 @@ class CSAT_Apex_Pacific {
         
         // engineer
         class Engineer_F: Soldier_F {
-            primaryWeapon = "arifle_CTAR_GL_ghx_F";   // with underbarrel grenade launcher
+            primaryWeapon = "arifle_CTAR_GL_ghex_F";   // with underbarrel grenade launcher
+            primaryWeaponUnderbarrelMagazine = "1Rnd_HE_Grenade_shell";
             vest = "V_HarnessOGL_ghex_F";
             backpack = "B_FieldPack_ghex_F";
             addItemsToBackpack[] = {
                 LIST_1("ToolKit"),
                 LIST_1("ACE_EntrenchingTool"),
-                LIST_1("ACE_wirecutter")
+                LIST_1("ACE_wirecutter"),
+                LIST_11("1Rnd_HE_Grenade_shell")
             };
         };
         
@@ -115,10 +117,6 @@ class CSAT_Apex_Pacific {
         
         // automatic rifle 
         class Soldier_AR_F {
-            vest[] = {
-              "V_HarnessO_ghex_F",
-              "V_TacVest_oli"
-            };
             primaryWeapon = "arifle_CTARS_ghex_F";
             primaryWeaponMagazine = "100Rnd_580x42_ghex_Mag_F";
             addItemsToVest[] = {
@@ -147,6 +145,7 @@ class CSAT_Apex_Pacific {
         class Soldier_UAV_F: Support_Mort_F {
             headgear = "H_MilCap_ghex_F";
             gps = "O_UavTerminal";
+            vest = "V_HarnessO_ghex_F";
             addItemsToVest[] = {
                 LIST_5("30Rnd_580x42_Mag_F"),
                 LIST_3("ACE_UAVBattery")

@@ -99,11 +99,14 @@ class NATO_Apex_Pacific {
         // engineer
         class Engineer_F: Soldier_F {
             primaryWeapon = "arifle_MX_GL_khk_F";   // MX with underbarrel grenade launcher
+            primaryWeaponUnderbarrelMagazine = "1Rnd_HE_Grenade_shell";
+            vest = "UK3CB_LDF_B_V_GREN_Vest_KKZ10_GEO";
             backpack = "B_AssaultPack_tna_F";
             addItemsToBackpack[] = {
                 LIST_1("ToolKit"),
                 LIST_1("ACE_EntrenchingTool"),
-                LIST_1("ACE_wirecutter")
+                LIST_1("ACE_wirecutter"),
+                LIST_11("1Rnd_HE_Grenade_shell")
             };
         };
         

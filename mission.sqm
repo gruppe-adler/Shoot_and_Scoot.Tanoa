@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=213;
+		nextID=216;
 	};
 	class Camera
 	{
-		pos[]={11876.005,22.714443,13100.245};
-		dir[]={-0.60298872,-0.22879277,-0.76423723};
-		up[]={-0.14171852,0.97347516,-0.17961624};
-		aside[]={-0.78506082,0,0.61941868};
+		pos[]={2118.3601,18.124031,3415.8726};
+		dir[]={-0.62819958,-0.39548331,0.67004347};
+		up[]={-0.27049506,0.91847306,0.2885125};
+		aside[]={0.72951877,1.4901161e-008,0.68396068};
 	};
 };
 binarizationWanted=0;
@@ -83,6 +83,7 @@ addons[]=
 	"A3_Characters_F_Exp_Vests",
 	"A3_Characters_F_Heads",
 	"ace_explosives",
+	"UK3CB_Factions_LDF_B",
 	"ace_trenches",
 	"ace_logistics_wirecutter",
 	"ace_optics",
@@ -98,7 +99,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=47;
+		items=48;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -394,33 +395,40 @@ class AddonsMetaData
 		};
 		class Item42
 		{
+			className="UK3CB_Factions_LDF";
+			name="3CB Factions - LDF";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item43
+		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item44
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item46
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item47
 		{
 			className="A3_Characters_F_Kart";
 			name="Arma 3 Karts - Characters and Clothing";
@@ -9095,7 +9103,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="V_Chestrig_rgr";
+								typeName="UK3CB_LDF_B_V_GREN_Vest_KKZ10_GEO";
 								isBackpack=0;
 								class MagazineCargo
 								{

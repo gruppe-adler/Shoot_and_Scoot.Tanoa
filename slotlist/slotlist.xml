@@ -26,13 +26,13 @@
       <squad side="" natosymbol="inf" callsign="Hunter-1" vehicletype="">
         <slot shortcode="SQL" description="Squad Leader"/>
         <slot shortcode="DMR" description="Marksman"/>
-        <slot shortcode="ENG" description="Engineer"/>
+        <slot shortcode="ENG" description="Engineer (+Grenadier)"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-2" vehicletype="">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer"          reserved-for="tbd"/>
+        <slot shortcode="ENG" description="Engineer (+Grenadier)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
     </platoon>
@@ -65,13 +65,13 @@
       <squad side="" natosymbol="inf" callsign="Hunter-1" vehicletype="">
         <slot shortcode="SQL" description="Squad Leader"/>
         <slot shortcode="DMR" description="Marksman"/>
-        <slot shortcode="ENG" description="Engineer"/>
+        <slot shortcode="ENG" description="Engineer (+Grenadier)"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-2" vehicletype="">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer"          reserved-for="tbd"/>
+        <slot shortcode="ENG" description="Engineer (+Grenadier)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
     </platoon>

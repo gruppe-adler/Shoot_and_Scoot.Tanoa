@@ -24,6 +24,8 @@ They need to place these sensors wisely in order to enable accurate triangulatio
 ### Hunter-Killer teams
 Hunter-Killer teams are very mobile motorized infantry teams that are meant to hunt down enemy artillery crews when they reveal their position through firing.
 
+In addition they employ explosives as decoys (also shows up on directionfinder screens) and in order to take down resupply points.
+
 
 ### Side Commander
 The commander is the top-most leader of one side and the only person that is not a directionfinder operator but still sees the sensors bearings.

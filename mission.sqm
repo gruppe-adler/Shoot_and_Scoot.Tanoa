@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3290;
+		nextID=3390;
 	};
 	class MarkerIDProvider
 	{
@@ -21,9 +21,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2118.3601,18.124031,3415.8726};
-		dir[]={-0.88112915,-0.23077014,0.41279703};
-		up[]={-0.20898107,0.97302246,0.097905517};
-		aside[]={0.42426479,7.2846751e-007,0.90560943};
+		dir[]={-0.8925935,-0.14382692,0.42730629};
+		up[]={-0.12972777,0.98960286,0.062103853};
+		aside[]={0.43179575,-7.4505806e-009,0.9019714};
 	};
 };
 binarizationWanted=0;
@@ -2132,7 +2132,7 @@ class Mission
 									headgear="rhsusf_ach_helmet_ucp";
 								};
 							};
-							id=3237;
+							id=3337;
 							type="rhsusf_army_ucp_rifleman";
 							class CustomAttributes
 							{
@@ -2169,7 +2169,7 @@ class Mission
 					class Attributes
 					{
 					};
-					id=3236;
+					id=3336;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2317,7 +2317,7 @@ class Mission
 									headgear="H_Beret_CSAT_01_F";
 								};
 							};
-							id=3262;
+							id=3362;
 							type="rhsusf_army_ucp_rifleman";
 							class CustomAttributes
 							{
@@ -2354,7 +2354,7 @@ class Mission
 					class Attributes
 					{
 					};
-					id=3261;
+					id=3361;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2375,7 +2375,7 @@ class Mission
 				};
 			};
 			id=59;
-			atlOffset=-181.97505;
+			atlOffset=-198.01556;
 		};
 		class Item1
 		{
@@ -8297,7 +8297,7 @@ class Mission
 							headgear="H_MilCap_tna_F";
 						};
 					};
-					id=3239;
+					id=3339;
 					type="B_T_Officer_F";
 					class CustomAttributes
 					{
@@ -8334,7 +8334,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3238;
+			id=3338;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8498,7 +8498,7 @@ class Mission
 							headgear="H_HelmetB_Light_tna_F";
 						};
 					};
-					id=3241;
+					id=3341;
 					type="B_T_Medic_F";
 					class CustomAttributes
 					{
@@ -8694,7 +8694,7 @@ class Mission
 							headgear="H_HelmetB_Enh_tna_F";
 						};
 					};
-					id=3242;
+					id=3342;
 					type="B_T_Soldier_SL_F";
 					class CustomAttributes
 					{
@@ -8740,7 +8740,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						description="2: Marksman";
+						description="Marksman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -8842,7 +8842,7 @@ class Mission
 							headgear="H_HelmetB_tna_F";
 						};
 					};
-					id=3243;
+					id=3343;
 					type="B_T_soldier_M_F";
 					class CustomAttributes
 					{
@@ -8889,7 +8889,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="4: Autorifleman";
+						description="Autorifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -8990,7 +8990,7 @@ class Mission
 							headgear="H_HelmetB_tna_F";
 						};
 					};
-					id=3244;
+					id=3344;
 					type="B_T_Soldier_AR_F";
 					atlOffset=9.5367432e-007;
 					class CustomAttributes
@@ -9037,7 +9037,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						description="8: Engineer";
+						description="Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9189,7 +9189,7 @@ class Mission
 							headgear="H_HelmetB_tna_F";
 						};
 					};
-					id=3245;
+					id=3345;
 					type="B_T_Engineer_F";
 					class CustomAttributes
 					{
@@ -9226,7 +9226,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3240;
+			id=3340;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9428,7 +9428,7 @@ class Mission
 							headgear="H_HelmetB_Enh_tna_F";
 						};
 					};
-					id=3247;
+					id=3347;
 					type="B_T_Soldier_TL_F";
 					class CustomAttributes
 					{
@@ -9474,7 +9474,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="2: Gunner (Mk6)";
+						description="Gunner (Mk6)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9582,14 +9582,14 @@ class Mission
 							headgear="H_HelmetB_Light_tna_F";
 						};
 					};
-					id=3248;
+					id=3348;
 					type="B_T_Support_Mort_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=3246;
+			id=3346;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9791,7 +9791,7 @@ class Mission
 							headgear="H_HelmetB_Enh_tna_F";
 						};
 					};
-					id=3250;
+					id=3350;
 					type="B_T_Soldier_TL_F";
 					class CustomAttributes
 					{
@@ -9837,7 +9837,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="2: Gunner (Mk6)";
+						description="Gunner (Mk6)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9945,14 +9945,14 @@ class Mission
 							headgear="H_HelmetB_Light_tna_F";
 						};
 					};
-					id=3251;
+					id=3351;
 					type="B_T_Support_Mort_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=3249;
+			id=3349;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10154,7 +10154,7 @@ class Mission
 							headgear="H_HelmetB_Enh_tna_F";
 						};
 					};
-					id=3253;
+					id=3353;
 					type="B_T_Soldier_TL_F";
 					class CustomAttributes
 					{
@@ -10200,7 +10200,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="2: Gunner (Mk6)";
+						description="Gunner (Mk6)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -10308,14 +10308,14 @@ class Mission
 							headgear="H_HelmetB_Light_tna_F";
 						};
 					};
-					id=3254;
+					id=3354;
 					type="B_T_Support_Mort_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=3252;
+			id=3352;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10423,7 +10423,7 @@ class Mission
 							headgear="H_MilCap_tna_F";
 						};
 					};
-					id=3256;
+					id=3356;
 					type="B_T_Soldier_UAV_F";
 					class CustomAttributes
 					{
@@ -10460,7 +10460,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3255;
+			id=3355;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10568,7 +10568,7 @@ class Mission
 							headgear="H_MilCap_tna_F";
 						};
 					};
-					id=3258;
+					id=3358;
 					type="B_T_Soldier_UAV_F";
 					class CustomAttributes
 					{
@@ -10605,7 +10605,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3257;
+			id=3357;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10713,7 +10713,7 @@ class Mission
 							headgear="H_MilCap_tna_F";
 						};
 					};
-					id=3260;
+					id=3360;
 					type="B_T_Soldier_UAV_F";
 					class CustomAttributes
 					{
@@ -10750,7 +10750,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3259;
+			id=3359;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10918,7 +10918,7 @@ class Mission
 							headgear="H_MilCap_ghex_F";
 						};
 					};
-					id=3264;
+					id=3364;
 					type="O_T_Officer_F";
 					class CustomAttributes
 					{
@@ -10955,7 +10955,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3263;
+			id=3363;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11118,7 +11118,7 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3266;
+					id=3366;
 					type="O_T_Medic_F";
 					class CustomAttributes
 					{
@@ -11305,7 +11305,7 @@ class Mission
 							headgear="H_HelmetLeaderO_ghex_F";
 						};
 					};
-					id=3267;
+					id=3367;
 					type="O_T_Soldier_SL_F";
 					atlOffset=9.5367432e-007;
 					class CustomAttributes
@@ -11352,7 +11352,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						description="2: Marksman";
+						description="Marksman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11436,7 +11436,7 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3268;
+					id=3368;
 					type="O_T_Soldier_M_F";
 				};
 				class Item3
@@ -11453,7 +11453,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="4: Autorifleman";
+						description="Autorifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11552,7 +11552,7 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3269;
+					id=3369;
 					type="O_T_Soldier_AR_F";
 				};
 				class Item4
@@ -11568,7 +11568,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						description="8: Engineer";
+						description="Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11718,14 +11718,14 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3270;
+					id=3370;
 					type="O_T_Engineer_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=3265;
+			id=3365;
 			atlOffset=9.5367432e-007;
 		};
 		class Item159
@@ -11905,7 +11905,7 @@ class Mission
 							headgear="H_HelmetLeaderO_ghex_F";
 						};
 					};
-					id=3272;
+					id=3372;
 					type="O_T_Soldier_TL_F";
 					class CustomAttributes
 					{
@@ -11951,7 +11951,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="2: Gunner (Mk6)";
+						description="Gunner (Mk6)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12058,7 +12058,7 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3273;
+					id=3373;
 					type="O_T_Support_Mort_F";
 					class CustomAttributes
 					{
@@ -12082,7 +12082,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3271;
+			id=3371;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12278,7 +12278,7 @@ class Mission
 							headgear="H_HelmetLeaderO_ghex_F";
 						};
 					};
-					id=3275;
+					id=3375;
 					type="O_T_Soldier_TL_F";
 					class CustomAttributes
 					{
@@ -12431,7 +12431,7 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3276;
+					id=3376;
 					type="O_T_Support_Mort_F";
 					class CustomAttributes
 					{
@@ -12455,7 +12455,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3274;
+			id=3374;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12652,7 +12652,7 @@ class Mission
 							headgear="H_HelmetLeaderO_ghex_F";
 						};
 					};
-					id=3278;
+					id=3378;
 					type="O_T_Soldier_TL_F";
 					class CustomAttributes
 					{
@@ -12699,7 +12699,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						description="2: Gunner (Mk6)";
+						description="Gunner (Mk6)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12806,7 +12806,7 @@ class Mission
 							headgear="H_HelmetO_ghex_F";
 						};
 					};
-					id=3279;
+					id=3379;
 					type="O_T_Support_Mort_F";
 					class CustomAttributes
 					{
@@ -12830,7 +12830,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3277;
+			id=3377;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12933,7 +12933,7 @@ class Mission
 							headgear="H_MilCap_ghex_F";
 						};
 					};
-					id=3281;
+					id=3381;
 					type="O_T_Soldier_UAV_F";
 					class CustomAttributes
 					{
@@ -12970,7 +12970,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3280;
+			id=3380;
 		};
 		class Item163
 		{
@@ -13056,7 +13056,7 @@ class Mission
 							headgear="H_MilCap_ghex_F";
 						};
 					};
-					id=3283;
+					id=3383;
 					type="O_T_Soldier_UAV_F";
 					atlOffset=9.5367432e-007;
 					class CustomAttributes
@@ -13094,7 +13094,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3282;
+			id=3382;
 			atlOffset=9.5367432e-007;
 		};
 		class Item164
@@ -13181,7 +13181,7 @@ class Mission
 							headgear="H_MilCap_ghex_F";
 						};
 					};
-					id=3285;
+					id=3385;
 					type="O_T_Soldier_UAV_F";
 					atlOffset=9.5367432e-007;
 					class CustomAttributes
@@ -13219,7 +13219,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3284;
+			id=3384;
 			atlOffset=9.5367432e-007;
 		};
 		class Item165
@@ -13260,7 +13260,7 @@ class Mission
 							headgear="H_HeadSet_yellow_F";
 						};
 					};
-					id=3287;
+					id=3387;
 					type="C_Marshal_F";
 					class CustomAttributes
 					{
@@ -13311,7 +13311,7 @@ class Mission
 							headgear="H_HeadSet_yellow_F";
 						};
 					};
-					id=3288;
+					id=3388;
 					type="C_Marshal_F";
 					class CustomAttributes
 					{
@@ -13362,7 +13362,7 @@ class Mission
 							headgear="H_HeadSet_red_F";
 						};
 					};
-					id=3289;
+					id=3389;
 					type="C_Marshal_F";
 					class CustomAttributes
 					{
@@ -13386,7 +13386,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3286;
+			id=3386;
 			class CustomAttributes
 			{
 				class Attribute0

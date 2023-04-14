@@ -28,6 +28,35 @@ Hunter-Killer teams are very mobile motorized infantry teams that are meant to h
 ### Side Commander
 The commander is the top-most leader of one side and the only person that is not a directionfinder operator but still sees the sensors bearings.
 
+# Modset
+The following mods are recommended to play this game mode (not all of which are mandatory):
+```
+@3cb factions;
+@ace;
+@ace_compat_rhs_afrf3;
+@ace_compat_rhs_gref3;
+@ace_compat_rhs_saf3;
+@ace_compat_rhs_usf3;
+@cba_a3;
+@cup_terrains_core;
+@diwako_dui;
+@enhanced_movement;
+@Enhanced Movement Rework;
+@grad_slinghelmet;
+@grad_trenches;
+@gruppe_adler_mod;
+@rhsafrf;
+@rhsgref;
+@rhssaf;
+@rhsusaf;
+@splendid_smoke;
+@tfar animations;
+@tfar;
+@vet_unflipping;
+@vurtuals_car_seat_n_stretcher;
+@zen;
+@zen_compat_ace;
+```
 
 # Documentation
 * English docu 

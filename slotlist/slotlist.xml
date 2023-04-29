@@ -1,4 +1,10 @@
 <match>
+  <company side="civilian" natosymbol="inf" callsign="Zeus" vehicletype="">
+    <slot shortcode="Z" description="Zeus" reserved-for=""/>
+    <slot shortcode="Z" description="Zeus" reserved-for="tbd"/>
+    <slot shortcode="Z" description="Zeus" reserved-for="tbd"/>
+  </company>
+  
   <company side="blufor" natosymbol="hq" callsign="NATO" vehicletype="" reserved-for="">
     <slot shortcode="CMD" description="Commander (+UAV)" reserved-for=""/>
     <slot shortcode="2IC" description="2nd in command (+UAV)" reserved-for="tbd"/>

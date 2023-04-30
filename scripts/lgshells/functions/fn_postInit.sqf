@@ -81,7 +81,14 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
                       private _angleX = asin (_vectorModelSpace # 0);
                       private _angleY = asin (_vectorModelSpace # 2);
 
-                      _turnRate = 8 * _frameTime;  // turn rate is dependant on projectile velocity
+                      _turnRate = 24 * _frameTime;  // turn rate is dependant on projectile velocity
+                       if (is_Zeus) then { 
+                        diag_log   str _angleX;
+                        diag_log   str _angleY;
+                        diag_log   str _turnRate;
+                        diag_log   str (getDir _projectile);
+                      };
+
                       _projectile setDir (getDir _projectile) + (_angleX min _turnRate  max -_turnRate );
                       if(((-_angleY) > 45)) then {
                           [_projectile, _pitch + (_angleY  min _turnRate  max -_turnRate), 0] call BIS_fnc_setPitchBank;

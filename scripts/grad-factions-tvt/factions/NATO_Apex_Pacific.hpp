@@ -158,6 +158,7 @@ class NATO_Apex_Pacific {
                 LIST_5("30Rnd_65x39_caseless_khaki_mag"),
                 LIST_3("ACE_UAVBattery")
             };
+            backpack = "TFAR_rt1523g_bwmod";
         };        
         
         // commander

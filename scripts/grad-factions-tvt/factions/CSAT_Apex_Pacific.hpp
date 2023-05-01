@@ -150,6 +150,7 @@ class CSAT_Apex_Pacific {
                 LIST_5("30Rnd_580x42_Mag_F"),
                 LIST_3("ACE_UAVBattery")
             };
+            backpack = "UK3CB_B_O_Assault_camo_Radio";
         };        
         
         // commander

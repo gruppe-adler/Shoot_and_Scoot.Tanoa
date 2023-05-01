@@ -21,11 +21,11 @@
     <platoon natosymbol="uav" callsign="Recon" vehicletype="GAZ-66-mounted sound directionfinder + UAV">
       <squad side="" natosymbol="uav" callsign="Sensor-1" vehicletype="GAZ-66-mounted sound directionfinder + UAV">
         <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
-        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+        <!-- <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/> -->
       </squad>
       <squad side="" natosymbol="uav" callsign="Sensor-2" vehicletype="GAZ-66-mounted sound directionfinder + UAV">
         <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
-        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+        <!-- <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/> -->
       </squad>
     </platoon>
     <platoon natosymbol="inf" callsign="Hunter Killer Teams" vehicletype="Fire team with light buggy">
@@ -60,11 +60,11 @@
     <platoon natosymbol="uav" callsign="Recon" vehicletype="GAZ-66-mounted sound directionfinder + UAV">
       <squad side="" natosymbol="uav" callsign="Sensor-1" vehicletype="GAZ-66-mounted sound directionfinder + UAV">
         <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
-        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+        <!-- <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/> -->
       </squad>
       <squad side="" natosymbol="uav" callsign="Sensor-2" vehicletype="GAZ-66-mounted sound directionfinder + UAV">
         <slot shortcode="SQL" description="Squad Leader (+UAV)"/>
-        <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/>
+        <!-- <slot shortcode="UAV" description="Drone Operator" reserved-for="tbd"/> -->
       </squad>
     </platoon>
     <platoon natosymbol="inf" callsign="Hunter Killer Teams" vehicletype="Fire team with light buggy">

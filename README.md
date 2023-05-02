@@ -12,13 +12,15 @@ Players of each side step into either of 3 roles:
 ### Artillery
 The task of the **artillery** crews is to destroy all enemy resupply stations and win the game for the own team.
 
-In order to find those stations they and **all other players** can utilize small UAVs.
+In order to find those stations they rely on targeting information from reconnaissance elements (e.g. UAV operators).
 
 
 ### Sound directionfinders
 The crews of the **sound directionfinders** can use their vehicles as sensors that point into the direction of where artillery has been fired from. 
 
 They need to place these sensors wisely in order to enable accurate triangulation of enemy artillery batteries.
+
+In addition to this ability they are also UAV operators, making them a multi-sensor reconnaissance role.
 
 
 ### Hunter-Killer teams

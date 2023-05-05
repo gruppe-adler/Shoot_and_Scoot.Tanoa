@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=222;
+		nextID=225;
 	};
 	class Camera
 	{
-		pos[]={2140.2234,37.060001,3467.415};
-		dir[]={-0.19351006,-0.42643952,-0.88358235};
-		up[]={-0.091232039,0.90451264,-0.41657409};
-		aside[]={-0.97685605,-2.4207111e-008,0.21393746};
+		pos[]={6984.2061,27.66,7280.9678};
+		dir[]={-0.18385352,-0.37430656,-0.90890139};
+		up[]={-0.074212424,0.92730421,-0.36687744};
+		aside[]={-0.98015338,-8.0734026e-008,0.19826564};
 	};
 };
 binarizationWanted=0;
@@ -2016,7 +2016,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={6959.6777,2.6614389,7201.3247};
-								angles[]={-0,4.1863203,0};
+								angles[]={0,4.1863203,0};
 							};
 							side="West";
 							flags=6;
@@ -2201,7 +2201,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={11849.856,6.9514389,13078.304};
-								angles[]={-0,3.8607712,0};
+								angles[]={0,3.8607712,0};
 							};
 							side="East";
 							flags=6;
@@ -2375,7 +2375,7 @@ class Mission
 				};
 			};
 			id=59;
-			atlOffset=-181.97505;
+			atlOffset=-198.01556;
 		};
 		class Item1
 		{
@@ -2587,7 +2587,7 @@ class Mission
 			dataType="Marker";
 			position[]={5691.333,2.21,10461.461};
 			name="blufor_pos01";
-			text="Blue 1";
+			text="Blue 056 104";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=416;
@@ -2597,7 +2597,7 @@ class Mission
 			dataType="Marker";
 			position[]={13152.146,6.8779998,11911.007};
 			name="opfor_pos01";
-			text="Red 1";
+			text="Red 131 119";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=417;
@@ -2608,7 +2608,7 @@ class Mission
 			dataType="Marker";
 			position[]={11931.903,35.629002,12744.58};
 			name="opfor_pos02";
-			text="Red 2";
+			text="Red 119 127";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=418;
@@ -2617,19 +2617,20 @@ class Mission
 		class Item7
 		{
 			dataType="Marker";
-			position[]={14079.997,86.833801,10699.165};
+			position[]={14079.997,86.834,10699.165};
 			name="opfor_pos03";
-			text="Red 3";
+			text="Red 140 106";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=419;
+			atlOffset=0.00019836426;
 		};
 		class Item8
 		{
 			dataType="Marker";
 			position[]={9651.5771,4.0380001,6514.3882};
 			name="blufor_pos02";
-			text="Blue 2";
+			text="Blue 096 065";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=420;
@@ -2640,7 +2641,7 @@ class Mission
 			dataType="Marker";
 			position[]={13926.854,57.206001,9258.7656};
 			name="opfor_pos04";
-			text="Red 4";
+			text="Red 139 092";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=421;
@@ -2651,7 +2652,7 @@ class Mission
 			dataType="Marker";
 			position[]={11915.325,145.634,10257.041};
 			name="opfor_pos05";
-			text="Red 5";
+			text="Red 119 102";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=422;
@@ -2662,7 +2663,7 @@ class Mission
 			dataType="Marker";
 			position[]={6458.1621,11.592,11208.557};
 			name="opfor_pos06";
-			text="Red 6";
+			text="Red 064 112";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=423;
@@ -2673,7 +2674,7 @@ class Mission
 			dataType="Marker";
 			position[]={11746.454,23.084999,6922.3691};
 			name="blufor_pos03";
-			text="Blue 3";
+			text="Blue 117 069";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=424;
@@ -2682,20 +2683,20 @@ class Mission
 		class Item13
 		{
 			dataType="Marker";
-			position[]={7496.1807,22.83,7169.0332};
+			position[]={7496.1812,22.83,7169.0332};
 			name="blufor_pos04";
-			text="Blue 4";
+			text="Blue 074 071";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=425;
-			atlOffset=15.87282;
+			atlOffset=15.872805;
 		};
 		class Item14
 		{
 			dataType="Marker";
 			position[]={14651.202,3.5320001,9701.2734};
 			name="opfor_pos07";
-			text="Red 7";
+			text="Red 146 097";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=426;
@@ -2706,7 +2707,7 @@ class Mission
 			dataType="Marker";
 			position[]={10072.098,409.20001,11796.605};
 			name="opfor_pos08";
-			text="Red 8";
+			text="Red 100 117";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=427;
@@ -2717,7 +2718,7 @@ class Mission
 			dataType="Marker";
 			position[]={6300.8369,45.627998,8573.8291};
 			name="blufor_pos05";
-			text="Blue 5";
+			text="Blue 063 085";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=428;
@@ -2728,7 +2729,7 @@ class Mission
 			dataType="Marker";
 			position[]={7461.0679,120.664,12016.85};
 			name="opfor_pos09";
-			text="Red 9";
+			text="Red 074 120";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=429;
@@ -2739,7 +2740,7 @@ class Mission
 			dataType="Marker";
 			position[]={5449.5542,4.684,9240.6504};
 			name="blufor_pos06";
-			text="Blue 6";
+			text="Blue 054 092";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=430;
@@ -2750,7 +2751,7 @@ class Mission
 			dataType="Marker";
 			position[]={8302.3184,36.206001,10343.519};
 			name="opfor_pos10";
-			text="Red 10";
+			text="Red 083 103 ";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=431;
@@ -2761,7 +2762,7 @@ class Mission
 			dataType="Marker";
 			position[]={8173.2422,231.53799,12011.597};
 			name="opfor_pos11";
-			text="Red 11";
+			text="Red 081 120";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=432;
@@ -2772,7 +2773,7 @@ class Mission
 			dataType="Marker";
 			position[]={9891.1846,19.399,13524.285};
 			name="opfor_pos12";
-			text="Red 12";
+			text="Red 098 135";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=433;
@@ -2783,7 +2784,7 @@ class Mission
 			dataType="Marker";
 			position[]={10318.418,19.848,6748.9258};
 			name="blufor_pos07";
-			text="Blue 7";
+			text="Blue 103 067";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=434;
@@ -2794,7 +2795,7 @@ class Mission
 			dataType="Marker";
 			position[]={5819.2891,21.431,10840.981};
 			name="opfor_pos13";
-			text="Red 13";
+			text="Red 058 108";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=435;
@@ -2805,7 +2806,7 @@ class Mission
 			dataType="Marker";
 			position[]={6943.271,90.811996,10740.537};
 			name="opfor_pos14";
-			text="Red 14";
+			text="Red 069 107";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=436;
@@ -2816,7 +2817,7 @@ class Mission
 			dataType="Marker";
 			position[]={9281.0566,21.716,13602.178};
 			name="opfor_pos15";
-			text="Red 15";
+			text="Red 092 136";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=437;
@@ -2827,7 +2828,7 @@ class Mission
 			dataType="Marker";
 			position[]={9172.0869,77.025002,10873.099};
 			name="opfor_pos16";
-			text="Red 16";
+			text="Red 091 108";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=438;
@@ -2838,7 +2839,7 @@ class Mission
 			dataType="Marker";
 			position[]={13677.288,245.36,11240.675};
 			name="opfor_pos17";
-			text="Red 17";
+			text="Red 136 112";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=439;
@@ -2849,7 +2850,7 @@ class Mission
 			dataType="Marker";
 			position[]={6956.5591,58.144001,13367.156};
 			name="opfor_pos18";
-			text="Red 18";
+			text="Red 069 133";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=440;
@@ -2860,7 +2861,7 @@ class Mission
 			dataType="Marker";
 			position[]={11326.345,102.086,12337.758};
 			name="opfor_pos19";
-			text="Red 19";
+			text="Red 113 123";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=441;
@@ -2871,7 +2872,7 @@ class Mission
 			dataType="Marker";
 			position[]={5364.9502,21.646,11433.73};
 			name="opfor_pos20";
-			text="Red 20";
+			text="Red 053 114";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=442;
@@ -2882,7 +2883,7 @@ class Mission
 			dataType="Marker";
 			position[]={11515.35,133.966,8011.6392};
 			name="blufor_pos08";
-			text="Blue 8";
+			text="Blue 115 080";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=443;
@@ -2893,7 +2894,7 @@ class Mission
 			dataType="Marker";
 			position[]={8178.6411,12.581,9767.9805};
 			name="blufor_pos09";
-			text="Blue 9";
+			text="Blue 081 097";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=444;
@@ -2904,7 +2905,7 @@ class Mission
 			dataType="Marker";
 			position[]={7224.5039,2.6949999,7853.4771};
 			name="blufor_pos10";
-			text="Blue 10";
+			text="Blue 072 078 ";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=445;
@@ -2915,7 +2916,7 @@ class Mission
 			dataType="Marker";
 			position[]={9806.4316,40.931999,6946.542};
 			name="blufor_pos11";
-			text="Blue 11";
+			text="Blue 098 069";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=446;
@@ -2926,7 +2927,7 @@ class Mission
 			dataType="Marker";
 			position[]={6319.1899,2.671,7240.4038};
 			name="blufor_pos12";
-			text="Blue 12";
+			text="Blue 063 072";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=447;
@@ -2937,7 +2938,7 @@ class Mission
 			dataType="Marker";
 			position[]={8077.9512,48.062,8843.0381};
 			name="blufor_pos13";
-			text="Blue 13";
+			text="Blue 080 088";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=448;
@@ -2948,7 +2949,7 @@ class Mission
 			dataType="Marker";
 			position[]={13421.502,85.668999,8527.6719};
 			name="blufor_pos14";
-			text="Blue 14";
+			text="Blue 134 085 ";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=449;
@@ -2959,7 +2960,7 @@ class Mission
 			dataType="Marker";
 			position[]={8562.2744,49.568001,7704.4351};
 			name="blufor_pos15";
-			text="Blue 15";
+			text="Blue 085 077";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=450;
@@ -2970,7 +2971,7 @@ class Mission
 			dataType="Marker";
 			position[]={5944.52,6.2509999,7837.7109};
 			name="blufor_pos17";
-			text="Blue 17";
+			text="Blue 059 078";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=451;
@@ -2981,7 +2982,7 @@ class Mission
 			dataType="Marker";
 			position[]={4737.542,2.6700001,8758.5244};
 			name="blufor_pos16";
-			text="Blue 16";
+			text="Blue 047 087";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=452;
@@ -2991,7 +2992,7 @@ class Mission
 			dataType="Marker";
 			position[]={12410.907,33.139999,7775.7988};
 			name="blufor_pos18";
-			text="Blue 18";
+			text="Blue 124 077";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=453;
@@ -3002,7 +3003,7 @@ class Mission
 			dataType="Marker";
 			position[]={9333.1338,188.257,8593.2568};
 			name="blufor_pos19";
-			text="Blue 19";
+			text="Blue 093 085";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=454;
@@ -3013,7 +3014,7 @@ class Mission
 			dataType="Marker";
 			position[]={6036.3809,55.373001,9620.1836};
 			name="blufor_pos20";
-			text="Blue 20";
+			text="Blue 060 096";
 			type="mil_unknown";
 			colorName="ColorWEST";
 			id=455;
@@ -11375,7 +11376,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2101.9341,12.951439,3455.218};
-						angles[]={-0,5.9742446,0};
+						angles[]={0,5.9742446,0};
 					};
 					side="West";
 					flags=6;
@@ -11520,7 +11521,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2098.7271,12.951439,3454.042};
-						angles[]={-0,5.9742446,0};
+						angles[]={0,5.9742446,0};
 					};
 					side="West";
 					flags=6;
@@ -11665,7 +11666,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2095.0969,12.951439,3453.001};
-						angles[]={-0,5.9742446,0};
+						angles[]={0,5.9742446,0};
 					};
 					side="West";
 					flags=6;
@@ -12511,6 +12512,7 @@ class Mission
 					};
 					id=3620;
 					type="O_T_Soldier_SL_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12929,6 +12931,7 @@ class Mission
 			{
 			};
 			id=3618;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14990,7 +14993,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2161.144,12.06144,3366.5972};
-						angles[]={-0,5.7765164,0};
+						angles[]={0,5.7765164,0};
 					};
 					side="East";
 					flags=6;
@@ -15063,6 +15066,7 @@ class Mission
 					};
 					id=3642;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15099,6 +15103,7 @@ class Mission
 			{
 			};
 			id=3641;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15130,7 +15135,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2163.418,12.06144,3368.322};
-						angles[]={-0,5.7765164,0};
+						angles[]={0,5.7765164,0};
 					};
 					side="East";
 					flags=6;
@@ -15203,6 +15208,7 @@ class Mission
 					};
 					id=3644;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15239,6 +15245,7 @@ class Mission
 			{
 			};
 			id=3643;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0

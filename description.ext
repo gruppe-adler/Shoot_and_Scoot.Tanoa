@@ -10,6 +10,9 @@ class CfgFunctions {
 };
 
 
+enableDebugConsole = 1; // 1 means available in SP and for hosts / logged in admins in MP
+
+
 // respawn behaviour (also done in mission.sqm)
 respawnOnStart = 0;
 

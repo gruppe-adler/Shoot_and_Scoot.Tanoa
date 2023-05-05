@@ -82,7 +82,7 @@ force arsr_listenerCalcDelay = 0;	// default 20
 force arsr_listenerClassesSetting = "[""UK3CB_CHD_O_Gaz66_Radio"", ""UK3CB_CHD_W_B_Gaz66_Radio""]";
 force arsr_listenerMaxDistance = 20000;	// in meters
 arsr_markerColor = "Default";
-force arsr_speedOfSound = 343;
+force arsr_speedOfSound = 700; // realistic sound traveling time would be 343 (but this is to slow for good counter battery action)
 force arsr_vicEngineOff = true;
 force arsr_vicStationary = true;
 

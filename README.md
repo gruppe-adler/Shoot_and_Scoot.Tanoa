@@ -1,3 +1,9 @@
+# Live gameplay trailer
+Click banner to watch the video
+
+[![live gameplay trailer](https://img.youtube.com/vi/s6wskXYYYXY/0.jpg)](https://youtu.be/s6wskXYYYXY)
+
+
 # Introduction
 **Shoot and Scoot** is a TvT game mode in which 2 sides fight against each other.
 
@@ -61,14 +67,8 @@ The following mods are recommended to play this game mode (not all of which are 
 ```
 
 # Documentation
-* English docu 
-  * [Docu slide deck](https://docs.google.com/presentation/d/1BGDOxqqZw4T6js3oQ4mPr4E7f8NLZsPS85MUAAIYvco/edit?usp=sharing)
-  * [Readme of sound directionfinder mod](https://github.com/Perondas/arsr.VR/blob/main/README.md)
-  * [Docu on RHS towing](https://www.rhsmods.org/w/towing)
-
-
- 
-
-* Language independet information
-  * [Demo video of sound directionfinder](https://www.youtube.com/watch?v=uboQB55MTRY)
+* [Docu slide deck](https://docs.google.com/presentation/d/1BGDOxqqZw4T6js3oQ4mPr4E7f8NLZsPS85MUAAIYvco/edit?usp=sharing)
+* [Readme of sound directionfinder mod](https://github.com/Perondas/arsr.VR/blob/main/README.md)
+* [Docu on RHS towing](https://www.rhsmods.org/w/towing)
+* [Demo video of sound directionfinder](https://www.youtube.com/watch?v=uboQB55MTRY)
 

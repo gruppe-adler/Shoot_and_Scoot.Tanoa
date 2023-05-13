@@ -114,7 +114,7 @@ class NATO_Apex_Pacific {
         class soldier_M_F: Soldier_F {
             primaryWeapon = "arifle_MXM_khk_F";
             primaryWeaponOptics = "optic_SOS_khk_F";
-            primaryWeaponUnderbarrel = "bipod_01_F_khk"
+            primaryWeaponUnderbarrel = "bipod_01_F_khk";
         };
         
         /*** following are classes not derived from the rifleman ***/

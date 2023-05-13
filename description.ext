@@ -6,6 +6,7 @@ class CfgFunctions {
     #include "scripts\stomper\funcs.hpp"                // enable sitting on Stomper UGV
     #include "scripts\craters\funcs.hpp"                // terrain deformation on artillery impacts
     #include "scripts\lgshells\funcs.hpp"               // fix for unreliable vanilla laser guided shells
+    #include "scripts\tfar-persistence\funcs.hpp"       // restore previous TFAR settings after respawn
     #include "scripts\grad-loadout\CfgFunctions.hpp"    // Gruppe Adler loadout handling
 };
 

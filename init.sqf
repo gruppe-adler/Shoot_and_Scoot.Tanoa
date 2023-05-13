@@ -25,14 +25,23 @@
 }, false, [], true]call CBA_fnc_addClassEventHandler;
 
 
-// nerf Darter's sensors to be more TvT friendly
+// nerf Darter drones to be more TvT friendly
 ["UAV_01_base_F", "init",{
     params ["_vehicle"];
-    _vehicle disableTIEquipment true;
-    _vehicle disableNVGEquipment true;
+    _vehicle disableTIEquipment true;   // disable thermal imaging
+    _vehicle disableNVGEquipment true;  // disable night vision imaging
     _vehicle removeMagazinesTurret ["Laserbatteries", [0]];   // disable laser designator
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
+["UAV_01_base_F", "Engine",{
+    params ["_vehicle", "_engineState"];
+    if (_engineState) then { 
+    // if engine has just been turned on...    (needed to also cover battery recharge)
+      if (fuel _vehicle > 0.66) then { 
+        _vehicle setFuel 0.66; // limit fuel to 2/3 of full capacity
+      } 
+    }
+}, true, [], true] call CBA_fnc_addClassEventHandler;
 
 
 // apply grad-loadout

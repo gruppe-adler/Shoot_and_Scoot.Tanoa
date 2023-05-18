@@ -1,38 +1,37 @@
 version=54;
-center[]={11771.421,6.9499998,13073.849};
+center[]={6949.7334,2.6600001,7318.9883};
 class items
 {
-	items=2;
+	items=1;
 	class Item0
 	{
 		dataType="Layer";
 		name="OPFOR supply station";
 		class Entities
 		{
-			items=4;
+			items=6;
 			class Item0
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.2783203,1.2035141,-1.2089844};
-					angles[]={-0,1.8348607,0};
+					position[]={0.40917969,0.16358852,0.58154297};
+					angles[]={-0,0.26406831,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					health=0.60000002;
 				};
-				id=1382;
-				type="Land_Pod_Heli_Transport_04_ammo_F";
+				id=3703;
+				type="Land_PortableCabinet_01_closed_sand_F";
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.93847656,0.24701071,0.048828125};
+					position[]={1.1523438,0.24701095,0.25048828};
 					angles[]={-0,5.5873189,0};
 				};
 				side="Empty";
@@ -40,7 +39,7 @@ class items
 				class Attributes
 				{
 				};
-				id=2969;
+				id=3700;
 				type="rhs_mortar_M821_inv";
 			};
 			class Item2
@@ -48,7 +47,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.60253906,0.27828741,0.609375};
+					position[]={-0.38867188,0.27828765,0.81103516};
 					angles[]={-0,3.3906202,0};
 				};
 				side="Empty";
@@ -56,7 +55,7 @@ class items
 				class Attributes
 				{
 				};
-				id=2970;
+				id=3701;
 				type="81mm_mortar_case_quad";
 			};
 			class Item3
@@ -64,7 +63,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.74414063,0.27828741,0.17089844};
+					position[]={0.95800781,0.27828765,0.37255859};
 					angles[]={-0,5.5873189,0};
 				};
 				side="Empty";
@@ -72,26 +71,51 @@ class items
 				class Attributes
 				{
 				};
-				id=2971;
+				id=3702;
 				type="81mm_mortar_case_single";
 			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.0644531,1.2035139,-1.0073242};
+					angles[]={0,1.8348646,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					health=0.60000002;
+				};
+				id=3699;
+				type="Land_Pod_Heli_Transport_04_ammo_F";
+			};
+			class Item5
+			{
+				dataType="Trigger";
+				position[]={-1.0683594,0,-1.0097656};
+				angle=1.8348645;
+				class Attributes
+				{
+					text="resupply_trigger";
+					condition="is_Zeus = !isNull (getAssignedCuratorLogic player); " \n "_return = false;" \n "vicsInZone = thisList select { _x isKindOf ""LandVehicle""};" \n "{" \n "    isSupplyVehicle = ([_x] call ace_rearm_fnc_isSource);" \n "    if (isSupplyVehicle && !isEngineOn _x) then {           " \n "        if (is_Zeus) then { systemChat ""supply vehicle detected""; };  " \n "        _return = true;" \n "        break;" \n "    };" \n "} forEach vicsInZone;" \n "" \n "_return;";
+					onActivation="is_Zeus = !isNull (getAssignedCuratorLogic player);    " \n "if (is_Zeus) then { systemChat ""On Activation""; };" \n "vicsInZone = thisList select { _x isKindOf ""LandVehicle""};" \n "{" \n "    isSupplyVehicle = ([_x] call ace_rearm_fnc_isSource);" \n "    if (isSupplyVehicle && !isEngineOn _x) then {" \n "        _x setFuel 1; " \n "        if (_x isKindOf ""UGV_01_base_F"") then {" \n "            rearmAmount = 400;" \n "        } else {" \n "            rearmAmount = 1200;" \n "        };" \n "        [_x, rearmAmount] call ace_rearm_fnc_setSupplyCount;" \n "        if (is_Zeus) then { systemChat format [""refueled and restocked with %1 supply credits"", rearmAmount]; };" \n "    };" \n "        " \n "} forEach thisList;" \n "";
+					sizeA=10;
+					sizeB=12;
+					timeout[]={15,15,15};
+					interuptable=1;
+					repeatable=1;
+					activationBy="ANY";
+					isRectangle=1;
+					triggerInterval=3;
+					effectSound="RHS_Autoloader";
+				};
+				id=3706;
+				type="EmptyDetectorAreaR50";
+			};
 		};
-		id=1385;
-	};
-	class Item1
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0.1953125,0.16358852,0.37988281};
-			angles[]={-0,0.26406831,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=3037;
-		type="Land_PortableCabinet_01_closed_sand_F";
+		id=3704;
+		atlOffset=-0.041562319;
 	};
 };

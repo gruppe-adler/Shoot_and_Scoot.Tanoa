@@ -1,5 +1,5 @@
 version=54;
-center[]={6983.8711,2.6600001,7203.0024};
+center[]={6968.6772,2.6600001,7291.4961};
 class items
 {
 	items=1;
@@ -9,13 +9,13 @@ class items
 		name="BLUFOR supply station";
 		class Entities
 		{
-			items=5;
+			items=6;
 			class Item0
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.11816406,1.3620374,-1.5854492};
+					position[]={-0.09765625,1.3620374,-1.3198242};
 					angles[]={-0,4.6760192,0};
 				};
 				side="Empty";
@@ -24,7 +24,7 @@ class items
 				{
 					health=0.60000002;
 				};
-				id=2988;
+				id=3692;
 				type="B_Slingload_01_Ammo_F";
 				atlOffset=2.3841858e-007;
 			};
@@ -33,23 +33,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.15917969,0.16358852,0.453125};
-					angles[]={-0,6.2230415,0};
-				};
-				side="Empty";
-				flags=4;
-				class Attributes
-				{
-				};
-				id=3042;
-				type="Land_PortableCabinet_01_closed_olive_F";
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.49072266,0.27828765,0.39941406};
+					position[]={0.734375,0.24701095,0.61132813};
 					angles[]={-0,5.2631068,0};
 				};
 				side="Empty";
@@ -57,7 +41,23 @@ class items
 				class Attributes
 				{
 				};
-				id=3040;
+				id=3695;
+				type="rhs_mortar_M821_inv";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.51123047,0.27828765,0.66503906};
+					angles[]={-0,5.2631068,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=3694;
 				type="81mm_mortar_case_single";
 			};
 			class Item3
@@ -65,23 +65,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.71386719,0.24701095,0.34570313};
-					angles[]={-0,5.2631068,0};
-				};
-				side="Empty";
-				flags=4;
-				class Attributes
-				{
-				};
-				id=3038;
-				type="rhs_mortar_M821_inv";
-			};
-			class Item4
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.92578125,0.27828765,0.38623047};
+					position[]={-0.90527344,0.27828765,0.65185547};
 					angles[]={-0,3.0664079,0};
 				};
 				side="Empty";
@@ -89,11 +73,50 @@ class items
 				class Attributes
 				{
 				};
-				id=3039;
+				id=3696;
 				type="81mm_mortar_case_quad";
 			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.13867188,0.16358852,0.71875};
+					angles[]={-0,6.2230415,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=3693;
+				type="Land_PortableCabinet_01_closed_olive_F";
+			};
+			class Item5
+			{
+				dataType="Trigger";
+				position[]={-0.10205078,0,-1.3266602};
+				angle=4.6760144;
+				class Attributes
+				{
+					text="resupply_trigger";
+					condition="is_Zeus = !isNull (getAssignedCuratorLogic player); " \n "_return = false;" \n "vicsInZone = thisList select { _x isKindOf ""LandVehicle""};" \n "{" \n "    isSupplyVehicle = ([_x] call ace_rearm_fnc_isSource);" \n "    if (isSupplyVehicle && !isEngineOn _x) then {           " \n "        if (is_Zeus) then { systemChat ""supply vehicle detected""; };  " \n "        _return = true;" \n "        break;" \n "    };" \n "} forEach vicsInZone;" \n "" \n "_return;";
+					onActivation="is_Zeus = !isNull (getAssignedCuratorLogic player);    " \n "if (is_Zeus) then { systemChat ""On Activation""; };" \n "vicsInZone = thisList select { _x isKindOf ""LandVehicle""};" \n "{" \n "    isSupplyVehicle = ([_x] call ace_rearm_fnc_isSource);" \n "    if (isSupplyVehicle && !isEngineOn _x) then {" \n "        _x setFuel 1; " \n "        if (_x isKindOf ""UGV_01_base_F"") then {" \n "            rearmAmount = 400;" \n "        } else {" \n "            rearmAmount = 1200;" \n "        };" \n "        [_x, rearmAmount] call ace_rearm_fnc_setSupplyCount;" \n "        if (is_Zeus) then { systemChat format [""refueled and restocked with %1 supply credits"", rearmAmount]; };" \n "    };" \n "        " \n "} forEach thisList;" \n "";
+					sizeA=10;
+					sizeB=12;
+					timeout[]={15,15,15};
+					interuptable=1;
+					repeatable=1;
+					activationBy="ANY";
+					isRectangle=1;
+					triggerInterval=3;
+					effectSound="RHS_Autoloader";
+				};
+				id=3705;
+				type="EmptyDetectorAreaR50";
+			};
 		};
-		id=1487;
-		atlOffset=0.0245049;
+		id=3697;
+		atlOffset=0.077541828;
 	};
 };

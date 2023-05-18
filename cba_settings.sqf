@@ -65,8 +65,8 @@ force ace_csw_ammoHandling = 0;
 
 
 // ACE Logistics
-force ace_rearm_supply = 1;
-
+force ace_rearm_supply = 1; // rearm supply is limited (using credits)
+force ace_rearm_level = 1;  // rearm types of ammo separately (not entire vic at once)
 
 // Artillery Sound Ranging
 force arsr_allowPlacedExplosives = false;

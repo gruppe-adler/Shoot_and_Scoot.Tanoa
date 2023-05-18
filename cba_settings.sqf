@@ -68,6 +68,7 @@ force ace_csw_ammoHandling = 0;
 force ace_cargo_carryAfterUnload = true;
 force ace_rearm_supply = 1; // rearm supply is limited (using credits)
 force ace_rearm_level = 1;  // rearm types of ammo separately (not entire vic at once)
+force ace_towing_addRopeToVehicleInventory = true;
 
 // Artillery Sound Ranging
 force arsr_allowPlacedExplosives = false;

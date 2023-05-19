@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3740;
+		nextID=3746;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=281;
+		nextID=306;
 	};
 	class Camera
 	{
-		pos[]={8064.5317,34.734371,13336.051};
-		dir[]={-0.19870816,-0.50115728,0.84224826};
-		up[]={-0.11509211,0.8653149,0.487831};
-		aside[]={0.97329646,-2.6501948e-007,0.22962499};
+		pos[]={8066.4722,37.071789,13333.356};
+		dir[]={-0.30716437,-0.54461068,0.78041893};
+		up[]={-0.19945982,0.83868939,0.50677168};
+		aside[]={0.93052185,-1.7287675e-008,0.36624318};
 	};
 };
 binarizationWanted=0;
@@ -95,7 +95,8 @@ addons[]=
 	"A3_Static_F_Exp_Mortar_01",
 	"A3_Soft_F_Exp_LSV_01",
 	"UK3CB_Factions_CHD_B",
-	"A3_Supplies_F_Heli_Slingload"
+	"A3_Supplies_F_Heli_Slingload",
+	"A3_Static_F_HMG_02"
 };
 class AddonsMetaData
 {
@@ -570,7 +571,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=83;
+		items=84;
 		class Item0
 		{
 			dataType="Layer";
@@ -15704,6 +15705,54 @@ class Mission
 			angle=15;
 			id=58;
 			atlOffset=-0.0004196167;
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2149.5161,14.004498,3416.7229};
+				angles[]={0,5.5665531,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="tree_pusher";
+				disableSimulation=1;
+			};
+			id=3745;
+			type="O_G_HMG_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };

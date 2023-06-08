@@ -2582,7 +2582,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5767.9883,4.1089039,9958.2227};
-			name="blufor_pos01";
+			name="blufor_pos1";
 			text="Blue 056 104";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2592,7 +2592,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={13152.146,6.8779998,11911.007};
-			name="opfor_pos01";
+			name="opfor_pos1";
 			text="Red 131 119";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2603,7 +2603,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={8111.5977,79.960716,12968.269};
-			name="opfor_pos02";
+			name="opfor_pos2";
 			text="Red 119 127";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2613,7 +2613,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={14079.997,86.834,10699.165};
-			name="opfor_pos03";
+			name="opfor_pos3";
 			text="Red 140 106";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2624,7 +2624,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={9651.5771,4.0380001,6514.3882};
-			name="blufor_pos02";
+			name="blufor_pos2";
 			text="Blue 096 065";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2635,7 +2635,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={13926.854,57.206001,9258.7656};
-			name="opfor_pos04";
+			name="opfor_pos4";
 			text="Red 139 092";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2646,7 +2646,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={11915.325,145.634,10257.041};
-			name="opfor_pos05";
+			name="opfor_pos5";
 			text="Red 119 102";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2657,7 +2657,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={6458.1621,11.592,11208.557};
-			name="opfor_pos06";
+			name="opfor_pos6";
 			text="Red 064 112";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2668,7 +2668,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={11746.454,23.084999,6922.3691};
-			name="blufor_pos03";
+			name="blufor_pos3";
 			text="Blue 117 069";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2679,7 +2679,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={7496.1812,22.83,7169.0332};
-			name="blufor_pos04";
+			name="blufor_pos4";
 			text="Blue 074 071";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2690,7 +2690,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={14651.202,3.5320001,9701.2734};
-			name="opfor_pos07";
+			name="opfor_pos7";
 			text="Red 146 097";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2701,7 +2701,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={10072.098,409.20001,11796.605};
-			name="opfor_pos08";
+			name="opfor_pos8";
 			text="Red 100 117";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2712,7 +2712,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={6300.8369,45.627998,8573.8291};
-			name="blufor_pos05";
+			name="blufor_pos5";
 			text="Blue 063 085";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2723,7 +2723,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={7461.0679,120.664,12016.85};
-			name="opfor_pos09";
+			name="opfor_pos9";
 			text="Red 074 120";
 			type="mil_unknown";
 			colorName="ColorEAST";
@@ -2734,7 +2734,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5449.5542,4.684,9240.6504};
-			name="blufor_pos06";
+			name="blufor_pos6";
 			text="Blue 054 092";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2778,7 +2778,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={10318.418,19.848,6748.9258};
-			name="blufor_pos07";
+			name="blufor_pos7";
 			text="Blue 103 067";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2877,7 +2877,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={11515.35,133.966,8011.6392};
-			name="blufor_pos08";
+			name="blufor_pos8";
 			text="Blue 115 080";
 			type="mil_unknown";
 			colorName="ColorWEST";
@@ -2888,7 +2888,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={8178.6411,12.581,9767.9805};
-			name="blufor_pos09";
+			name="blufor_pos9";
 			text="Blue 081 097";
 			type="mil_unknown";
 			colorName="ColorWEST";

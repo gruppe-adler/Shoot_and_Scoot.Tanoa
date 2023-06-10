@@ -36,3 +36,8 @@ for "_i" from 1 to _numActualStations do {
     [east,     _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;
     [civilian, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for Zeus' convenience
 } forEach _opforStations;
+
+
+// create supply stations for both sides
+{ [west, getMarkerPos _x] call spot_randomizer_fnc_placeSupplyStation; } forEach _bluforStations;
+{ [east, getMarkerPos _x] call spot_randomizer_fnc_placeSupplyStation; } forEach _opforStations;

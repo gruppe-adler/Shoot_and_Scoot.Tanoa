@@ -4,5 +4,6 @@ class spot_randomizer {
         file = "scripts\spot-randomizer\functions";
         class randomizeSpots{postInit = 1;};
         class placeTask{};
+        class placeSupplyStation{};
     };
 };

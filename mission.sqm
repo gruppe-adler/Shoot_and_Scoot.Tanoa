@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3823;
+		nextID=3828;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=315;
+		nextID=320;
 	};
 	class Camera
 	{
-		pos[]={8068.9751,22.407694,13349.937};
-		dir[]={-0.24831811,-0.51990455,0.81733912};
-		up[]={-0.15113352,0.85422117,0.49745598};
-		aside[]={0.95682019,-7.2919647e-008,0.29069442};
+		pos[]={8065.8242,37.589031,13337.294};
+		dir[]={-0.18826352,-0.64081186,0.74426198};
+		up[]={-0.15714669,0.76769513,0.62124807};
+		aside[]={0.96947032,1.4624675e-009,0.24523081};
 	};
 };
 binarizationWanted=0;
@@ -96,14 +96,13 @@ addons[]=
 	"A3_Soft_F_Exp_LSV_01",
 	"UK3CB_Factions_CHD_B",
 	"A3_Supplies_F_Heli_Slingload",
-	"A3_Static_F_HMG_02",
-	"A3_Structures_F_Exp_Military_Camonets"
+	"A3_Static_F_HMG_02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=50;
+		items=49;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -446,13 +445,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item49
-		{
-			className="A3_Structures_F_Exp";
-			name="Arma 3 Apex - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 dlcs[]=
@@ -579,7 +571,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=85;
+		items=84;
 		class Item0
 		{
 			dataType="Layer";
@@ -2663,7 +2655,7 @@ class Mission
 		class Item11
 		{
 			dataType="Marker";
-			position[]={6458.5029,11.58033,11207.222};
+			position[]={6459.5371,11.52928,11203.261};
 			name="opfor_pos6";
 			text="Red 064 112";
 			type="mil_unknown";
@@ -2856,9 +2848,9 @@ class Mission
 		class Item29
 		{
 			dataType="Marker";
-			position[]={11428.478,110.89857,12320.116};
+			position[]={11374.165,111.94735,12341.841};
 			name="opfor_pos19";
-			text="Red 114 123";
+			text="Red 113 123";
 			type="mil_unknown";
 			colorName="ColorEAST";
 			id=441;
@@ -15749,23 +15741,6 @@ class Mission
 				};
 				nAttributes=2;
 			};
-		};
-		class Item84
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5763.7437,8.5612545,9924.3975};
-				angles[]={0.047963165,0,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=3820;
-			type="CamoNet_ghex_big_F";
-			atlOffset=0.0024166107;
 		};
 	};
 };

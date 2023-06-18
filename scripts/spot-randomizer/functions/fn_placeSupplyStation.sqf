@@ -20,6 +20,7 @@ switch (_side) do
 // create objects for supply stations
 _net = (_netType createVehicle _position);   // net first because it requires most space
 _container = (_containerType createVehicle (getPosATL _net));
+_container lockInventory true;  // prevent inventory from being used (necessary for Opfor container)
 
 
 // apply a random rotation for variety
@@ -49,3 +50,60 @@ private _nearObjects  = nearestTerrainObjects [_position, [], 11];
 
 // add a trigger area to restock ammo trucks (incl. Stompers)
 [_position, _rotation] call spot_randomizer_fnc_placeRestockArea;
+
+
+// add menu entry that allows putting a damaged camo net back up
+spot_randomizer_fnc_CamoNetBroken =  // inline function
+{
+    private _return = false;
+    private _nets = nearestObjects [player,["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"],10];
+    { 
+        if ( damage _x > 0.9 ) then { 
+            _return = true;
+            break; 
+        }; 
+    } forEach _nets;
+    _return;
+};
+spot_randomizer_fnc_RepairCamoNet =  // inline function
+{
+    private _nets = nearestObjects [player,["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"],10];
+    { 
+        if ( call spot_randomizer_fnc_CamoNetBroken ) then { 
+            _x setDamage 0.9;   // once damaged it shall remain damaged (but standing)
+        };
+    } forEach _nets;
+};
+_container addAction [
+        "Erect broken camouflage net", 
+        spot_randomizer_fnc_RepairCamoNet,
+        nil, 
+        6,    // high up in priority
+        true, 
+        true, 
+        "", 
+        toString spot_randomizer_fnc_CamoNetBroken, 
+        20, 
+        false, 
+        "", 
+        ""
+    ];
+/* TODO: I would prefer a Hold Action but it does not work yet :-(
+[
+    _container,									// Object the action is attached to
+    "Erect broken camouflage net",										// Title of the action
+    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",	// Idle icon shown on screen
+    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",	// Progress icon shown on screen
+    toString spot_randomizer_fnc_CamoNetBroken,						// Condition for the action to be shown
+    "_caller distance _target < 15",						// Condition for the action to progress
+    {},													// Code executed when action starts
+    {},													// Code executed on every progress tick
+    { call spot_randomizer_fnc_RepairCamoNet; },				// Code executed on completion
+    {},													// Code executed on interrupted
+    [],													// Arguments passed to the scripts as _this select 3
+    10,													// Action duration in seconds
+    0,													// Priority
+    false,											// Remove on completion
+    false												// Show in unconscious state
+] remoteExec ["BIS_fnc_holdActionAdd", 0, _container];	// MP compatible implementation
+*/

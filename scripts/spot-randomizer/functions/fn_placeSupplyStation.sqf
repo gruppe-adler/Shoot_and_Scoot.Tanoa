@@ -22,9 +22,15 @@ _net = (_netType createVehicle _position);   // net first because it requires mo
 _container = (_containerType createVehicle (getPosATL _net));
 
 // apply a random rotation for variety
+// if there is a road nearby, make sure the entry to the net is not facing away from the road
 private _rotation = (random 360);
-[_container, [_rotation,0,0]] call BIS_fnc_setObjectRotation;
-[_net, [(_rotation+90) % 360,0,0]] call BIS_fnc_setObjectRotation;
+private _nearbyRoad = [_position, 65] call BIS_fnc_nearestRoad;
+if (not isNull _nearbyRoad) then { 
+    _rotation = _net getRelDir _nearbyRoad;   // don't use the random rotation if there's a road nearby
+    _rotation = (_rotation + 180) % 360;      // turn around 180° because this is how camo nets work :-/
+};
+[_net, [_rotation,0,0]] call BIS_fnc_setObjectRotation;
+[_container, [(_rotation+90) % 360,0,0]] call BIS_fnc_setObjectRotation;
 
 sleep 3;  // wait for jerky physics to finish
 

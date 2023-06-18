@@ -1,6 +1,9 @@
 private _numPossiblePositions = 20;   // How many possible positions for supply stations are there (per side)?
 private _numActualStations    = 5;    // How many of the possible positions will acutally have supply stations?
 
+is_Zeus = !isNull (getAssignedCuratorLogic player); 
+if (is_Zeus) then { systemChat "Randomizing spots started"; }; 
+
 // fetch all markers
 private _bluforAllMarkers = [];
 private _opforAllMarkers = []; 
@@ -39,5 +42,13 @@ for "_i" from 1 to _numActualStations do {
 
 
 // create supply stations for both sides
-{ [west, getMarkerPos _x] call spot_randomizer_fnc_placeSupplyStation; } forEach _bluforStations;
-{ [east, getMarkerPos _x] call spot_randomizer_fnc_placeSupplyStation; } forEach _opforStations;
+{ 
+    [west, getMarkerPos _x] call spot_randomizer_fnc_placeSupplyStation; 
+    if (is_Zeus) then { systemChat "BluFor spot placed"; }; 
+} forEach _bluforStations;
+{
+    [east, getMarkerPos _x] call spot_randomizer_fnc_placeSupplyStation;
+    if (is_Zeus) then { systemChat "OpFor spot placed"; }; 
+} forEach _opforStations;
+
+if (is_Zeus) then { systemChat "Randomizing spots done"; }; 

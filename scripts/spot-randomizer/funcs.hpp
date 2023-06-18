@@ -5,5 +5,6 @@ class spot_randomizer {
         class randomizeSpots{postInit = 1;};
         class placeTask{};
         class placeSupplyStation{};
+        class placeRestockArea{};
     };
 };

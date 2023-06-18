@@ -21,6 +21,7 @@ switch (_side) do
 _net = (_netType createVehicle _position);   // net first because it requires most space
 _container = (_containerType createVehicle (getPosATL _net));
 
+
 // apply a random rotation for variety
 // if there is a road nearby, make sure the entry to the net is not facing away from the road
 private _rotation = (random 360);
@@ -32,14 +33,19 @@ if (not isNull _nearbyRoad) then {
 [_net, [_rotation,0,0]] call BIS_fnc_setObjectRotation;
 [_container, [(_rotation+90) % 360,0,0]] call BIS_fnc_setObjectRotation;
 
+
 sleep 3;  // wait for jerky physics to finish
+
 
 // restore health after jerky Arma physics
 _container setDamage 0.4;   // start with a bit over 50% hit points (requested by players)
 _net       setDamage 0.0;   // fix broken nets 
 
+
 //clear area for supply stations from obstacles
 private _nearObjects  = nearestTerrainObjects [_position, [], 11];
 { hideObjectGlobal _x } forEach _nearObjects;
-// diag_log format ["_nearObjects=%1", _nearObjects];
-// { _x remoteExecCall ["hideObjectGlobal", 2] } forEach _nearObjects;
+
+
+// add a trigger area to restock ammo trucks (incl. Stompers)
+[_position, _rotation] call spot_randomizer_fnc_placeRestockArea;

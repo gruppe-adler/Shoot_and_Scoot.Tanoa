@@ -13,7 +13,19 @@ spot_randomizer_fnc_TriggerCondition =  // inline function
     vicsInZone = thisList select { _x isKindOf "LandVehicle"};
     {
         isSupplyVehicle = ([_x] call ace_rearm_fnc_isSource);
-        if (isSupplyVehicle && !isEngineOn _x) then
+        
+        // prevent broken containers from acting as resupply
+        isNearAliveContainer = false;
+        supply_containers = nearestObjects [_x,["B_Slingload_01_Ammo_F", "Land_Pod_Heli_Transport_04_ammo_F"],12];
+        {
+            if (alive _x) then {
+                isNearAliveContainer = true;
+                break; 
+            };
+        } forEach supply_containers;
+        if (is_Zeus && !isNearAliveContainer) then { systemChat "supply container is dead"; };  
+        
+        if (isSupplyVehicle && (!isEngineOn _x) && isNearAliveContainer) then
         {           
             if (is_Zeus) then { systemChat "supply vehicle detected"; };  
             _return = true;

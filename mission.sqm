@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3828;
+		nextID=3829;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=320;
+		nextID=325;
 	};
 	class Camera
 	{
-		pos[]={8065.8242,37.589031,13337.294};
-		dir[]={-0.18826352,-0.64081186,0.74426198};
-		up[]={-0.15714669,0.76769513,0.62124807};
-		aside[]={0.96947032,1.4624675e-009,0.24523081};
+		pos[]={8067.5723,26.542572,13331.712};
+		dir[]={-0.068007089,-0.38375565,0.92095554};
+		up[]={-0.02826084,0.92342269,0.38271877};
+		aside[]={0.9973039,3.2470416e-007,0.073645212};
 	};
 };
 binarizationWanted=0;
@@ -571,7 +571,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=84;
+		items=85;
 		class Item0
 		{
 			dataType="Layer";
@@ -10967,7 +10967,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8074.042,10.220562,13369.849};
-						angles[]={0.021328852,0,0.047963165};
+						angles[]={0.021327924,0,0.047961645};
 					};
 					name="opfor_respawn";
 					id=932;
@@ -10996,7 +10996,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="OPFOR base northern airfield";
+									value="OPFOR base near Saint-Paul";
 								};
 							};
 						};
@@ -15740,6 +15740,86 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item84
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2149.166,12.77,3411.564};
+			};
+			name="civilian_respawn";
+			id=3828;
+			type="ModuleRespawnPosition_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleRespawnPosition_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleRespawnPosition_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Briefing zone on southern island";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleRespawnPosition_F_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="3";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleRespawnPosition_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="1";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleRespawnPosition_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="0";
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};

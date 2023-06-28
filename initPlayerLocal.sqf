@@ -1,22 +1,9 @@
 params ["_player", "_didJIP"];
 enableSaving [false, false];
 
-// This will show the sound ranging to all players
-// _player setVariable ["arsr_receptionAllowed", true];
-
-
 
 // allow U menu for easier team management
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
-
-
-// remove NVG googles for all players (even if set in Eden Editor) 
-player unassignItem hmd player;
-player removeItem   hmd player;
-
-
-// respawn with the same loadout you had when you started
-// [player, [missionNamespace, "inventory_at_start"]] call BIS_fnc_saveInventory;
 
 
 // prevent use of enemy UAV terminals

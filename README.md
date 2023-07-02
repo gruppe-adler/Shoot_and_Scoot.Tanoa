@@ -1,7 +1,9 @@
-# Live gameplay trailer
-Click banner to watch the video
-
+# Live gameplay trailers
+Click banner to watch the videos
+## Trailer 1
 [![live gameplay trailer](https://img.youtube.com/vi/s6wskXYYYXY/0.jpg)](https://youtu.be/s6wskXYYYXY)
+## Trailer 2
+[![live gameplay trailer](https://img.youtube.com/vi/ziYV_R8k-tE/0.jpg)](https://youtu.be/ziYV_R8k-tE)
 
 
 # Introduction

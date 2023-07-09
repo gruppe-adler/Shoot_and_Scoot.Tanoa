@@ -1,3 +1,5 @@
+if (!isServer) exitWith {};   // we don't want this to run on the clients
+
 private _numPossiblePositions = 20;   // How many possible positions for supply stations are there (per side)?
 private _numActualStations    = 5;    // How many of the possible positions will acutally have supply stations?
 

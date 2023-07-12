@@ -72,10 +72,9 @@ class CSAT_Apex_Pacific {
         // squad leader (hunter-killer)
         class Soldier_SL_F: Soldier_F {
             backpack = "UK3CB_B_O_Assault_camo_Radio";
-            binoculars = "Laserdesignator_02_ghex_F";
+            binoculars = "Rangefinder";
             addItemsToBackpack[] = {
-                LIST_3("30Rnd_580x42_Mag_Tracer_F"),
-                LIST_1("Laserbatteries")
+                LIST_3("30Rnd_580x42_Mag_Tracer_F")
             };
         };
         

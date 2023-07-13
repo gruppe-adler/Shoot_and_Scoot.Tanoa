@@ -41,8 +41,13 @@ if (not isNull _nearbyRoad) then {
 sleep 3;  // wait for jerky physics to finish
 
 // restore health after jerky Arma physics
-_container setDamage 0.4;   // start with a bit over 50% hit points (requested by players)
+_container setDamage 0.0;   // start with a bit over 50% hit points (requested by players)
 _net       setDamage 0.0;   // fix broken nets
+
+
+//clear area for supply stations from obstacles
+private _nearObjects  = nearestTerrainObjects [_position, [], 11];
+{ hideObjectGlobal _x } forEach _nearObjects;
 
 // clear area for supply stations from obstacles
 private _nearObjects = nearestTerrainObjects [_position, [], 11];

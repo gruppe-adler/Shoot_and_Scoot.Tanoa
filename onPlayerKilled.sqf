@@ -15,12 +15,13 @@ private _distance = (_oldUnit distance2D _respawnPoint);
 private _timePenalty = if (playerSide == civilian || playerSide == independent) then { 
                               0;   // no time penalty for respawning Zeus
                           } else { 
-                              _distance/1000 * 60;  // 60s per 1km distance
+                              _distance/1000 * 30;  // 30s per 1km distance
                           };
-// setPlayerRespawnTime _timePenalty;
+setPlayerRespawnTime _timePenalty;
 
  if (_timePenalty > 0) then { 
     hint parseText format ["You died <t color='#ff0000'>%1km</t> away from your respawn point. %2
-    I plan to implement a respawn time penalty of <t color='#ff0000'>%3min %4s</t> for this in the future. %5
-    <t color='#00ffff'>Tell me in the debriefing how you would feel about that.</t> :-)", (_distance/1000) toFixed 3, "<br/><br/>", (_timePenalty/60) toFixed 0, (_timePenalty%60) toFixed 0, "<br/><br/>"];
+    Thus your respawn time is set to <t color='#ff0000'>%3min %4s</t>. %5
+    <t color='#00ffff'>The further away from home you die,  %6
+    the longer you need to wait.</t>", (_distance/1000) toFixed 1, "<br/><br/>", floor (_timePenalty/60), (_timePenalty%60) toFixed 0, "<br/><br/>", "<br/>"];
 };

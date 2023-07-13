@@ -76,10 +76,9 @@ class NATO_Apex_Pacific {
         // squad leader (hunter-killer)
         class Soldier_SL_F: Soldier_F {
             backpack = "TFAR_rt1523g_bwmod";
-            binoculars = "Laserdesignator_03";
+            binoculars = "Rangefinder";
             addItemsToBackpack[] = {
-                LIST_3("30Rnd_65x39_caseless_khaki_mag_Tracer"),
-                LIST_1("Laserbatteries")
+                LIST_3("30Rnd_65x39_caseless_khaki_mag_Tracer")
             };
         };
         

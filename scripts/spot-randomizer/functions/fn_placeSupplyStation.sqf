@@ -1,5 +1,14 @@
 params ["_side", "_position"];
 
+
+// apply position randomisation
+private _offsetMin = random [0, 50, 100];
+
+private _roadBlacklist = [_position, 150] call BIS_fnc_nearestRoad;
+// find me  a good spot, by between random min distance and max 150m, ignore positions with roads
+// don't be in the see and if nothing works default to the original provided position
+private _position = [_position, _offsetMin,  150, 15, 0, 0.2, 0, _roadBlacklist, _position] call BIS_fnc_findSafePos;
+
 private _containerType = "";
 private _netType = "";
 switch (_side) do

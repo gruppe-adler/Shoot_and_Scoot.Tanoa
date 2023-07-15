@@ -18,6 +18,16 @@ for "_i" from 1 to _numPossiblePositions do {
 };
 
 
+// sort markers by x-coordinate
+private _bluforAllMarkersSorted = [ _bluforAllMarkers, [], { getMarkerPos _x select 0 }, "ASCEND" ] call BIS_fnc_sortBy;
+private _opforAllMarkersSorted  = [ _opforAllMarkers,  [], { getMarkerPos _x select 0 }, "ASCEND" ] call BIS_fnc_sortBy;
+// rename markers from West to East with ascending numbers
+for "_i" from 1 to _numPossiblePositions do {
+    (_bluforAllMarkersSorted select _i-1) setMarkerText (format [" Blue %1", _i]);
+    (_opforAllMarkersSorted  select _i-1) setMarkerText (format [" Red %1",  _i]);
+};
+
+
 // select random stations with the actual containers being present
 private _bluforStations = [];
 private _opforStations = [];

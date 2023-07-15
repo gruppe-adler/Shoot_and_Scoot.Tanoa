@@ -1,13 +1,10 @@
 params ["_side", "_position"];
 
 
-// apply position randomisation
-private _offsetMin = random [0, 50, 100];
-
-private _roadBlacklist = [_position, 150] call BIS_fnc_nearestRoad;
-// find me  a good spot, by between random min distance and max 150m, ignore positions with roads
-// don't be in the see and if nothing works default to the original provided position
-private _position = [_position, _offsetMin,  150, 15, 0, 0.2, 0, _roadBlacklist, _position] call BIS_fnc_findSafePos;
+// find me a good, flat spot at a distance of up t0 150m away from the marker position
+// don't be in the sea and if no such position is found default to the original provided position
+private _fuzzyPosition = [_position, 0,  150, 10, 0, 0.2, 0, _roadBlacklist, [_position, _position]] call BIS_fnc_findSafePos;
+systemChat format ["_fuzzyPosition: %1", str(_fuzzyPosition)];
 
 private _containerType = "";
 private _netType = "";
@@ -27,7 +24,7 @@ switch (_side) do
 };
 
 // create objects for supply stations
-_net = (_netType createVehicle _position);   // net first because it requires most space
+_net = (_netType createVehicle _fuzzyPosition);   // net first because it requires most space
 _container = (_containerType createVehicle (getPosATL _net));
 _container lockInventory true;  // prevent inventory from being used (necessary for Opfor container)
 
@@ -35,7 +32,7 @@ _container lockInventory true;  // prevent inventory from being used (necessary 
 // apply a random rotation for variety
 // if there is a road nearby, make sure the entry to the net is not facing away from the road
 private _rotation = (random 360);
-private _nearbyRoad = [_position, 65] call BIS_fnc_nearestRoad;
+private _nearbyRoad = [_fuzzyPosition, 65] call BIS_fnc_nearestRoad;
 if (not isNull _nearbyRoad) then { 
     _rotation = _net getRelDir _nearbyRoad;   // don't use the random rotation if there's a road nearby
     _rotation = (_rotation + 180) % 360;      // turn around 180° because this is how camo nets work :-/
@@ -53,12 +50,12 @@ _net       setDamage 0.0;   // fix broken nets
 
 
 //clear area for supply stations from obstacles
-private _nearObjects  = nearestTerrainObjects [_position, [], 11];
+private _nearObjects  = nearestTerrainObjects [_fuzzyPosition, [], 11];
 { hideObjectGlobal _x } forEach _nearObjects;
 
 
 // add a trigger area to restock ammo trucks (incl. Stompers)
-[_position, _rotation] call spot_randomizer_fnc_placeRestockArea;
+[_fuzzyPosition, _rotation] call spot_randomizer_fnc_placeRestockArea;
 
 
 // add menu entry that allows putting a damaged camo net back up

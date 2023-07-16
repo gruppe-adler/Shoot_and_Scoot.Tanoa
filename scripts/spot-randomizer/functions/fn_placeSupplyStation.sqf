@@ -13,22 +13,22 @@ switch (_side) do
 {
   case west: {
     _containerType = "B_Slingload_01_Ammo_F";
-    _netType = "CamoNet_BLUFOR_big_F";
+    _netType       = "CamoNet_BLUFOR_big_F";
   };
 
   case east: {
     _containerType = "Land_Pod_Heli_Transport_04_ammo_F";
-    _netType = "CamoNet_ghex_big_F";
+    _netType       = "CamoNet_ghex_big_F";
   };
   default {
     _containerType = "Banner_01_IDAP_F";      // if you see this IDAP sign there is a bug
-    _netType = "CamoNet_INDP_open_F";
+    _netType       = "CamoNet_INDP_open_F";
   };
 };
 
 // create objects for supply stations
-_net = (_netType createVehicle _fuzzyPosition);   // net first because it requires most space
-_container = (_containerType createVehicle (getPosATL _net));
+private _net       = (_netType createVehicle _fuzzyPosition);   // net first because it requires most space
+private _container = (_containerType createVehicle (getPosATL _net));
 _container setVariable [ "id", _marker, true];
 _container setVariable [ "side", _side, true];
 _container lockInventory true;  // prevent inventory from being used (necessary for opfor container)
@@ -65,8 +65,7 @@ private _nearObjects = nearestTerrainObjects [_position, [], 11];
 [_fuzzyPosition, _rotation] call spot_randomizer_fnc_placeRestockArea;
 
 // add menu entry that allows putting a damaged camo net back up
-spot_randomizer_fnc_CamoNetBroken =  // inline function
-{
+private _spot_randomizer_fnc_CamoNetBroken =  {
   private _return = false;
   private _nets = nearestObjects [player, ["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"], 10];
   {
@@ -77,8 +76,7 @@ spot_randomizer_fnc_CamoNetBroken =  // inline function
   } forEach _nets;
   _return;
 };
-spot_randomizer_fnc_RepairCamoNet =  // inline function
-{
+private _spot_randomizer_fnc_RepairCamoNet = {
   private _nets = nearestObjects [player, ["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"], 10];
   {
     if (call spot_randomizer_fnc_CamoNetBroken) then {
@@ -88,13 +86,13 @@ spot_randomizer_fnc_RepairCamoNet =  // inline function
 };
 _container addAction [
   "Erect broken camouflage net",
-  spot_randomizer_fnc_RepairCamoNet,
+  _spot_randomizer_fnc_RepairCamoNet,
   nil,
       6, // high up in priority
   true,
   true,
   "",
-  toString spot_randomizer_fnc_CamoNetBroken,
+  toString _spot_randomizer_fnc_CamoNetBroken,
   20,
   false,
   "",

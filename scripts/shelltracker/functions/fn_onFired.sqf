@@ -1,14 +1,9 @@
 /**
   Visualize flying shells for Zeus.
+  This should be 100% LOCAL only, as it's PFH!
 */
-systemchat "onFired";
-diag_log "onFired";
 if !(hasInterface) exitWith {};
 params ["_projectile", "_gunner", "_magazine"];
-diag_log("This is the projectile we receive");
-diag_log _projectile;
-diag_log _gunner;
-diag_log _magazine;
 
 /**
 Drawing shell markers for Zeus and streamers.
@@ -26,6 +21,7 @@ _marker setMarkerTextLocal _markerText;
 _marker setMarkerColorLocal _markerColor;
 _projectile setVariable ["marker", _markerName];
 _projectile setVariable ["markerRadius", _radius];
+// When the projectile "dies", change to impact marker handling.
 _projectile addEventHandler ["Deleted", {
   params ["_projectile", "_pos", "_velocity"];
   private _marker = _projectile getVariable "marker";
@@ -40,12 +36,15 @@ _projectile addEventHandler ["Deleted", {
     _markerRadius setMarkerSizeLocal [_radius, _radius];
     _markerRadius setMarkerColorLocal (getMarkerColor _marker);
     _markerRadius setMarkerBrushLocal "Border";
+    // Fade out impact markers over 10 seconds.
     while {_alpha > 0} do {
       _alpha = _alpha - 0.1;
       sleep 1;
       _marker setMarkerAlphaLocal _alpha;
       _markerRadius setMarkerAlphaLocal _alpha;
     };
+    // Finally, we clean up markers.
+    // Not explicitly cleaning up projectile variables, because projectiles are gone anyway now.
     deleteMarkerLocal _marker;
     deleteMarkerLocal _markerRadius;
   };

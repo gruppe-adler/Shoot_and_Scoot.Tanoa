@@ -13,7 +13,7 @@ class CfgFunctions {
 };
 
 
-enableDebugConsole = 2; // 1 means available in SP and for hosts / logged in admins in MP
+enableDebugConsole = 1; // 1 means available in SP and for hosts / logged in admins in MP
 
 
 // respawn behaviour (also done in mission.sqm)
@@ -27,7 +27,6 @@ class Loadouts {
     handleRadios = 1;       // 0/1 - Sets if loadouts will contain radios. Set this to 0 if you plan on using TFAR's automatic radio distribution for example.
     resetLoadout = 1;       // 0/1 - Sets if a unit's default loadout will be cleared before GRAD Loadout is applied. Set this to 0 if you plan to only replace a factions uniforms for example.
     randomizationMode = 1;  // 0/1/2/3 - Sets randomization mode (if supported by loadout). 0 to disable, 1 to enable, 2 to enable for players only, 3 to enable for AI only.
-
 	// gear customization by players themselves
 	customGear = -1;        // -1 means to keep this disabled for now
 	// customGear = 300;       // time in seconds that players can access the customGear interface after last loadout application

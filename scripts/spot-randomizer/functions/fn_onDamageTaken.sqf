@@ -11,7 +11,8 @@ diag_log _instigator;
 diag_log _damage;
 diag_log damage _unit;
 diag_log _ammo;
-private _ammoname = getText(configfile >> "CfgAmmo" >> _ammo >> "displayName");
-private _message = [_unit getVariable "id", "was hit by", name _instigator, "for", (_damage - _damagePrv) *100, "% with", _ammoname, ". Current HP:", (1-_damage)*100, "%"] joinString " ";
+private _dmg_dealt = (_damage - _damagePrv) * 100;
+if (_dmg_dealt < 3) exitWith {}; // skip any messages with tiny effects. These are probably just minor ACE frag damages.
+private _message = [markerText (_unit getVariable "id"), "was hit by", name _instigator, "for", _dmg_dealt, "% with", _ammo, ". Current HP:", (1-_damage)*100, "%"] joinString " ";
 systemChat _message;
 diag_log _message;

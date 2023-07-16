@@ -3,6 +3,7 @@ class shelltracker {
     class functions {
         file = "scripts\shelltracker\functions";
         class postInit{postInit = 1;};
-        class onShellFired{};
+        class onFired{};
+        class addFiredEH{};
     };
 };

@@ -123,12 +123,18 @@ _container addEventHandler [ "HandleDamage", {
   diag_log "Damage has been taken!";
   systemchat "Damage has been taken!";
   private _damagePrv = damage _unit;
+  diag_log _instigator;
+  diag_log _source;
+  diag_log _damage;
+  diag_log _damagePrv;
+  diag_log _unit;
   if (_ammo in [
     "rhs_ammo_3of56", "rhs_ammo_d462", "rhs_ammo_s463", "rhs_ammo_3of69m", // Howitzer rounds
     "Sh_82mm_AMOS", "Flare_82mm_AMOS_White", "Smoke_82mm_AMOS_White" // Mortar rounds
   ]) then {
-    [_unit, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken"];
-  }
+  };
+  [_unit, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken"];
+  nil; // Ensure we return nil so we don't accidentally modify damage values...
 }];
 
 _container;

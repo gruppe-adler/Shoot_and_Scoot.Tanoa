@@ -4,7 +4,6 @@
 systemchat "onFired";
 diag_log "onFired";
 if !(hasInterface) exitWith {};
-if (isNull(getAssignedCuratorLogic player)) exitWith {};
 params ["_projectile", "_gunner", "_magazine"];
 diag_log("This is the projectile we receive");
 diag_log _projectile;

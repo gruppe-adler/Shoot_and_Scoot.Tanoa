@@ -12,7 +12,7 @@ private _markerColor = [side _gunner, true ] call BIS_fnc_sideColor;
 private _ammo = getText(configfile >> "CfgMagazines" >> _magazine >> "ammo");
 private _ammoname = getText(configfile >> "CfgMagazines" >> _magazine >> "displayName");
 private _radius = getNumber(configfile >> "CfgAmmo" >> _ammo >> "indirectHitRange") * 2;
-systemchat (name _gunner) + " just fired " + _ammoname;
+systemchat ((name _gunner) + " just fired " + _ammoname);
 private _markerName = [diag_tickTime, _magazine, name _gunner] joinString "";
 private _marker = createMarkerLocal [_markerName, _projectile];
 _marker setMarkerTypeLocal "mil_dot_noShadow";

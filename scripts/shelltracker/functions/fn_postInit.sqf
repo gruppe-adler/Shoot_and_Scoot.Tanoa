@@ -3,7 +3,6 @@
   This function needs to be run whenever allPlayers changes (especially when new ones join)!!!
 */
 if !(hasInterface) exitWith {};
-if (isNull(getAssignedCuratorLogic player)) exitWith {}; // Only Zeus gets to see this for now. Maybe CMD/sensor as well, later on?
 
 /**
   Kind of a workaround to ensure we register with every vehicle out there.
@@ -17,6 +16,7 @@ diag_log("(Re-)Init Shelltracker");
     params ["_unit", "_role", "_vehicle", "_turret"];
     // TODO: We could add a vehicle filter here, to ensure we only init the tracker for artillery vehicles. Would also cut down amount of function calls.
     // if (_vehicle in ["VEHICLE NAME", "VEHICLE NAME", ...] exitWith{};
+    if (isNull(getAssignedCuratorLogic player)) exitWith {}; // Only Zeus gets to see this for now. Maybe CMD/sensor as well, later on?
     private _idx =_vehicle call shelltracker_fnc_addFiredEH;
   }];
   _x setVariable ["shelltracker_GetIn_idx", _getinidx];

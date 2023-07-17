@@ -24,19 +24,20 @@ seekerCone = 120;  // in degree
 // unregister shell firing event handler when getting out of a vehicle
 player addEventHandler ["GetOutMan", {
   params ["_unit", "_role", "_vehicle", "_turret"];
-  _vehicle removeEventHandler ["Fired", lgshell_eventHandler_index];
+  private _idx = _vehicle getVariable "lgshells_firedEH_idx";
+  _vehicle removeEventHandler ["Fired", _idx];
 }];
 
 
 
 // register shell firing event handler when getting into a vehicle
-lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
+player addEventHandler ["GetInMan", {
   params ["_unit", "_role", "_vehicle", "_turret"];
 
   is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current player is a Zeus
   if (is_Zeus) then { [player, 5] spawn BIS_fnc_traceBullets };  // colored tracers
 
-  _vehicle addEventHandler ["Fired", {
+  private _idx = _vehicle addEventHandler ["Fired", {
       params ["_shooter", "", "", "", "", "", "_projectile"];
       testorino = _projectile;
       if (typeOf _projectile isNotEqualTo "rhs_ammo_3of69m") exitWith {};   // only run this code for RHS D30J laser guided shells
@@ -106,4 +107,5 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
           10
       ] call CBA_fnc_waitAndExecute;
   }];
+  _vehicle setVariable ["lgshells_firedEH_idx", _idx];
 }];

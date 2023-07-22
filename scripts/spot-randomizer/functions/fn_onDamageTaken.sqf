@@ -12,8 +12,8 @@ if ((playerSide in [civilian, independent]) && _damage >= 1) exitWith { // TODO:
     _marker = (_unit getVariable "id");
     [(str playerSide) + _marker, "FAILED"] call BIS_fnc_taskSetState;
     _marker setMarkerTypeLocal "mil_objective";
-    _marker setMarkerTextLocal ((markerText _marker) + " destroyed");
     systemchat ([markerText _marker, "has been destroyed by", _unit getVariable "shootnscoot_lastDamageDealer"] joinString " ");
+    _marker setMarkerTextLocal ((markerText _marker) + " destroyed");
 };
 
 // If regular damage, just show a message for Zeus&Streamer

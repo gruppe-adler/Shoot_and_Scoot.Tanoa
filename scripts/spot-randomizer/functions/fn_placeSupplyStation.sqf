@@ -71,8 +71,8 @@ private _spot_randomizer_fnc_CamoNetBroken =  {
     private _nets = nearestObjects [player, ["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"], 10];
     {
         if (damage _x > 0.9) then {
-        _return = true;
-        break;
+            _return = true;
+            break;
         };
     } forEach _nets;
     _return;
@@ -81,7 +81,7 @@ private _spot_randomizer_fnc_RepairCamoNet = {
     private _nets = nearestObjects [player, ["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"], 10];
     {
         if (call spot_randomizer_fnc_CamoNetBroken) then {
-        _x setDamage 0.9;   // once damaged it shall remain damaged (but standing)
+            _x setDamage 0.9;   // once damaged it shall remain damaged (but standing)
         };
     } forEach _nets;
 };

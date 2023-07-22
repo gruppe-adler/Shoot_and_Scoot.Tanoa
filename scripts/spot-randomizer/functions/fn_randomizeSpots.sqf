@@ -10,11 +10,11 @@ if (is_Zeus) then { systemChat "Randomizing spots started"; };
 private _bluforAllMarkers = [];
 private _opforAllMarkers = [];
 for "_i" from 1 to _numPossiblePositions do {
-  private _string = format ["blufor_pos%1", _i];
-  _bluforAllMarkers pushBackUnique _string;
+    private _string = format ["blufor_pos%1", _i];
+    _bluforAllMarkers pushBackUnique _string;
 
-  _string = format ["opfor_pos%1", _i];
-  _opforAllMarkers pushBackUnique _string;
+    _string = format ["opfor_pos%1", _i];
+    _opforAllMarkers pushBackUnique _string;
 };
 
 
@@ -23,8 +23,8 @@ private _bluforAllMarkersSorted = [ _bluforAllMarkers, [], { getMarkerPos _x sel
 private _opforAllMarkersSorted  = [ _opforAllMarkers,  [], { getMarkerPos _x select 0 }, "ASCEND" ] call BIS_fnc_sortBy;
 // rename markers from West to East with ascending numbers
 for "_i" from 1 to _numPossiblePositions do {
-    (_bluforAllMarkersSorted select _i-1) setMarkerText (format [" Blue %1", _i]);
-    (_opforAllMarkersSorted  select _i-1) setMarkerText (format [" Red %1",  _i]);
+    (_bluforAllMarkersSorted select _i-1) setMarkerTextLocal (format [" Blue %1", _i]);
+    (_opforAllMarkersSorted  select _i-1) setMarkerTextLocal (format [" Red %1",  _i]);
 };
 
 
@@ -32,37 +32,37 @@ for "_i" from 1 to _numPossiblePositions do {
 private _bluforStations = [];
 private _opforStations = [];
 for "_i" from 1 to _numActualStations do {
-  private _bluforSpot = selectRandom _bluforAllMarkers;
-  _bluforStations pushBackUnique _bluforSpot;
-  _bluforAllMarkers deleteAt (_bluforAllMarkers find _bluforSpot);
+    private _bluforSpot = selectRandom _bluforAllMarkers;
+    _bluforStations pushBackUnique _bluforSpot;
+    _bluforAllMarkers deleteAt (_bluforAllMarkers find _bluforSpot);
 
-  private _opforSpot = selectRandom _opforAllMarkers;
-  _opforStations pushBackUnique _opforSpot;
-  _opforAllMarkers deleteAt (_opforAllMarkers find _opforSpot);
+    private _opforSpot = selectRandom _opforAllMarkers;
+    _opforStations pushBackUnique _opforSpot;
+    _opforAllMarkers deleteAt (_opforAllMarkers find _opforSpot);
 };
 
 
 // create tasks for both sides that show them their own stations
 {
-  [west,     _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;
-  [civilian, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for Zeus' convenience
-  [independent, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for streamer convenience
+    [west,     _x] call spot_randomizer_fnc_placeTask;
+    [civilian, _x] call spot_randomizer_fnc_placeTask;   // for Zeus' convenience
+    // [independent, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for streamer convenience
 } forEach _bluforStations;
 {
-  [east,     _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;
-  [civilian, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for Zeus' convenience
-  [independent, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for streamer convenience
+    [east,     _x] call spot_randomizer_fnc_placeTask;
+    [civilian, _x] call spot_randomizer_fnc_placeTask;   // for Zeus' convenience
+    // [independent, _x, getMarkerPos _x] call spot_randomizer_fnc_placeTask;   // for streamer convenience
 } forEach _opforStations;
 
 
 // create supply stations for both sides
 {
-  [west, _x] call spot_randomizer_fnc_placeSupplyStation;
-  if (is_Zeus) then { systemChat (["BluFor spot placed at",_x] joinString " "); };
+    [west, _x] call spot_randomizer_fnc_placeSupplyStation;
+    if (is_Zeus) then { systemChat (["BluFor spot placed at",_x] joinString " "); };
 } foreach _bluforStations;
 {
-  [east, _x] call spot_randomizer_fnc_placeSupplyStation;
-  if (is_Zeus) then { systemChat (["OpFor spot placed at",_x] joinString " "); };
+    [east, _x] call spot_randomizer_fnc_placeSupplyStation;
+    if (is_Zeus) then { systemChat (["OpFor spot placed at",_x] joinString " "); };
 } forEach _opforStations;
 
 if (is_Zeus) then { systemChat "Randomizing spots done"; };

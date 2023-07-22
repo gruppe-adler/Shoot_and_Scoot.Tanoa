@@ -1,13 +1,11 @@
 /**
-  Visualize flying shells for Zeus.
-  This should be 100% LOCAL only, as it's PFH!
+Visualize flying shells for Zeus.
+This should be 100% LOCAL only, as it's PFH!
 */
 if !(hasInterface) exitWith {};
 params ["_projectile", "_gunner", "_magazine"];
 
-/**
-Drawing shell markers for Zeus and streamers.
-*/
+// Drawing shell markers for Zeus and streamers.
 private _markerColor = [side _gunner, true ] call BIS_fnc_sideColor;
 private _ammo = getText(configfile >> "CfgMagazines" >> _magazine >> "ammo");
 private _ammoname = getText(configfile >> "CfgMagazines" >> _magazine >> "displayName");
@@ -23,37 +21,38 @@ _projectile setVariable ["marker", _markerName];
 _projectile setVariable ["markerRadius", _radius];
 // When the projectile "dies", change to impact marker handling.
 _projectile addEventHandler ["Deleted", {
-  params ["_projectile", "_pos", "_velocity"];
-  private _marker = _projectile getVariable "marker";
-  private _radius = _projectile getVariable "markerRadius";
-  _marker setMarkerTypeLocal "mil_destroy_noShadow";
-  [_marker, _radius] spawn {
-    private _marker = _this#0;
-    private _radius = _this#1;
-    private _alpha = 1;
-    private _markerRadius = createMarkerLocal [_marker + "radius", getMarkerPos _marker];
-    _markerRadius setMarkerShapeLocal "ELLIPSE";
-    _markerRadius setMarkerSizeLocal [_radius, _radius];
-    _markerRadius setMarkerColorLocal (getMarkerColor _marker);
-    _markerRadius setMarkerBrushLocal "Border";
-    // Fade out impact markers over 10 seconds.
-    while {_alpha > 0} do {
-      _alpha = _alpha - 0.1;
-      sleep 1;
-      _marker setMarkerAlphaLocal _alpha;
-      _markerRadius setMarkerAlphaLocal _alpha;
+    params ["_projectile", "_pos", "_velocity"];
+    private _marker = _projectile getVariable "marker";
+    private _radius = _projectile getVariable "markerRadius";
+    _marker setMarkerTypeLocal "mil_destroy_noShadow";
+    // Tiny scheduled loop to handle change over time and cleanup without the PFH.
+    [_marker, _radius] spawn {
+        private _marker = _this#0;
+        private _radius = _this#1;
+        private _alpha = 1;
+        private _markerRadius = createMarkerLocal [_marker + "radius", getMarkerPos _marker];
+        _markerRadius setMarkerShapeLocal "ELLIPSE";
+        _markerRadius setMarkerSizeLocal [_radius, _radius];
+        _markerRadius setMarkerColorLocal (getMarkerColor _marker);
+        _markerRadius setMarkerBrushLocal "Border";
+        // Fade out impact markers over 10 seconds.
+        while {_alpha > 0} do {
+        _alpha = _alpha - 0.1;
+        sleep 1;
+        _marker setMarkerAlphaLocal _alpha;
+        _markerRadius setMarkerAlphaLocal _alpha;
+        };
+        // Finally, we clean up markers.
+        // Not explicitly cleaning up projectile variables, because projectiles are gone anyway now.
+        deleteMarkerLocal _marker;
+        deleteMarkerLocal _markerRadius;
     };
-    // Finally, we clean up markers.
-    // Not explicitly cleaning up projectile variables, because projectiles are gone anyway now.
-    deleteMarkerLocal _marker;
-    deleteMarkerLocal _markerRadius;
-  };
 }];
 [{
-  private _proj = _this#0#0;
-  if (!alive _proj) exitWith {
-      [_this#1] call CBA_fnc_removePerFrameHandler;
-  };
-  private _marker = _proj getVariable "marker";
-  _marker setMarkerPosLocal _proj;
+    private _proj = _this#0#0;
+    if (!alive _proj) exitWith {
+        [_this#1] call CBA_fnc_removePerFrameHandler;
+    };
+    private _marker = _proj getVariable "marker";
+    _marker setMarkerPosLocal _proj;
 }, 0, [_projectile]] call CBA_fnc_addPerFrameHandler;

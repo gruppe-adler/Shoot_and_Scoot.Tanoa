@@ -9,7 +9,7 @@ class CfgFunctions {
     #include "scripts\spot-randomizer\funcs.hpp"        // handle randomization of supply containers
     #include "scripts\tfar-persistence\funcs.hpp"       // restore previous TFAR settings after respawn
     #include "scripts\grad-loadout\CfgFunctions.hpp"    // Gruppe Adler loadout handling
-    #include "scripts\shelltracker\funcs.hpp"
+    #include "scripts\shelltracker\funcs.hpp"           // display of artillery shells for Zeus and streamers
 };
 
 

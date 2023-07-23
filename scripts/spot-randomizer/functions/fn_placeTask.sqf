@@ -1,8 +1,8 @@
-params ["_side", "_marker"];
+params ["_side", "_stationid"];
 
-_position =  markerPos _marker;
-_text = markerText _marker;
-_taskID = (str _side) + _marker;
+private _position =  markerPos _stationid;
+private _text = trim(markerText _stationid); // Must trim whitespaces from markerText
+private _taskID = (str _side) + _stationid; // Tasks are side-specific, so we add it to the id
 
 [
     _side,

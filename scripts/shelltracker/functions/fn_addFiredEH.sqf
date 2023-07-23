@@ -1,5 +1,5 @@
 // _this === vehicle object
-if !(isNil{_this getVariable "shelltracker_Fired_idx"}) exitWith {}; // Already set up for this unit, we can skip
+if !(isNil{_this getVariable "shelltracker_Fired_idx"}) exitWith {}; // Already set up for this vehicle, we can skip
 
 private _idx = _this addEventHandler ["Fired", {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];

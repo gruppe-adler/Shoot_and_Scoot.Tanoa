@@ -1,7 +1,7 @@
 if (!isServer) exitWith {};
-params ["_side", "_marker"];
+params ["_side", "_stationid"];
 
-_position = getMarkerPos _marker;
+_position = getMarkerPos _stationid;
 
 // find me a good, flat spot at a distance of up t0 150m away from the marker position
 // don't be in the sea and if no such position is found default to the original provided position
@@ -30,8 +30,7 @@ switch (_side) do
 // create objects for supply stations
 private _net       = (_netType createVehicle _fuzzyPosition);   // net first because it requires most space
 private _container = (_containerType createVehicle (getPosATL _net));
-_container setVariable [ "id", _marker, true];
-_container setVariable [ "side", _side, true];
+_container setVariable [ "shootnscoot_stationid", _stationid, true];
 _container lockInventory true;  // prevent inventory from being used (necessary for opfor container)
 
 // apply a random rotation for variety
@@ -130,7 +129,7 @@ private _idx = _container addEventHandler [ "HandleDamage", {
         "rhs_ammo_3of56", "rhs_ammo_d462", "rhs_ammo_s463", "rhs_ammo_3of69m", // Howitzer rounds
         "Sh_82mm_AMOS", "Flare_82mm_AMOS_White", "Smoke_82mm_AMOS_White" // Mortar rounds
     ] || _damage >= 1) then {
-    [_unit, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken"];
+        [_unit, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken", -2]; // Run on all clients, not server
     };
     // Once container is destroyed, we can remove this handler and clean up.
     if (_damage >= 1) then { // has to trigger once after full destruction

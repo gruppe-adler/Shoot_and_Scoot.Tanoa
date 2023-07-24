@@ -120,21 +120,21 @@ _container addAction [
 ] remoteExec ["BIS_fnc_holdActionAdd", 0, _container];// MP compatible implementation
 */
 
-
 private _idx = _container addEventHandler [ "HandleDamage", {
-    params ["_unit", "_selection", "_damage", "_source", "_ammo", "_hitIndex", "_instigator", "_hitPoint", "_directHit"];
-    private _damagePrv = damage _unit;
+    params ["_container", "_selection", "_damage", "_source", "_ammo", "_hitIndex", "_instigator", "_hitPoint", "_directHit"];
+    private _damagePrv = damage _container;
     // No need to spam useless information, we care about artillery hits only!
     if (_ammo in [
         "rhs_ammo_3of56", "rhs_ammo_d462", "rhs_ammo_s463", "rhs_ammo_3of69m", // Howitzer rounds
         "Sh_82mm_AMOS", "Flare_82mm_AMOS_White", "Smoke_82mm_AMOS_White" // Mortar rounds
     ] || _damage >= 1) then {
-        [_unit, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken", -2]; // Run on all clients, not server
+        [_container, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken", -2]; // Run on all clients, not server
     };
     // Once container is destroyed, we can remove this handler and clean up.
+    // HandleDamage keeps firing even if damage is > 1 for as long as object exists.
     if (_damage >= 1) then { // has to trigger once after full destruction
-        _unit removeEventHandler ["HandleDamage", _unit getVariable "shootnscoot_HandleDamage_idx"];
-        _unit setVariable ["shootnscoot_HandleDamage_idx", nil];
+        _container removeEventHandler ["HandleDamage", _container getVariable "shootnscoot_HandleDamage_idx"];
+        _container setVariable ["shootnscoot_HandleDamage_idx", nil];
     };
     nil // Ensure we return nil so we don't accidentally modify damage values...
 }];

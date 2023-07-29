@@ -55,12 +55,6 @@ _net       setDamage 0.0;   // fix broken nets
 private _nearObjects  = nearestTerrainObjects [_fuzzyPosition, [], 11];
 { hideObjectGlobal _x } forEach _nearObjects;
 
-// clear area for supply stations from obstacles
-private _nearObjects = nearestTerrainObjects [_position, [], 11];
-{
-    hideObjectGlobal _x
-} forEach _nearObjects;
-
 // add a trigger area to restock ammo trucks (incl. Stompers)
 [_fuzzyPosition, _rotation] call spot_randomizer_fnc_placeRestockArea;
 

@@ -9,7 +9,7 @@ params ["_projectile", "_gunner", "_magazine"];
 private _markerColor = [side _gunner, true ] call BIS_fnc_sideColor;
 private _ammo = getText(configfile >> "CfgMagazines" >> _magazine >> "ammo");
 private _ammoname = getText(configfile >> "CfgMagazines" >> _magazine >> "displayName");
-private _radius = getNumber(configfile >> "CfgAmmo" >> _ammo >> "indirectHitRange") * 2;
+private _radius = getNumber(configfile >> "CfgAmmo" >> _ammo >> "indirectHitRange") * 1.2;
 private _markerName = [diag_tickTime, _magazine, name _gunner] joinString "";
 private _marker = createMarkerLocal [_markerName, _projectile];
 private _markerText = [_ammoname, "by", name _gunner] joinString " ";

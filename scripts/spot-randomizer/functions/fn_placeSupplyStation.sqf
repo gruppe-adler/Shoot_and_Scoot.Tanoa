@@ -122,7 +122,7 @@ private _idx = _container addEventHandler [ "HandleDamage", {
         "rhs_ammo_3of56", "rhs_ammo_d462", "rhs_ammo_s463", "rhs_ammo_3of69m", // Howitzer rounds
         "Sh_82mm_AMOS", "Flare_82mm_AMOS_White", "Smoke_82mm_AMOS_White" // Mortar rounds
     ] || _damage >= 1) then {
-        [_container, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken", -2]; // Run on all clients, not server
+        [_container, _instigator, _damage, _ammo, _damagePrv] remoteExec ["spot_randomizer_fnc_onDamageTaken", 0]; // Run on the server and every connected client
     };
     // Once container is destroyed, we can remove this handler and clean up.
     // HandleDamage keeps firing even if damage is > 1 for as long as object exists.

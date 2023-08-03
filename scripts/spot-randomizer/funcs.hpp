@@ -6,5 +6,6 @@ class spot_randomizer {
         class placeTask{};
         class placeSupplyStation{};
         class placeRestockArea{};
+        class onDamageTaken{};
     };
 };

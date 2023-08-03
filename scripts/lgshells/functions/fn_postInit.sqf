@@ -24,19 +24,20 @@ seekerCone = 120;  // in degree
 // unregister shell firing event handler when getting out of a vehicle
 player addEventHandler ["GetOutMan", {
   params ["_unit", "_role", "_vehicle", "_turret"];
-  _vehicle removeEventHandler ["Fired", lgshell_eventHandler_index];
+  private _idx = _vehicle getVariable "lgshells_firedEH_idx";
+  _vehicle removeEventHandler ["Fired", _idx];
 }];
 
 
 
 // register shell firing event handler when getting into a vehicle
-lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
+player addEventHandler ["GetInMan", {
   params ["_unit", "_role", "_vehicle", "_turret"];
-  
+
   is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current player is a Zeus
   if (is_Zeus) then { [player, 5] spawn BIS_fnc_traceBullets };  // colored tracers
-  
-  _vehicle addEventHandler ["Fired", {
+
+  private _idx = _vehicle addEventHandler ["Fired", {
       params ["_shooter", "", "", "", "", "", "_projectile"];
       testorino = _projectile;
       if (typeOf _projectile isNotEqualTo "rhs_ammo_3of69m") exitWith {};   // only run this code for RHS D30J laser guided shells
@@ -46,27 +47,27 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
           {
               [
                   {
-                      private _projectile = _this#0#1;                    
+                      private _projectile = _this#0#1;
                       private _shooter = _this#0#0;
-                      
+
                       if (!alive _projectile) exitWith {
                           [_this#1] call CBA_fnc_removePerFrameHandler;
                           if (is_Zeus) then { systemChat "terminated" };
                       };
                       private _result = [
-                          getPosASL _projectile, 
-                          vectorDir _projectile, 
-                          seekerCone, 
-                          laserMaxDetectionRange, 
-                          laserWavelength, 
-                          laserCode, 
+                          getPosASL _projectile,
+                          vectorDir _projectile,
+                          seekerCone,
+                          laserMaxDetectionRange,
+                          laserWavelength,
+                          laserCode,
                           _projectile
                       ] call ace_laser_fnc_seekerFindLaserSpot;
-                      
+
                       private _spot = _result#0;
                       if (isNil "_spot") exitWith { if (is_Zeus) then { systemChat "no spot" } };
                       if (is_Zeus) then { systemChat "tracking" };
-                      
+
                       private _frameTime = time - (_projectile getVariable ["lastFrameTime", time]);
                       _projectile setVariable ["lastFrameTime", time];
                       private _distance2D = _projectile distance2D _spot;
@@ -82,7 +83,7 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
                       private _angleY = asin (_vectorModelSpace # 2);
 
                       _turnRate = 24 * _frameTime;  // turn rate is dependant on projectile velocity
-                       if (is_Zeus) then { 
+                       if (is_Zeus) then {
                         diag_log   str _angleX;
                         diag_log   str _angleY;
                         diag_log   str _turnRate;
@@ -99,11 +100,12 @@ lgshell_eventHandler_index = player addEventHandler ["GetInMan", {
                       };
                   },
                   0.1,
-                  _this            
+                  _this
               ] call CBA_fnc_addPerFrameHandler;
           },
           [getPosASL _shooter, _projectile],
           10
       ] call CBA_fnc_waitAndExecute;
   }];
+  _vehicle setVariable ["lgshells_firedEH_idx", _idx];
 }];

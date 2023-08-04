@@ -31,6 +31,7 @@ switch (_side) do
 private _net       = (_netType createVehicle _fuzzyPosition);   // net first because it requires most space
 private _container = (_containerType createVehicle (getPosATL _net));
 _container setVariable [ "shootnscoot_stationid", _stationid, true];
+_container setVariable [ "shootnscoot_stationNet", _net, true];
 _container lockInventory true;  // prevent inventory from being used (necessary for opfor container)
 
 // apply a random rotation for variety
@@ -44,75 +45,20 @@ if (not isNull _nearbyRoad) then {
 [_net, [_rotation, 0, 0]] call BIS_fnc_setObjectRotation;
 [_container, [(_rotation+90) % 360, 0, 0]] call BIS_fnc_setObjectRotation;
 
-sleep 3;  // wait for jerky physics to finish
-
-// restore health after jerky Arma physics
-_container setDamage 0.0;   // start with a bit over 50% hit points (requested by players)
-_net       setDamage 0.0;   // fix broken nets
-
-
 //clear area for supply stations from obstacles
 private _nearObjects  = nearestTerrainObjects [_fuzzyPosition, [], 11];
 { hideObjectGlobal _x } forEach _nearObjects;
 
+sleep 3;  // wait for jerky physics to finish
+
+// restore health after jerky Arma physics
+_container setDamage 0.0;   // start with a bit over 50% hit points (requested by players)
+_net       setDamage 0.8;   // start with low health to fix https://github.com/gruppe-adler/Shoot_and_Scoot.Tanoa/issues/29
+
+_container remoteExec ["spot_randomizer_fnc_initStationClient", 0, true]; // Init any local container stuff for all players (incl. JIP!)
+
 // add a trigger area to restock ammo trucks (incl. Stompers)
 [_fuzzyPosition, _rotation] call spot_randomizer_fnc_placeRestockArea;
-
-// add menu entry that allows putting a damaged camo net back up
-private _spot_randomizer_fnc_CamoNetBroken =  {
-    private _return = false;
-    private _nets = nearestObjects [player, ["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"], 10];
-    {
-        if (damage _x > 0.9) then {
-            _return = true;
-            break;
-        };
-    } forEach _nets;
-    _return;
-};
-private _spot_randomizer_fnc_RepairCamoNet = {
-    private _nets = nearestObjects [player, ["CamoNet_BLUFOR_big_F", "CamoNet_ghex_big_F"], 10];
-    {
-        if (call spot_randomizer_fnc_CamoNetBroken) then {
-            _x setDamage 0.9;   // once damaged it shall remain damaged (but standing)
-        };
-    } forEach _nets;
-};
-_container addAction [
-    "Erect broken camouflage net",
-    _spot_randomizer_fnc_RepairCamoNet,
-    nil,
-        6, // high up in priority
-    true,
-    true,
-    "",
-    toString _spot_randomizer_fnc_CamoNetBroken,
-    20,
-    false,
-    "",
-    ""
-];
-/* TODO: I would prefer a Hold action but it does not work yet :-(
-[
-    _container, // Object the action is attached to
-    "Erect broken camouflage net", // Title of the action
-    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", // Idle icon shown on screen
-    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", // Progress icon shown on screen
-    toString spot_randomizer_fnc_CamoNetBroken, // Condition for the action to be shown
-    "_caller distance _target < 15", // Condition for the action to progress
-    {}, // Code executed when action starts
-    {}, // Code executed on every progress tick
-        {
-        call spot_randomizer_fnc_RepairCamoNet;
-    }, // Code executed on completion
-    {}, // Code executed on interrupted
-    [], // Arguments passed to the scripts as _this select 3
-    10, // action duration in seconds
-    0, // priority
-    false, // Remove on completion
-    false// Show in unconscious state
-] remoteExec ["BIS_fnc_holdActionAdd", 0, _container];// MP compatible implementation
-*/
 
 private _idx = _container addEventHandler [ "HandleDamage", {
     params ["_container", "_selection", "_damage", "_source", "_ammo", "_hitIndex", "_instigator", "_hitPoint", "_directHit"];

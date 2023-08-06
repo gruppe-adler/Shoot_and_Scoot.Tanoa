@@ -27,15 +27,6 @@
     true
 ] call CBA_fnc_addSetting;
 
-[
-    "arsr_approxymationMarker",
-    "CHECKBOX",
-    ["Show approxymation marker", "Shows a marker that uses the inaccurate location info to show an approximate position of the artillery piece. This marker will NOT be auto deleted!"],
-    ["Mission", "ARSR - General"],
-    true,
-    true
-] call CBA_fnc_addSetting;
-
 if !(isNil "ace_explosives") then {
     [
         "arsr_allowPlacedExplosives",
@@ -70,15 +61,6 @@ if !(isNil "ace_explosives") then {
 };
 
 // ========= User settings =========
-
-[
-    "arsr_drawStyle",
-    "LIST",
-    ["Draw style", "Style how the listener data is being displayed"],
-    ["Mission", "ARSR - User settings"],
-    [[0, 1, 2], ["Arrows", "Lines", "Cones"], 1],
-    false
-] call CBA_fnc_addSetting;
 
 [
     "arsr_autoDeleteMarkerTime",
@@ -140,11 +122,11 @@ private _indexBlue = _colors findIf {_x isEqualTo "ColorBlue"};
 ] call CBA_fnc_addSetting;
 
 [
-    "arsr_listenerAccuracy",
+    "arsr_angleError",
     "SLIDER",
-    ["Listener accuracy", "Value in meters, higher values mean less accurate"],
+    ["Listener accuracy in terms of angle error", "Value in degrees (as passed into 'random [min, mid, max]'), higher values mean less accurate"],
     ["Mission", "ARSR - Listener"],
-    [0, 1000, 50, 0],
+    [0, 20, 5, 1],
     true
 ] call CBA_fnc_addSetting;
 

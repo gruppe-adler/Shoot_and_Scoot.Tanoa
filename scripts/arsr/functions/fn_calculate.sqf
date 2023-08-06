@@ -31,28 +31,29 @@ fnc_listenerOperatorNearby = {
         if (arsr_vicEngineOff && {isEngineOn _vic}) exitWith {};
         if ((_originatorPos distance _vic) > (_vic getVariable ["arsr_listenerMaxDistance", arsr_listenerMaxDistance])) exitWith {};
 
-        private _accuracy = _vic getVariable ["arsr_listenerAccuracy", arsr_listenerAccuracy];
-        private _inAccurateOriginalPos = _originatorPos getPos [(_accuracy / 2) - (random _accuracy), random 360];
+        private _angleError = _vic getVariable ["arsr_angleError", arsr_angleError];
 
         [{
-            params ["_originatorPos", "_inAccurateOriginalPos", "_interceptPos", "_vic", "_interceptTime"];
+            params ["_originatorPos", "_angleError", "_interceptPos", "_vic", "_interceptTime"];
             if !(alive _vic) exitWith {};
             private _targets = ([] call CBA_fnc_players) select {
                 _x getVariable ["arsr_receptionAllowed", false] && { // can receive in general
                 alive _x && { // is alive
                 ((_vic getVariable ["arsr_side", sideLogic]) isEqualTo sideLogic || {(side group _x) isEqualTo (_vic getVariable ["arsr_side", sideLogic])}) // check if listener has a side assigned and if it matches the receiver units side
             }}};
+
+            // send drawing event with all information necessary to paint on the map
             ["arsr_drawData", [
                 _originatorPos,
-                _inAccurateOriginalPos,
+                _angleError,
                 _interceptPos, // position of listener
                 format ["%1#%2", _originatorPos, _interceptTime],
-                _vic getVariable ["arsr_listenerAccuracy", arsr_listenerAccuracy],
+                _vic getVariable ["arsr_angleError", arsr_angleError],
                 _vic getVariable ["arsr_listenerMaxDistance", arsr_listenerMaxDistance]
             ], _targets] call CBA_fnc_targetEvent;
         },[
-            _originatorPos, // pricise position of artillery
-            _inAccurateOriginalPos, // in accurate position of artillery
+            _originatorPos, // precise position of artillery
+            _angleError, // angle error of the sensor
             getPos _vic, // position of listener at the time fire was heard
             _vic, // the listener itself
             _time // time when artillery fired

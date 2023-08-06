@@ -72,14 +72,12 @@ force ace_towing_addRopeToVehicleInventory = true;
 
 // Artillery Sound Ranging
 force arsr_allowPlacedExplosives = false;
-force arsr_approxymationMarker = false;
 force arsr_artilleryBaseClassesSetting = "[""RHS_M119_WD""], [""rhssaf_army_o_d30""], [""APC_Wheeled_01_mortar_base_lxWS""], [""B_D_APC_Wheeled_01_mortar_lxWS""], [""B_T_APC_Wheeled_01_mortar_lxWS""], [""O_Mortar_01_F""], [""B_Mortar_01_F""], [""B_T_Mortar_01_F""], [""B_D_Mortar_01_lxWS""]";
 force force arsr_autoDeleteMarkerTime = 40;	// in seconds
-force force arsr_drawStyle = 1;
 force arsr_explosivesAddSide = true;
 force arsr_explosivesMinHit = 500;
 arsr_lineColor = "ColorBlue";
-force arsr_listenerAccuracy = 200;	// in meters
+force arsr_angleError = 5;	// in degree (as passed into "random [min, mid, max]")
 force arsr_listenerCalcDelay = 0;	// default 20
 force arsr_listenerClassesSetting = "[""UK3CB_CHD_O_Gaz66_Radio"", ""UK3CB_CHD_W_B_Gaz66_Radio""]";
 force arsr_listenerMaxDistance = 20000;	// in meters

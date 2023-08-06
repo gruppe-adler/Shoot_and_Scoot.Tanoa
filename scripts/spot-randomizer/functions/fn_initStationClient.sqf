@@ -29,15 +29,6 @@ private _pbar = {[
 ] call ace_common_fnc_progressBar;
 };
 
-/*
- * Argument:
- * 0: Object the action should be assigned to <OBJECT>
- * 1: Type of action, 0 for actions, 1 for self-actions <NUMBER>
- * 2: Parent path of the new action <ARRAY> (Example: `["ACE_SelfActions", "ACE_Equipment"]`)
- * 3: Action <ARRAY>
- */
-[_this, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 // Vanilla menu, but with progress bar
 _this addAction [
     "Fix broken camouflage net",

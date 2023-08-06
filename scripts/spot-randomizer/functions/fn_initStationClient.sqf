@@ -1,28 +1,6 @@
 if !(hasInterface) exitWith {};
 // _this === station container
 
-// add menu entry that allows putting a damaged camo net back up
-// Vanilla HoldAction
-[
-    _this, // Object the action is attached to
-    "Fix camouflage net", // Title of the action
-    "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa", // Idle icon shown on screen
-    "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa", // Progress icon shown on screen
-    "_this distance _target < 15 && damage (_target getVariable 'shootnscoot_stationNet') > 0.9", // Condition for the action to be shown
-    "_caller distance _target < 15", // Condition for the action to progress
-    {}, // Code executed when action starts
-    {}, // Code executed on every progress tick
-    {
-        (_target getVariable "shootnscoot_stationNet") setDamage 0.8
-    }, // Code executed on completion
-    {}, // Code executed on interrupted
-    [], // Arguments passed to the scripts as _this select 3
-    10, // action duration in seconds
-    0, // priority
-    false, // Remove on completion
-    false// Show in unconscious state
-] call BIS_fnc_holdActionAdd;
-
 /*
  * ACE Progress Bar
  * Finish/Failure/Conditional are all passed [_args, _elapsedTime, _totalTime, _errorCode]
@@ -44,38 +22,13 @@ private _pbar = {[
     },
     "Repairing...",
     {
-        alive player and (player distance _this#0) < 15 &&
+        alive player and (player distance _this#0) < 12 &&
         isNull objectParent player &&
         speed(_this#0) < 3
     }
 ] call ace_common_fnc_progressBar;
 };
-/*
- * ACE INTERACT
- * Argument:
- * 0: Action name <STRING>
- * 1: Name of the action shown in the menu <STRING>
- * 2: Icon <STRING>
- * 3: Statement <CODE>
- * 4: Condition <CODE>
- * 5: Insert children code <CODE> (Optional)
- * 6: Action parameters <ANY> (Optional)
- * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)
- * 8: Distance <NUMBER> (Optional)
- * 9: Other parameters [showDisabled,enableInside,canCollapse,runOnHover,doNotCheckLOS] <ARRAY> (Optional)
- * 10: Modifier function <CODE> (Optional)
- */
-private _action = [
-    "Fix camo net",
-    "Fix camo net",
-    "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
-    _pbar,
-    {player distance _target < 15 && damage (_target getVariable 'shootnscoot_stationNet') > 0.9},
-    {},
-    [],
-    [0,0,0],
-    15
-] call ace_interact_menu_fnc_createAction;
+
 /*
  * Argument:
  * 0: Object the action should be assigned to <OBJECT>
@@ -87,14 +40,14 @@ private _action = [
 
 // Vanilla menu, but with progress bar
 _this addAction [
-    "Fix camouflage net",
+    "Fix broken camouflage net",
     _pbar,
     nil,
     6, // high up in priority
     true,
     true,
     "",
-    "player distance _target < 15 && damage (_target getVariable 'shootnscoot_stationNet') > 0.9"
+    "player distance _target < 12 && damage (_target getVariable 'shootnscoot_stationNet') > 0.9"
     ,
     20,
     false,

@@ -44,13 +44,14 @@ is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current playe
     };
     
     // handle damage to vegetation
-    _radius =  _indirectHitRAnge / 4;   // set kill radius for vegetation
+    _radius =  _indirectHitRAnge / 4;   // set kill radius for vegetation and barriers
     // if (is_Zeus) then { systemChat format ["radius is %1m", _radius]; }; 
     nearBushes = nearestTerrainObjects [_boom, ["BUSH"], _radius];
     nearTrees  = nearestTerrainObjects [_boom, ["TREE"], _radius];
+    nearBarriers  = nearestTerrainObjects [_boom, ["WALL", "FENCE"], _radius];
     { _x remoteExecCall ["hideObjectGlobal", 2] } forEach nearBushes;   // hide bushes in impact zone
     tree_pusher setPosASL _posASL;  // tree_pusher is an invisible helper object that we move around to fell trees in different directions
-    { [_x, [1, true, tree_pusher]] remoteExecCall ["setDamage", 2] } forEach nearTrees;   // fell trees with animation and falling away from impact point
+    { [_x, [1, true, tree_pusher]] remoteExecCall ["setDamage", 2] } forEach nearTrees + nearBarriers;   // fell trees, walls and fences with animation and falling away from impact point
     
     [{
         {

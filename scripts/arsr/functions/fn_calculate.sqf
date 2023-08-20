@@ -40,17 +40,18 @@ fnc_listenerOperatorNearby = {
             params ["_originatorPos", "_falseHeading", "_interceptPos", "_vic", "_interceptTime"];
             if !(alive _vic) exitWith {};
             private _targets = ([] call CBA_fnc_players) select {
+                side _x == independent || { // streamers shall see all bearings
                 _x getVariable ["arsr_receptionAllowed", false] && { // can receive in general
                 alive _x && { // is alive
                 ((_vic getVariable ["arsr_side", sideLogic]) isEqualTo sideLogic || {(side group _x) isEqualTo (_vic getVariable ["arsr_side", sideLogic])}) // check if listener has a side assigned and if it matches the receiver units side
-            }}};
+            }}}};
 
             // send drawing event with all information necessary to paint on the map
             ["arsr_drawData", [
                 _originatorPos,
                 _falseHeading,
                 _interceptPos, // position of listener
-                format ["%1#%2", _originatorPos, _interceptTime],
+                side _vic, // side of listener
                 _vic getVariable ["arsr_angleError", arsr_angleError],
                 _vic getVariable ["arsr_listenerMaxDistance", arsr_listenerMaxDistance]
             ], _targets] call CBA_fnc_targetEvent;

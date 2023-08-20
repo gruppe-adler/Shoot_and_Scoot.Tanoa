@@ -83,15 +83,6 @@ private _indexBlue = _colors findIf {_x isEqualTo "ColorBlue"};
     false
 ] call CBA_fnc_addSetting;
 
-[
-    "arsr_lineColor",
-    "LIST",
-    ["Line color", "Color of drawn lines"],
-    ["Mission", "ARSR - User settings"],
-    [_colors, _colors, _indexBlue],
-    false
-] call CBA_fnc_addSetting;
-
 // ========= Listener =========
 
 [

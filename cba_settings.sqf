@@ -76,7 +76,6 @@ force arsr_artilleryBaseClassesSetting = "[""RHS_M119_WD""], [""rhssaf_army_o_d3
 force force arsr_autoDeleteMarkerTime = 40;	// in seconds
 force arsr_explosivesAddSide = true;
 force arsr_explosivesMinHit = 500;
-arsr_lineColor = "ColorBlue";
 force arsr_angleError = 3;	// in degree (as passed into "random [min, mid, max]")
 force arsr_listenerCalcDelay = 0;	// default 20
 force arsr_listenerClassesSetting = "[""UK3CB_CHD_O_Gaz66_Radio"", ""UK3CB_CHD_W_B_Gaz66_Radio""]";

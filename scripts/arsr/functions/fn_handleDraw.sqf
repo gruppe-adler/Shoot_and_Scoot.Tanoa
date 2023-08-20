@@ -1,4 +1,4 @@
-params ["_originatorPos", "_angleError", "_interceptPos", "_shotKey"];
+params ["_originatorPos", "_falseHeading", "_interceptPos", "_shotKey"];
 
 systemChat "Artillery shot detected! Drawing on map!";
 

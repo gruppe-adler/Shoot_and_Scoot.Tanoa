@@ -32,9 +32,12 @@ fnc_listenerOperatorNearby = {
         if ((_originatorPos distance _vic) > (_vic getVariable ["arsr_listenerMaxDistance", arsr_listenerMaxDistance])) exitWith {};
 
         private _angleError = _vic getVariable ["arsr_angleError", arsr_angleError];
+        private _preciseHeading   = (getPos _vic getDir _originatorPos) + 360;    // adding 360° prevents from dealing with negative numbers
+        private _falseHeading     = (random [_preciseHeading-_angleError, _preciseHeading, _preciseHeading+_angleError]) % 360;    // precise heading plus a gaussian distributed error added to it
+        // systemChat format ["_preciseHeading=%1, _falseHeading=%2, _angleError=%3", _preciseHeading % 360, _falseHeading, _angleError];
 
         [{
-            params ["_originatorPos", "_angleError", "_interceptPos", "_vic", "_interceptTime"];
+            params ["_originatorPos", "_falseHeading", "_interceptPos", "_vic", "_interceptTime"];
             if !(alive _vic) exitWith {};
             private _targets = ([] call CBA_fnc_players) select {
                 _x getVariable ["arsr_receptionAllowed", false] && { // can receive in general
@@ -45,7 +48,7 @@ fnc_listenerOperatorNearby = {
             // send drawing event with all information necessary to paint on the map
             ["arsr_drawData", [
                 _originatorPos,
-                _angleError,
+                _falseHeading,
                 _interceptPos, // position of listener
                 format ["%1#%2", _originatorPos, _interceptTime],
                 _vic getVariable ["arsr_angleError", arsr_angleError],
@@ -53,7 +56,7 @@ fnc_listenerOperatorNearby = {
             ], _targets] call CBA_fnc_targetEvent;
         },[
             _originatorPos, // precise position of artillery
-            _angleError, // angle error of the sensor
+            _falseHeading, // precise heading with some random error added to it
             getPos _vic, // position of listener at the time fire was heard
             _vic, // the listener itself
             _time // time when artillery fired

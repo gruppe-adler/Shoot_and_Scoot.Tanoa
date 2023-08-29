@@ -28,12 +28,9 @@ if ((playerSide in [civilian, independent]) && _damage >= 1) exitWith { // TODO:
 
 // If regular damage, just show a message for Zeus&Streamer
 if (_dmg_dealt < 3) exitWith {}; // Skip any tiny damage effects. These are probably just minor ACE frag damages.
-private _message = [
-    markerText (_container getVariable "shootnscoot_stationid"),
-    "was hit by",
-    name _instigator, "for",
-    _dmg_dealt,
-    "% with",
-    _ammo,
-    ". Current HP:", (1-_damage)*100, "%"] joinString " ";
-systemChat _message;
+systemChat format ["%1 dealt %2%3 damage to %4. Remaining HP %5%6", 
+                        name _instigator, 
+                        round _dmg_dealt, "%", 
+                        markerText (_container getVariable "shootnscoot_stationid"), 
+                        round ((1-_damage)*100), "%"
+                    ];

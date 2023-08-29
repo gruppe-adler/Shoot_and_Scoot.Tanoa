@@ -12,10 +12,10 @@ private _ammoname = getText(configfile >> "CfgMagazines" >> _magazine >> "displa
 private _radius = getNumber(configfile >> "CfgAmmo" >> _ammo >> "indirectHitRange") * 1.2;
 private _markerName = [diag_tickTime, _magazine, name _gunner] joinString "";
 private _marker = createMarkerLocal [_markerName, _projectile];
-private _markerText = [_ammoname, "by", name _gunner] joinString " ";
 systemchat ((name _gunner) + " just fired " + _ammoname);
-_marker setMarkerTypeLocal "mil_dot_noShadow";
-_marker setMarkerTextLocal _markerText;
+_marker setMarkerTypeLocal "hd_start";
+_marker setMarkerDirLocal (getDir _projectile);
+_marker setMarkerSizeLocal [0.4, 0.4];
 _marker setMarkerColorLocal _markerColor;
 _projectile setVariable ["marker", _markerName];
 _projectile setVariable ["markerRadius", _radius];

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4387;
+		nextID=4389;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=360;
+		nextID=365;
 	};
 	class Camera
 	{
-		pos[]={2149.783,37.767231,3440.47};
-		dir[]={-0.77236938,-0.5897705,-0.23596373};
-		up[]={-0.56406558,0.80754215,-0.17232491};
-		aside[]={-0.29218388,1.0150688e-007,0.95639575};
+		pos[]={8058.8711,17.665222,13352.864};
+		dir[]={0.3736763,-0.37750536,0.84726775};
+		up[]={0.15233685,0.92600644,0.34540719};
+		aside[]={0.91496938,1.2768578e-007,-0.40353316};
 	};
 };
 binarizationWanted=0;
@@ -3101,7 +3101,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={6961.4624,2.6614389,7201.146};
-								angles[]={-0,4.1863203,0};
+								angles[]={0,4.1863203,0};
 							};
 							side="West";
 							flags=6;
@@ -3462,7 +3462,7 @@ class Mission
 				};
 			};
 			id=59;
-			atlOffset=-124.55689;
+			atlOffset=-124.55547;
 		};
 		class Item1
 		{
@@ -4222,7 +4222,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6948.6123,2.8161528,7201.6763};
-						angles[]={0,0.011536626,0};
+						angles[]={-0,6.2427773,0};
 					};
 					side="West";
 					flags=6;
@@ -4231,7 +4231,6 @@ class Mission
 					};
 					id=757;
 					type="B_UAV_AI";
-					atlOffset=0.15471387;
 				};
 			};
 			class Attributes
@@ -4259,7 +4258,6 @@ class Mission
 				};
 			};
 			id=756;
-			atlOffset=2.3841858e-007;
 		};
 		class Item52
 		{
@@ -4274,7 +4272,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6942.2524,2.8161528,7201.2729};
-						angles[]={0,0.011536626,0};
+						angles[]={-0,6.2427773,0};
 					};
 					side="West";
 					flags=6;
@@ -4283,7 +4281,6 @@ class Mission
 					};
 					id=799;
 					type="B_UAV_AI";
-					atlOffset=0.15471387;
 				};
 			};
 			class Attributes
@@ -4311,7 +4308,6 @@ class Mission
 				};
 			};
 			id=798;
-			atlOffset=2.3841858e-007;
 		};
 		class Item53
 		{
@@ -4326,7 +4322,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6935.8472,2.8161528,7201.0469};
-						angles[]={0,0.011536626,0};
+						angles[]={-0,6.2427773,0};
 					};
 					side="West";
 					flags=6;
@@ -4335,7 +4331,6 @@ class Mission
 					};
 					id=802;
 					type="B_UAV_AI";
-					atlOffset=0.15471387;
 				};
 			};
 			class Attributes
@@ -4363,7 +4358,6 @@ class Mission
 				};
 			};
 			id=801;
-			atlOffset=2.3841858e-007;
 		};
 		class Item54
 		{
@@ -4565,7 +4559,7 @@ class Mission
 			name="OPFOR base";
 			class Entities
 			{
-				items=48;
+				items=49;
 				class Item0
 				{
 					dataType="Layer";
@@ -7289,9 +7283,258 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item48
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8072.6128,10.359935,13381.783};
+						angles[]={0,5.1279135,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						textures="CHDKZ";
+					};
+					id=4387;
+					type="UK3CB_CHD_O_Gaz66_Radio";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="rhs_decalNumber_type";
+							expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cTrucksGaz4NumberPlaces, _value]]] call rhs_fnc_decalsInit";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Default";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="CHDKZ";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=12;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="mast_handler";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item2
+													{
+														class data
+														{
+															singleType="STRING";
+															value="cover_hide";
+														};
+													};
+													class Item3
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item4
+													{
+														class data
+														{
+															singleType="STRING";
+															value="spare_hide";
+														};
+													};
+													class Item5
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item6
+													{
+														class data
+														{
+															singleType="STRING";
+															value="bench_hide";
+														};
+													};
+													class Item7
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item8
+													{
+														class data
+														{
+															singleType="STRING";
+															value="rear_numplate_hide";
+														};
+													};
+													class Item9
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+													class Item10
+													{
+														class data
+														{
+															singleType="STRING";
+															value="light_hide";
+														};
+													};
+													class Item11
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="rhs_decalPlatoon_type";
+							expression="_this setVariable ['rhs_decalPlatoon_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Army";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[""FirstAidKit""],[1]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""O_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""O_UAV_01_backpack_F"",""B_AssaultPack_ocamo""],[2,1]]],false]";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="rhs_decalArmy_type";
+							expression="_this setVariable ['rhs_decalArmy_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Army";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_decalArmy";
+							expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cTrucksGazRightArmyPlaces,  _this getVariable ['rhs_decalArmy_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="rhs_decalPlatoon";
+							expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cTrucksGazRightPlatoonPlaces,  _this getVariable ['rhs_decalPlatoon_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
 			};
 			id=3655;
-			atlOffset=-0.050723076;
+			atlOffset=1.4458942;
 		};
 		class Item61
 		{
@@ -7316,14 +7559,14 @@ class Mission
 			name="BLUFOR base";
 			class Entities
 			{
-				items=44;
+				items=45;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6954.0366,4.7493391,7158.8428};
-						angles[]={0,0.011536626,0};
+						position[]={6952.1362,4.7493391,7158.8901};
+						angles[]={-0,6.2427773,0};
 					};
 					side="West";
 					flags=6;
@@ -7334,7 +7577,6 @@ class Mission
 					};
 					id=758;
 					type="B_T_UGV_01_olive_F";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7371,8 +7613,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6947.6714,4.7493391,7158.5386};
-						angles[]={0,0.011536626,0};
+						position[]={6945.8062,4.7493391,7158.6304};
+						angles[]={-0,6.2427773,0};
 					};
 					side="West";
 					flags=6;
@@ -7383,7 +7625,6 @@ class Mission
 					};
 					id=800;
 					type="B_T_UGV_01_olive_F";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7420,8 +7661,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6941.2637,4.7493391,7158.4126};
-						angles[]={0,0.011536626,0};
+						position[]={6939.502,4.7493391,7158.1489};
+						angles[]={-0,6.2427773,0};
 					};
 					side="West";
 					flags=6;
@@ -7432,7 +7673,6 @@ class Mission
 					};
 					id=803;
 					type="B_T_UGV_01_olive_F";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8756,8 +8996,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6962.7153,3.0224257,7157.8159};
-						angles[]={0,6.231698,0};
+						position[]={6959.5869,3.0224257,7157.938};
+						angles[]={-0,6.2515345,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9005,8 +9245,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6968.8652,3.0224257,7158.4736};
-						angles[]={0,6.231698,0};
+						position[]={6965.6445,3.0224257,7158.1748};
+						angles[]={-0,6.2515345,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9254,8 +9494,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6974.7847,3.0224257,7158.4678};
-						angles[]={0,6.231698,0};
+						position[]={6971.667,3.0224257,7158.3501};
+						angles[]={-0,6.2515345,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9892,6 +10132,255 @@ class Mission
 							};
 						};
 						nAttributes=1;
+					};
+				};
+				class Item44
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6977.4385,3.0224257,7158.5581};
+						angles[]={-0,6.2515345,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						textures="CHDSZ";
+					};
+					id=4388;
+					type="UK3CB_CHD_W_B_Gaz66_Radio";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="rhs_decalNumber_type";
+							expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cTrucksGaz4NumberPlaces, _value]]] call rhs_fnc_decalsInit";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Default";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="CHDSZ";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=12;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="mast_handler";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item2
+													{
+														class data
+														{
+															singleType="STRING";
+															value="cover_hide";
+														};
+													};
+													class Item3
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item4
+													{
+														class data
+														{
+															singleType="STRING";
+															value="spare_hide";
+														};
+													};
+													class Item5
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item6
+													{
+														class data
+														{
+															singleType="STRING";
+															value="bench_hide";
+														};
+													};
+													class Item7
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+													class Item8
+													{
+														class data
+														{
+															singleType="STRING";
+															value="rear_numplate_hide";
+														};
+													};
+													class Item9
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+													class Item10
+													{
+														class data
+														{
+															singleType="STRING";
+															value="light_hide";
+														};
+													};
+													class Item11
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="rhs_decalPlatoon_type";
+							expression="_this setVariable ['rhs_decalPlatoon_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Army";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[""FirstAidKit""],[1]],[[],[]],[[""ACE_UAVBattery"",""ACE_MapTools"",""B_UavTerminal"",""ToolKit""],[10,2,2,1]],[[""B_UAV_01_backpack_F"",""B_AssaultPack_tna_F""],[2,1]]],false]";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="rhs_decalArmy_type";
+							expression="_this setVariable ['rhs_decalArmy_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Army";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_decalArmy";
+							expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cTrucksGazRightArmyPlaces,  _this getVariable ['rhs_decalArmy_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="rhs_decalPlatoon";
+							expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cTrucksGazRightPlatoonPlaces,  _this getVariable ['rhs_decalPlatoon_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="-1";
+								};
+							};
+						};
+						nAttributes=7;
 					};
 				};
 			};
@@ -12953,7 +13442,7 @@ class Mission
 					};
 					id=4304;
 					type="B_T_Soldier_AR_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15573,7 +16062,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2121.0574,12.951439,3436.4768};
-						angles[]={-0,1.2227719,0};
+						angles[]={0,1.2227719,0};
 					};
 					side="West";
 					flags=6;
@@ -15718,7 +16207,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2119.7568,12.951439,3439.6355};
-						angles[]={-0,1.2227719,0};
+						angles[]={0,1.2227719,0};
 					};
 					side="West";
 					flags=6;
@@ -15863,7 +16352,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2118.575,12.951439,3443.2222};
-						angles[]={-0,1.2227719,0};
+						angles[]={0,1.2227719,0};
 					};
 					side="West";
 					flags=6;
@@ -16008,7 +16497,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2117.325,12.951439,3446.4841};
-						angles[]={-0,1.2227776,0};
+						angles[]={0,1.2227776,0};
 					};
 					side="West";
 					flags=6;
@@ -18393,6 +18882,7 @@ class Mission
 					};
 					id=4351;
 					type="O_T_Soldier_SL_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18814,6 +19304,7 @@ class Mission
 			{
 			};
 			id=4349;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21327,6 +21818,7 @@ class Mission
 					};
 					id=4376;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21363,6 +21855,7 @@ class Mission
 			{
 			};
 			id=4375;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21394,7 +21887,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2160.616,12.06144,3366.2642};
-						angles[]={-0,5.7765164,0};
+						angles[]={0,5.7765164,0};
 					};
 					side="East";
 					flags=6;
@@ -21467,6 +21960,7 @@ class Mission
 					};
 					id=4378;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21503,6 +21997,7 @@ class Mission
 			{
 			};
 			id=4377;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21534,7 +22029,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2162.7932,12.06144,3367.8049};
-						angles[]={-0,5.7765164,0};
+						angles[]={0,5.7765164,0};
 					};
 					side="East";
 					flags=6;
@@ -21607,6 +22102,7 @@ class Mission
 					};
 					id=4380;
 					type="O_T_Soldier_UAV_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21643,6 +22139,7 @@ class Mission
 			{
 			};
 			id=4379;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0

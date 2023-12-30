@@ -58,7 +58,9 @@ force ace_viewdistance_limitViewDistance = 8000;
 force ace_weather_enabled = false;
 force ace_weather_windSimulation = false;
 
-force TFAR_takingRadio = 0;
+// TFAR - Global settings
+force TFAR_globalRadioRangeCoef = 2;	// increase radio range 
+
 
 // ACE Crew Served Weapons
 force ace_csw_ammoHandling = 0;

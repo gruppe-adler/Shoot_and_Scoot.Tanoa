@@ -134,7 +134,8 @@ class CSAT_Apex_Pacific {
             goggles = "G_Tactical_Clear";
             addItemsToVest[] = {
                 LIST_5("30Rnd_580x42_Mag_F"),
-                LIST_1("ACE_artilleryTable")         
+                LIST_1("ACE_artilleryTable"),
+                LIST_1("ACE_Fortify")                
             };
         };       
         

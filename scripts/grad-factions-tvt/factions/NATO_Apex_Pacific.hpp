@@ -143,7 +143,8 @@ class NATO_Apex_Pacific {
             goggles = "G_Tactical_Clear";
             addItemsToVest[] = {
                 LIST_5("30Rnd_65x39_caseless_khaki_mag"),
-                LIST_1("ACE_artilleryTable")         
+                LIST_1("ACE_artilleryTable"),
+                LIST_1("ACE_Fortify")                
             };
         };       
         

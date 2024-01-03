@@ -144,6 +144,7 @@ class NATO_Apex_Pacific {
             addItemsToVest[] = {
                 LIST_5("30Rnd_65x39_caseless_khaki_mag"),
                 LIST_1("ACE_artilleryTable"),
+                LIST_1("ACE_EntrenchingTool"),
                 LIST_1("ACE_Fortify")                
             };
         };       

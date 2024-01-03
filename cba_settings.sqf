@@ -60,6 +60,12 @@ force ace_weather_windSimulation = false;
 
 // TFAR - Global settings
 force TFAR_globalRadioRangeCoef = 2;	// increase radio range 
+force TFAR_SameSRFrequenciesForSide = true;
+force TFAR_SameLRFrequenciesForSide = true;
+force TFAR_setting_defaultFrequencies_lr_west = "51,52,53,54,55,56,57,58";
+force TFAR_setting_defaultFrequencies_lr_east = "61,62,63,64,65,66,67,68";
+force TFAR_setting_defaultFrequencies_sr_west = "101,102,103,104,105,106,107,108";
+force TFAR_setting_defaultFrequencies_sr_east = "111,112,113,114,115,116,117,118";
 
 
 // ACE Crew Served Weapons

@@ -21,8 +21,8 @@ Click banner to watch the videos
 **Shoot and Scoot** is a TvT game mode in which 2 sides fight against each other.
 
 Players of each side step into either of 3 roles:
-* artillery 
-* sound directionfinders 
+* artillery
+* sound directionfinders
 * hunter-killer teams
 
 ![](pics/SnS_loadpic.png)
@@ -35,7 +35,7 @@ In order to find those stations they rely on targeting information from reconnai
 
 
 ### Sound directionfinders
-The crews of the **sound directionfinders** can use their vehicles as sensors that point into the direction of where artillery has been fired from. 
+The crews of the **sound directionfinders** can use their vehicles as sensors that point into the direction of where artillery has been fired from.
 
 They need to place these sensors wisely in order to enable accurate triangulation of enemy artillery batteries.
 
@@ -54,10 +54,6 @@ The following mods are recommended to play this game mode (not all of which are 
 ```
 @3cb factions;
 @ace;
-@ace_compat_rhs_afrf3;
-@ace_compat_rhs_gref3;
-@ace_compat_rhs_saf3;
-@ace_compat_rhs_usf3;
 @cba_a3;
 @cup_terrains_core;
 @diwako_dui;

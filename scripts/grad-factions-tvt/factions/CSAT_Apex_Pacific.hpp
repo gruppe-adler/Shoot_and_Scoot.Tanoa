@@ -110,6 +110,9 @@ class CSAT_Apex_Pacific {
             primaryWeapon = "arifle_CTARS_ghex_F";
             primaryWeaponMagazine = "30Rnd_580x42_Mag_F";
             primaryWeaponOptics = "optic_DMS_ghex_F";
+            addItemsToVest[] = {
+                LIST_1("ACE_RangeCard")                
+            };
         };
         
         /*** following are classes not derived from the rifleman ***/
@@ -131,7 +134,7 @@ class CSAT_Apex_Pacific {
             goggles = "G_Tactical_Clear";
             addItemsToVest[] = {
                 LIST_5("30Rnd_580x42_Mag_F"),
-                LIST_1("ACE_artilleryTable")                
+                LIST_1("ACE_artilleryTable")         
             };
         };       
         

@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4391;
+		nextID=4409;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=370;
+		nextID=385;
 	};
 	class Camera
 	{
-		pos[]={2083.7334,59.387039,3461.2083};
-		dir[]={0.58806872,-0.57356989,-0.57025689};
-		up[]={0.41176313,0.81915665,-0.39929137};
-		aside[]={-0.6961512,0,-0.71789539};
+		pos[]={2136.0615,23.338421,3432.0291};
+		dir[]={0.81013495,-0.45891747,-0.36479568};
+		up[]={0.41845128,0.88847834,-0.1884245};
+		aside[]={-0.41058496,-7.1311661e-008,-0.9118225};
 	};
 };
 binarizationWanted=0;
@@ -52,6 +52,8 @@ addons[]=
 	"A3_Drones_F_Air_F_Gamma_UAV_01",
 	"rhsusf_c_troops",
 	"rhsusf_c_weapons",
+	"A3_Weapons_F_Enoch_Pistols_ESD",
+	"crowsEW_spectrum",
 	"A3_Weapons_F",
 	"A3_Weapons_F_Mark",
 	"ace_laser",
@@ -108,13 +110,14 @@ addons[]=
 	"UK3CB_Factions_ION_B_Woodland",
 	"A3_Characters_F_Kart",
 	"A3_Characters_F_Orange_Headgear",
-	"ace_fortify"
+	"ace_fortify",
+	"crowsEW_editormodules"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=57;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -236,261 +239,280 @@ class AddonsMetaData
 		};
 		class Item17
 		{
+			className="A3_Weapons_F_Enoch";
+			name="Arma 3 Contact Platform - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item18
+		{
+			className="crowsEW_spectrum";
+			name="spectrum";
+			author="Crowdedlight";
+		};
+		class Item19
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item20
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item21
 		{
 			className="ace_laser";
 			name="ACE3 - Laser";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item20
+		class Item22
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
+		class Item23
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item24
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USAF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item25
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item24
+		class Item26
 		{
 			className="ace_artillerytables";
 			name="ACE3 - ArtilleryTables";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item25
+		class Item27
 		{
 			className="A3_Weapons_F_Exp";
 			name="Arma 3 Apex - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item28
 		{
 			className="A3_Characters_F_Oldman";
 			name="Arma 3 Oldman - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item29
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item30
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item31
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item32
 		{
 			className="rhsusf_c_m252";
 			name="rhsusf_c_m252";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item31
+		class Item33
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item34
 		{
 			className="A3_Structures_F_Exp_Infrastructure";
 			name="Arma 3 Apex - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item35
 		{
 			className="ace_scopes";
 			name="ACE3 - Scopes";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item34
+		class Item36
 		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item35
+		class Item37
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item36
+		class Item38
 		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item37
+		class Item39
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item40
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item39
+		class Item41
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item40
+		class Item42
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
+		class Item43
 		{
 			className="ace_laserpointer";
 			name="ACE3 - Laser Pointer";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item42
+		class Item44
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item45
 		{
 			className="UK3CB_Factions_LDF";
 			name="3CB Factions - LDF";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item44
+		class Item46
 		{
 			className="ace_arsenal";
 			name="ACE3 - Arsenal";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item47
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item46
+		class Item48
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item47
+		class Item49
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item48
+		class Item50
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item49
+		class Item51
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item50
+		class Item52
 		{
 			className="UK3CB_Factions_ANP";
 			name="3CB Factions - ANP";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item51
+		class Item53
 		{
 			className="UK3CB_Factions_ION";
 			name="3CB Factions - ION Services";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item52
+		class Item54
 		{
 			className="A3_Characters_F_Kart";
 			name="Arma 3 Karts - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item53
+		class Item55
 		{
 			className="ace_fortify";
 			name="ace_fortify";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item56
+		{
+			className="crowsEW_editormodules";
+			name="editormodules";
+			author="Crowdedlight";
 		};
 	};
 };
@@ -502,6 +524,7 @@ dlcs[]=
 	"UK3CB_Factions",
 	"Heli",
 	"RHS_USAF",
+	"Enoch",
 	"Mark",
 	"Oldman",
 	"ORANGE",
@@ -618,7 +641,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=98;
+		items=102;
 		class Item0
 		{
 			dataType="Layer";
@@ -3143,6 +3166,11 @@ class Mission
 											ammoLeft=30;
 										};
 									};
+									class handgun
+									{
+										name="hgun_esd_01_F";
+										muzzle="muzzle_antenna_03_f";
+									};
 									class binocular
 									{
 										name="Laserdesignator";
@@ -3327,6 +3355,11 @@ class Mission
 											name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 											ammoLeft=30;
 										};
+									};
+									class handgun
+									{
+										name="hgun_esd_01_F";
+										muzzle="muzzle_antenna_03_f";
 									};
 									class binocular
 									{
@@ -10564,8 +10597,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2149.5161,14.004498,3416.7229};
-				angles[]={0,5.5665531,0};
+				position[]={2167.533,14.004498,3427.8352};
+				angles[]={-0,5.5665531,0};
 			};
 			side="Empty";
 			flags=4;
@@ -22816,6 +22849,191 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item98
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2161.1365,12.77,3425.7415};
+				angles[]={-0,2.3123398,0};
+			};
+			id=4393;
+			type="crowsEW_editormodules_moduleSetJammable";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crowsEW_editormodules_jammable_classnames";
+					expression="_this setVariable ['Classname',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item99
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2159.0745,12.77,3424.2354};
+				angles[]={-0,2.5291622,0};
+			};
+			id=4394;
+			type="crowsEW_editormodules_moduleSetJammable";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crowsEW_editormodules_jammable_classnames";
+					expression="_this setVariable ['Classname',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2162.6143,12.920468,3423.9548};
+				angles[]={-0,5.587049,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=4395;
+			type="B_UAV_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2160.6697,12.920468,3422.3235};
+				angles[]={-0,5.5852165,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=4396;
+			type="O_UAV_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=2;
+		};
+		class Links
+		{
+			items=2;
+			class Item0
+			{
+				linkID=0;
+				item0=4393;
+				item1=4395;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=4394;
+				item1=4396;
+				class CustomData
+				{
+					type="Sync";
+				};
 			};
 		};
 	};

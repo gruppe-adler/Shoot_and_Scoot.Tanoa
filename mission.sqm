@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4409;
+		nextID=4411;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=385;
+		nextID=395;
 	};
 	class Camera
 	{
-		pos[]={2136.0615,23.338421,3432.0291};
-		dir[]={0.81013495,-0.45891747,-0.36479568};
-		up[]={0.41845128,0.88847834,-0.1884245};
-		aside[]={-0.41058496,-7.1311661e-008,-0.9118225};
+		pos[]={8068.9985,26.189106,13344.33};
+		dir[]={-1.2363449e-007,-0.70710683,0.70710683};
+		up[]={-1.2363449e-007,0.70710671,0.70710683};
+		aside[]={1,0,1.7484557e-007};
 	};
 };
 binarizationWanted=0;
@@ -111,13 +111,14 @@ addons[]=
 	"A3_Characters_F_Kart",
 	"A3_Characters_F_Orange_Headgear",
 	"ace_fortify",
-	"crowsEW_editormodules"
+	"crowsEW_editormodules",
+	"A3_Armor_F_Tank_LT_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=57;
+		items=58;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -514,6 +515,13 @@ class AddonsMetaData
 			name="editormodules";
 			author="Crowdedlight";
 		};
+		class Item57
+		{
+			className="A3_Armor_F_Tank";
+			name="Arma 3 Tank - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -641,7 +649,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=102;
+		items=104;
 		class Item0
 		{
 			dataType="Layer";
@@ -10598,7 +10606,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2167.533,14.004498,3427.8352};
-				angles[]={-0,5.5665531,0};
+				angles[]={0,5.5665531,0};
 			};
 			side="Empty";
 			flags=4;
@@ -22857,7 +22865,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2161.1365,12.77,3425.7415};
-				angles[]={-0,2.3123398,0};
+				angles[]={0,2.3123398,0};
 			};
 			id=4393;
 			type="crowsEW_editormodules_moduleSetJammable";
@@ -22885,7 +22893,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2159.0745,12.77,3424.2354};
-				angles[]={-0,2.5291622,0};
+				angles[]={0,2.5291622,0};
 			};
 			id=4394;
 			type="crowsEW_editormodules_moduleSetJammable";
@@ -22913,7 +22921,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2162.6143,12.920468,3423.9548};
-				angles[]={-0,5.587049,0};
+				angles[]={0,5.587049,0};
 			};
 			side="Empty";
 			flags=4;
@@ -22962,7 +22970,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2160.6697,12.920468,3422.3235};
-				angles[]={-0,5.5852165,0};
+				angles[]={0,5.5852165,0};
 			};
 			side="Empty";
 			flags=4;
@@ -22999,6 +23007,318 @@ class Mission
 						{
 							singleType="BOOL";
 							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item102
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6957.1719,4.7767429,7215.3853};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="jammer1";
+				textures="Indep_Olive";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=4409;
+			type="I_LT_01_scout_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[2]],[[""SmokeShell"",""SmokeShellGreen""],[2,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Indep_Olive";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=8;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showTools";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showCamonetHull";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showBags";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showSLATHull";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item103
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8044.6196,14.555405,13348.446};
+				angles[]={0.15084518,3.4722455,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="jammer2";
+				textures="Indep_Olive";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=4410;
+			type="I_LT_01_scout_F";
+			atlOffset=-0.0017604828;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[2]],[[""SmokeShell"",""SmokeShellGreen""],[2,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Indep_Olive";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=8;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showTools";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showCamonetHull";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showBags";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													singleType="STRING";
+													value="showSLATHull";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
 						};
 					};
 				};

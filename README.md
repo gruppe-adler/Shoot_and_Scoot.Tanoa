@@ -55,6 +55,7 @@ The following mods are recommended to play this game mode (not all of which are 
 @3cb factions;
 @ace;
 @cba_a3;
+@Crows Electronic Warfare;
 @cup_terrains_core;
 @diwako_dui;
 @enhanced_movement;

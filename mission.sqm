@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=405;
+		nextID=415;
 	};
 	class Camera
 	{
-		pos[]={6944.6367,14.478826,7230.1245};
-		dir[]={0.38115698,-0.42345455,-0.82184392};
-		up[]={0.1781681,0.90591139,-0.38416305};
-		aside[]={-0.90719336,-3.8332655e-007,-0.42073938};
+		pos[]={6953.8994,14.478826,7210.1494};
+		dir[]={0.66242707,-0.43484956,-0.61001498};
+		up[]={0.31988907,0.90049714,-0.29457894};
+		aside[]={-0.67741454,-3.5157427e-007,-0.73561645};
 	};
 };
 binarizationWanted=0;
@@ -7681,7 +7681,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8053.625,9.9977083,13389.317};
-						angles[]={0,5.1236019,-0};
+						angles[]={0,5.1236019,0};
 					};
 					side="Empty";
 					class Attributes
@@ -7715,7 +7715,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8052.3906,10.008357,13386.629};
-						angles[]={0,5.1236019,-0};
+						angles[]={0,5.1236019,0};
 					};
 					side="Empty";
 					flags=4;
@@ -7748,12 +7748,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={8049.6904,9.9312038,13387.676};
-						angles[]={0,5.1286945,-0};
+						position[]={8049.6899,9.9309244,13387.676};
+						angles[]={0,5.1287022,0};
 					};
 					id=4423;
 					type="crowsEW_editormodules_moduleAddJammer";
-					atlOffset=2.0932283;
+					atlOffset=2.0929999;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7771,6 +7771,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
+							expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
 							expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
 							class Value
@@ -7782,7 +7795,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="crowsEW_editormodules_addjammer_isDroneJammer";
 							expression="_this setVariable ['IsDroneJammer',_value,true];";
@@ -7795,7 +7808,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
 							expression="_this setVariable ['Radius',_value,true];";
@@ -7808,7 +7821,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 				class Item52
@@ -7816,12 +7829,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={8050.8833,9.9396696,13390.615};
-						angles[]={0,5.1236019,-0};
+						position[]={8050.8828,9.940094,13390.615};
+						angles[]={0,5.1236062,0};
 					};
 					id=4424;
 					type="crowsEW_editormodules_moduleAddJammer";
-					atlOffset=2.2305632;
+					atlOffset=2.2309999;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7839,6 +7852,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
+							expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
 							expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
 							class Value
@@ -7850,7 +7876,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="crowsEW_editormodules_addjammer_isDroneJammer";
 							expression="_this setVariable ['IsDroneJammer',_value,true];";
@@ -7863,7 +7889,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
 							expression="_this setVariable ['Radius',_value,true];";
@@ -7876,12 +7902,12 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 			};
 			id=3655;
-			atlOffset=0.0096225739;
+			atlOffset=0.009765625;
 		};
 		class Item61
 		{
@@ -10804,7 +10830,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6981.4604,2.6708403,7194.3525};
-						angles[]={-0,1.5264125,0};
+						angles[]={0,1.5264125,0};
 					};
 					side="Empty";
 					flags=4;
@@ -10814,6 +10840,7 @@ class Mission
 					};
 					id=4417;
 					type="Land_DataTerminal_01_F";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10838,7 +10865,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6981.2705,2.6708403,7197.439};
-						angles[]={-0,1.5264125,0};
+						angles[]={0,1.5264125,0};
 					};
 					side="Empty";
 					flags=4;
@@ -10848,6 +10875,7 @@ class Mission
 					};
 					id=4418;
 					type="Land_DataTerminal_01_F";
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10872,7 +10900,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6984.084,2.6600001,7197.6919};
-						angles[]={-0,1.5264125,0};
+						angles[]={0,1.5264126,0};
 					};
 					id=4419;
 					type="crowsEW_editormodules_moduleAddJammer";
@@ -10893,6 +10921,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
+							expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
 							expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
 							class Value
@@ -10904,7 +10945,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="crowsEW_editormodules_addjammer_isDroneJammer";
 							expression="_this setVariable ['IsDroneJammer',_value,true];";
@@ -10917,7 +10958,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
 							expression="_this setVariable ['Radius',_value,true];";
@@ -10930,7 +10971,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 				class Item48
@@ -10938,8 +10979,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={6984.0444,2.6600001,7194.6436};
-						angles[]={-0,1.5264125,0};
+						position[]={6984.0439,2.6600001,7194.644};
+						angles[]={0,1.5264126,0};
 					};
 					id=4420;
 					type="crowsEW_editormodules_moduleAddJammer";
@@ -10960,6 +11001,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
+							expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
 							expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
 							class Value
@@ -10971,7 +11025,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="crowsEW_editormodules_addjammer_isDroneJammer";
 							expression="_this setVariable ['IsDroneJammer',_value,true];";
@@ -10984,7 +11038,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
 							expression="_this setVariable ['Radius',_value,true];";
@@ -10997,7 +11051,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 			};

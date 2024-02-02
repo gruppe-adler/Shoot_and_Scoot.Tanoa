@@ -93,5 +93,7 @@ force arsr_speedOfSound = 1500; // realistic sound traveling time would be 343 (
 force arsr_vicEngineOff = true;
 force arsr_vicStationary = true;
 
-
-
+// Crows Electronic Warfare
+force crowsEW_spectrum_spectrumEnable = true;	// enable Spectrum Device
+force crowsEW_spectrum_tfarSideTrack = true;	// show friendly radio emissions
+force crowsEW_spectrum_minJamSigStrength = -40;	// (in dBm); minimum signal strength necessary in Spectrum Device for jamming

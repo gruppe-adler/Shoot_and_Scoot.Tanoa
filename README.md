@@ -56,10 +56,10 @@ The following mods are recommended to play this game mode (not all of which are 
 @ace;
 @cba_a3;
 @Crows Electronic Warfare;
-@cup_terrains_core;
 @diwako_dui;
 @enhanced_movement;
 @Enhanced Movement Rework;
+@grad_D30_tweak;
 @grad_slinghelmet;
 @grad_trenches;
 @gruppe_adler_mod;

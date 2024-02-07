@@ -58,7 +58,6 @@ The following mods are recommended to play this game mode (not all of which are 
 @diwako_dui;
 @enhanced_movement;
 @Enhanced Movement Rework;
-@grad_D30_tweak;
 @grad_slinghelmet;
 @grad_trenches;
 @gruppe_adler_mod;
@@ -66,6 +65,7 @@ The following mods are recommended to play this game mode (not all of which are 
 @rhsgref;
 @rhssaf;
 @rhsusaf;
+@grad_D30_tweak;   // must be loaded after RHS mods to take effect
 @splendid_smoke;
 @tfar animations;
 @tfar;

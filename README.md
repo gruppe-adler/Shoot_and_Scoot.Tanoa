@@ -55,10 +55,10 @@ The following mods are recommended to play this game mode (not all of which are 
 @3cb factions;
 @ace;
 @cba_a3;
-@cup_terrains_core;
 @diwako_dui;
 @enhanced_movement;
 @Enhanced Movement Rework;
+@grad_D30_tweak;
 @grad_slinghelmet;
 @grad_trenches;
 @gruppe_adler_mod;

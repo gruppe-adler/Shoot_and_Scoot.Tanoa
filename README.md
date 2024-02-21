@@ -1,22 +1,3 @@
-# Gameplay footage
-Click banner to watch the videos
-
-## Live gameplay trailers
-[![live gameplay trailer](https://img.youtube.com/vi/s6wskXYYYXY/0.jpg)](https://youtu.be/s6wskXYYYXY)
-[![live gameplay trailer](https://img.youtube.com/vi/ziYV_R8k-tE/0.jpg)](https://youtu.be/ziYV_R8k-tE)
-
-
-## Live streams
-### Game night 7th July 2023
-* [Liru the Lance Corporal](https://www.youtube.com/@LirutheLanceCorporal) commenting from Zeus perspective
-  * [![commented stream](https://yt3.googleusercontent.com/ytc/AOPolaQFqt0AcS_7_eIfV1cJ04BuyFkBNZw9XdCQq2TJ=s176-c-k-c0x00ffffff-no-rj)](https://youtu.be/J5Y3seYMmlI)
-  <a href="https://youtu.be/J5Y3seYMmlI"><img src="https://img.youtube.com/vi/J5Y3seYMmlI/0.jpg" height="176"></a>
-
-* [Instant Arma](https://www.youtube.com/@InstantArma) playing as a hunter-killer team member
-  * [![commented stream](https://yt3.googleusercontent.com/ytc/AOPolaQX5TdXzLFV2jZ7Dffls3wOGFtZmtawNhSLZyLv=s176-c-k-c0x00ffffff-no-rj)](https://youtu.be/9Do8yCZWnvM)
-<a href="https://youtu.be/9Do8yCZWnvM"><img src="https://img.youtube.com/vi/9Do8yCZWnvM/0.jpg" height="176"></a>
-
-
 # Introduction
 **Shoot and Scoot** is a TvT game mode in which 2 sides fight against each other.
 
@@ -48,6 +29,26 @@ Hunter-Killer teams are very mobile motorized infantry teams that are meant to h
 
 ### Side Commander
 The commander is the top-most leader of one side and the only person that is not a directionfinder operator but still sees the sensors bearings.
+
+
+# Gameplay footage
+Click banner to watch the videos
+
+## Trailers
+[![live gameplay trailer](https://img.youtube.com/vi/s6wskXYYYXY/0.jpg)](https://youtu.be/s6wskXYYYXY)
+[![live gameplay trailer](https://img.youtube.com/vi/ziYV_R8k-tE/0.jpg)](https://youtu.be/ziYV_R8k-tE)
+
+
+## Live streams
+* [Liru the Lance Corporal](https://www.youtube.com/@LirutheLanceCorporal) commenting from Zeus perspective
+  * [![commented stream](https://yt3.googleusercontent.com/ytc/AOPolaQFqt0AcS_7_eIfV1cJ04BuyFkBNZw9XdCQq2TJ=s176-c-k-c0x00ffffff-no-rj)](https://youtu.be/J5Y3seYMmlI)
+  <a href="https://youtu.be/J5Y3seYMmlI"><img src="https://img.youtube.com/vi/J5Y3seYMmlI/0.jpg" height="176"></a>
+  <a href="https://youtu.be/PfVHyE1Ipxg"><img src="https://img.youtube.com/vi/PfVHyE1Ipxg/0.jpg" height="176"></a>
+  
+* [Instant Arma](https://www.youtube.com/@InstantArma) playing as a hunter-killer team member
+  * [![commented stream](https://yt3.googleusercontent.com/ytc/AOPolaQX5TdXzLFV2jZ7Dffls3wOGFtZmtawNhSLZyLv=s176-c-k-c0x00ffffff-no-rj)](https://youtu.be/9Do8yCZWnvM)
+<a href="https://youtu.be/9Do8yCZWnvM"><img src="https://img.youtube.com/vi/9Do8yCZWnvM/0.jpg" height="176"></a>
+
 
 # Modset
 The following mods are recommended to play this game mode (not all of which are mandatory):

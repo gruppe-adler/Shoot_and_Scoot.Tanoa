@@ -135,6 +135,7 @@ class CSAT_Apex_Pacific {
             addItemsToVest[] = {
                 LIST_5("30Rnd_580x42_Mag_F"),
                 LIST_1("ACE_artilleryTable"),
+                LIST_1("ACE_PlottingBoard"),
                 LIST_1("ACE_EntrenchingTool"),
                 LIST_1("ACE_Fortify")                
             };

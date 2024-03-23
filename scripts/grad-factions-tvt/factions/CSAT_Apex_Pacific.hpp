@@ -106,11 +106,13 @@ class CSAT_Apex_Pacific {
         class Engineer_F: Soldier_F {
             handgunWeapon = "hgun_esd_01_F";    // spectrum device
             handgunWeaponMuzzle = "muzzle_antenna_03_f";    // jamming antenna
+            handgunWeaponMagazine = "";
             backpack = "B_FieldPack_ghex_F";
             addItemsToBackpack[] = {
                 LIST_1("ToolKit"),
                 LIST_1("ACE_EntrenchingTool"),
-                LIST_1("ACE_wirecutter")
+                LIST_1("ACE_wirecutter"),
+                LIST_1("muzzle_antenna_01_f")   // military antenna (for TFAR emission detection)
             };
         };
         

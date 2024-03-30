@@ -25,7 +25,7 @@ fnc_listenerOperatorNearby = {
     };
 
     [{
-        params [["_originatorPos", [0, 0, 0]], ["_vic", objNull], ["_time", 0]];
+        params [["_originatorPos", [0, 0, 0]], ["_vic", objNull], ["_time", 0], ["_radioCall", false]];
         if !(alive _vic) exitWith {};
         if (arsr_vicStationary && {(speed _vic) isNotEqualTo 0}) exitWith {};
         if (arsr_vicEngineOff && {isEngineOn _vic}) exitWith {};
@@ -37,7 +37,7 @@ fnc_listenerOperatorNearby = {
         // systemChat format ["_preciseHeading=%1, _falseHeading=%2, _angleError=%3", _preciseHeading % 360, _falseHeading, _angleError];
 
         [{
-            params ["_originatorPos", "_falseHeading", "_interceptPos", "_vic", "_interceptTime"];
+            params ["_originatorPos", "_falseHeading", "_interceptPos", "_vic", "_interceptTime", "_radioCall"];
             if !(alive _vic) exitWith {};
             private _targets = ([] call CBA_fnc_players) select {
                 side _x == independent || { // streamers shall see all bearings
@@ -61,10 +61,11 @@ fnc_listenerOperatorNearby = {
             _falseHeading, // precise heading with some random error added to it
             getPos _vic, // position of listener at the time fire was heard
             _vic, // the listener itself
-            _time // time when artillery fired
+            _time, // time when artillery fired
+            _radioCall  // true if TFAR emission was intercepted
         ], _vic getVariable ["arsr_listenerCalcDelay", arsr_listenerCalcDelay]] call CBA_fnc_waitAndExecute;
 
-    }, [_originatorPos, _x, _time], _soundDelay] call CBA_fnc_waitAndExecute;
+    }, [_originatorPos, _x, _time, _radioCall], _soundDelay] call CBA_fnc_waitAndExecute;
 } foreach (arsr_listeners select {
     ((_x getVariable ["tf_range",0]) == 50000) && { // listener is actively listening
     (_artySide isNotEqualTo (_x getVariable ["arsr_side", sideLogic])) && { // check if the firing vehicle is not on the same side as the listener

@@ -10,7 +10,7 @@
 
     _explosive addEventHandler ["Explode", {
         params ["_explosive", "_pos", "_velocity"];
-        ["arsr_shotEvent", [_pos, _explosive getVariable ["arsr_side", sideLogic]]] call CBA_fnc_serverEvent;
+        ["arsr_shotEvent", [_pos, _explosive getVariable ["arsr_side", sideLogic], false]] call CBA_fnc_serverEvent;
     }];
 }] call CBA_fnc_addEventHandler;
 

@@ -11,4 +11,4 @@ if (_crew isEqualTo []) exitWith {
 };
 private _artySide = side group (_crew select 0);
 
-[getPos _unit, _artySide] call arsr_fnc_calculate;
+[getPos _unit, _artySide, false] call arsr_fnc_calculate;

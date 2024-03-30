@@ -6,6 +6,7 @@ class arsr {
         class postInit{postInit = 1;};
         class handleFired{};
         class handleDraw{};
+        class handleOnTangent{};
         class drawLines{};
         class initMarker{};
         class calculate{};

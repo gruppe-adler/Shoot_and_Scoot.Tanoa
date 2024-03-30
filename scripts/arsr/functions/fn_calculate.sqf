@@ -1,4 +1,4 @@
-params ["_originatorPos", ["_artySide", sideLogic]];
+params ["_originatorPos", ["_artySide", sideLogic], ["_radioCall", false]];
 private _time = time;
 
 // Check if a vehicle has at least one crew member alive
@@ -19,11 +19,11 @@ fnc_listenerOperatorNearby = {
 
 {
     private _distance =  _x distance _originatorPos;
-    private _soundDelay = if (arsr_speedOfSound > 0) then {
-        _distance / arsr_speedOfSound
-    } else {
-        0
+    private _soundDelay = 0;
+    if (!_radioCall && arsr_speedOfSound > 0) then {
+        _soundDelay = _distance / arsr_speedOfSound;
     };
+
     [{
         params [["_originatorPos", [0, 0, 0]], ["_vic", objNull], ["_time", 0]];
         if !(alive _vic) exitWith {};
@@ -52,6 +52,7 @@ fnc_listenerOperatorNearby = {
                 _falseHeading,
                 _interceptPos, // position of listener
                 side _vic, // side of listener
+                _radioCall, // true if TFAR emission was intercepted
                 _vic getVariable ["arsr_angleError", arsr_angleError],
                 _vic getVariable ["arsr_listenerMaxDistance", arsr_listenerMaxDistance]
             ], _targets] call CBA_fnc_targetEvent;

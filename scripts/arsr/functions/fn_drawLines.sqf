@@ -1,6 +1,11 @@
-params ["_originatorPos", "_falseHeading", "_interceptPos", "_side", "_angleError", "_maxRange"];
+params ["_originatorPos", "_falseHeading", "_interceptPos", "_side", "_radioCall", "_angleError", "_maxRange"];
 private _marker = call arsr_fnc_initMarker;
-_marker setMarkerColorLocal ([_side,  true] call BIS_fnc_sideColor);
+
+if (_radioCall) then {
+    _marker setMarkerColorLocal "ColorBlack";
+} else {
+    _marker setMarkerColorLocal ([_side,  true] call BIS_fnc_sideColor);
+};
 _marker setMarkerShapeLocal "polyline";
 
 private _from = _interceptPos;

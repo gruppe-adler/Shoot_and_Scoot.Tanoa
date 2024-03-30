@@ -1,6 +1,6 @@
-params ["_originatorPos", "_falseHeading", "_interceptPos", "_side"];
+params ["_originatorPos", "_falseHeading", "_interceptPos", "_side", ["_radioCall", false]];
 
-if ((side player) isNotEqualTo independent) then { // don't clutter streamers interface with these messages
+if (!_radioCall && ((side player) isNotEqualTo independent)) then { // don't clutter streamers interface with these messages
 	systemChat "Artillery shot detected! Drawing on map!";
 };
 

@@ -8,8 +8,6 @@ This function needs to be run whenever allPlayers changes (especially when new o
 
 if !(hasInterface) exitWith {};
 
-diag_log("_this in initTracker is:");
-diag_log(_this);
 params [["_unitsToUpdate", allPlayers, [[]]]];
 
 private _fnc = {
@@ -18,8 +16,6 @@ private _fnc = {
     // Especially important for mortars, which can be "destroyed" and remade by packing them into backpacks, losing any existing EHs.
     // Would also work if vehicle respawn mechanics get added later on.
     // EHs are stored per object using setVariable to ensure we never double-add EHs by accident
-    diag_log("_this in initTracker _fnc is:");
-    diag_log(_this);
     {
         // If already set up for this unit, we skip. We must check if EH actually exists, bc it gets lost during respawn.
         if (!(isNil {_x getVariable "shelltracker_GetIn_idx"}) && (_x getEventHandlerInfo ["GetInMan", _x getVariable "shelltracker_GetIn_idx"] select 0)) then { continue };

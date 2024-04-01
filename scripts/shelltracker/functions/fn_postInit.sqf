@@ -9,4 +9,4 @@ player addEventHandler ["Respawn", {
     [[_unit]] remoteExecCall ["shellTracker_fnc_initTracker"];
 }];
 
-call shelltracker_fnc_initTracker;
+[allPlayers] call shelltracker_fnc_initTracker;

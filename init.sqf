@@ -47,7 +47,7 @@
 // turn off jammer when loaded into vehicle
 fnc_DeactivateJammerOnLoad = {
     params ["_item","_vehicle"];
-    if (typeof _item == "Land_DataTerminal_01_F") then {
+    if ( typeName _item == "OBJECT" && { typeOf _item == "Land_DataTerminal_01_F" }) then {
         ["crowsew_main_toggleJammer", [netId _item, false]] call CBA_fnc_serverEvent; // deactivate jammer
         ["crowsew_sounds_setSoundEnable", [_item, false]] call CBA_fnc_serverEvent;  // deactivate jammer sound
         [_item, 0] call BIS_fnc_dataTerminalAnimate; // close the data terminal box

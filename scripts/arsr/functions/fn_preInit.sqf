@@ -2,8 +2,7 @@
 
 if !(hasInterface) exitWith {};
 
-["arsr_drawData", {call arsr_fnc_handleDraw}] call CBA_fnc_addEventHandler;
-
+["arsr_drawData", arsr_fnc_handleDraw] call CBA_fnc_addEventHandler;
 
 
 // add eventhandler to radio transmission

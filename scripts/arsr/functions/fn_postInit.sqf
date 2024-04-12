@@ -14,8 +14,6 @@
     }];
 }] call CBA_fnc_addEventHandler;
 
-if !(isServer) exitWith {};
-
 arsr_listeners = [];
 {
     [_x, "init", {
@@ -28,6 +26,8 @@ arsr_listeners = [];
         arsr_listeners = arsr_listeners - [_vehicle, objNull];
     }, false] call CBA_fnc_addClassEventHandler;
 } forEach (arsr_listenerClassesSetting splitString "[,""']");
+
+if !(isServer) exitWith {};
 
 {
     [_x,"Fired", {_this call arsr_fnc_handleFired}, true] call CBA_fnc_addClassEventHandler;

@@ -24,6 +24,30 @@ enableSaving [false, false];
 }] call CBA_fnc_addPlayerEventHandler;
 
 
+// radio range booster towers
+fnc_TFAR_Boost_RadioTower_Loop = {
+    private _isBackToNormal = player getVariable ["tf_sendingDistanceMultiplicator", 1] == 1;
+    private _radioTowersInRange = nearestObjects [player, ["Land_TTowerBig_2_F"], 10, true];
+    if (count _radioTowersInRange > 0) then {
+        // boost radio range by factor of 10
+        if (_isBackToNormal) then {
+            hint parseText format ["Radio tower nearby. <br/> <t color='#00ffff'>You now have 10x radio range.</t>"];
+        };
+        player setVariable ["tf_receivingDistanceMultiplicator", 1/10, true];
+        player setVariable ["tf_sendingDistanceMultiplicator", 10, true];
+    } else {
+        // reset radio range back to normal
+        if (!_isBackToNormal) then {
+            hint parseText format ["Radio tower out of range. <br/> Your radio range is back to normal."];
+        };
+        player setVariable ["tf_receivingDistanceMultiplicator", 1, true];
+        player setVariable ["tf_sendingDistanceMultiplicator", 1, true];    
+    };
+};
+[fnc_TFAR_Boost_RadioTower_Loop, 2] call CBA_fnc_addPerFrameHandler; 
+
+
+
 // prevent map markers because this would be too easy 
 // --> we want to foster teamplay through radio comms instead
 0 enableChannel false;  // disable  global   channel

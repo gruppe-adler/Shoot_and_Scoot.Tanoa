@@ -55,28 +55,28 @@
         <slot shortcode="SQL" description="Squad Leader"/>
         <!-- <slot shortcode="DMR" description="Marksman"/> -->
         <slot shortcode="GRE" description="Grenadier"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-2" vehicletype="Fire team with light buggy">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <!-- <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/> -->
         <slot shortcode="GRE" description="Grenadier" reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)" reserved-for="tbd"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-3" vehicletype="Fire team with light buggy">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <!-- <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/> -->
         <slot shortcode="GRE" description="Grenadier" reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)" reserved-for="tbd"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-4" vehicletype="Fire team with light buggy">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <!-- <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/> -->
         <slot shortcode="GRE" description="Grenadier" reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)" reserved-for="tbd"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
     </platoon>
@@ -128,28 +128,28 @@
         <slot shortcode="SQL" description="Squad Leader"/>
         <!-- <slot shortcode="DMR" description="Marksman"/> -->
         <slot shortcode="GRE" description="Grenadier"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-2" vehicletype="Fire team with light buggy">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <!-- <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/> -->
         <slot shortcode="GRE" description="Grenadier" reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)" reserved-for="tbd"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-3" vehicletype="Fire team with light buggy">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <!-- <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/> -->
         <slot shortcode="GRE" description="Grenadier" reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)" reserved-for="tbd"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
       <squad side="" natosymbol="inf" callsign="Hunter-4" vehicletype="Fire team with light buggy">
         <slot shortcode="SQL" description="Squad Leader"      reserved-for="tbd"/>
         <!-- <slot shortcode="DMR" description="Marksman"          reserved-for="tbd"/> -->
         <slot shortcode="GRE" description="Grenadier" reserved-for="tbd"/>
-        <slot shortcode="ENG" description="Engineer (incl. electronic warfare)" reserved-for="tbd"/>
+        <slot shortcode="EW" description="Electronic warfare operator (also Engineer)" reserved-for="tbd"/>
         <slot shortcode="LMG" description="Light Machine Gun" reserved-for="tbd"/>
       </squad>
     </platoon>

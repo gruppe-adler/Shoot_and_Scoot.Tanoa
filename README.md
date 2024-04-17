@@ -3,7 +3,7 @@
 
 Players of each side step into either of 3 roles:
 * artillery
-* sound directionfinders
+* signal intelligence and reconnaissance
 * hunter-killer teams
 
 ![](pics/SnS_loadpic.png)
@@ -15,10 +15,12 @@ The task of the **artillery** crews is to destroy all enemy resupply stations an
 In order to find those stations they rely on targeting information from reconnaissance elements (e.g. UAV operators).
 
 
-### Sound directionfinders
-The crews of the **sound directionfinders** can use their vehicles as sensors that point into the direction of where artillery has been fired from.
+### Signal intelligence
+The crews of the **signal intelligence** elements can use their vehicles as sensors that point into the direction of where
+* artillery has been fired from
+* TFAR radio calls have been started from
 
-They need to place these sensors wisely in order to enable accurate triangulation of enemy artillery batteries.
+They need to place these sensors wisely in order to enable accurate triangulation of enemy signal sources.
 
 In addition to this ability they are also UAV operators, making them a multi-sensor reconnaissance role.
 
@@ -82,4 +84,4 @@ The following mods are recommended to play this game mode (not all of which are 
 * [Readme of sound directionfinder mod](https://github.com/Perondas/arsr.VR/blob/main/README.md)
 * [Docu on RHS towing](https://www.rhsmods.org/w/towing)
 * [Demo video of sound directionfinder](https://www.youtube.com/watch?v=uboQB55MTRY)
-
+* [Electronic Warfare features](https://crowdedlight.github.io/Crows-Electronic-Warfare/)

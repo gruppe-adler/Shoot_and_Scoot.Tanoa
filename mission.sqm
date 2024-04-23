@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=460;
+		nextID=465;
 	};
 	class Camera
 	{
-		pos[]={2116.9846,34.105629,3430.7988};
-		dir[]={0.31442758,-0.40763494,-0.85732704};
-		up[]={0.14036579,0.91313392,-0.38272622};
-		aside[]={-0.93887174,3.5470293e-007,-0.34433448};
+		pos[]={2137.3252,16.065655,3415.1169};
+		dir[]={0.5932008,-0.34402716,-0.72789693};
+		up[]={0.21735959,0.93897647,-0.26672369};
+		aside[]={-0.77521843,8.8334491e-007,-0.63176501};
 	};
 };
 binarizationWanted=0;
@@ -568,7 +568,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -605,7 +605,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -23241,6 +23241,11 @@ class Mission
 									ammoLeft=30;
 								};
 							};
+							class handgun
+							{
+								name="hgun_esd_01_F";
+								muzzle="muzzle_antenna_01_f";
+							};
 							class uniform
 							{
 								typeName="UK3CB_ION_B_U_Uniform_05_DES";
@@ -23303,7 +23308,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACE_MapTools";
@@ -23312,6 +23317,16 @@ class Mission
 									class Item1
 									{
 										name="ACE_artilleryTable";
+										count=1;
+									};
+									class Item2
+									{
+										name="muzzle_antenna_03_f";
+										count=1;
+									};
+									class Item3
+									{
+										name="crowsew_tfar_icom";
 										count=1;
 									};
 								};

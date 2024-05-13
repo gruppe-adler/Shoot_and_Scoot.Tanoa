@@ -67,7 +67,7 @@ if !(isNil "ace_explosives") then {
     "SLIDER",
     ["Auto delete Markers", "Time in seconds, -1 means disabled"],
     ["Mission", "ARSR - User settings"],
-    [-1, 10*60, -1, 0],
+    [-1, 10*60, 40, 0],
     false
 ] call CBA_fnc_addSetting;
 

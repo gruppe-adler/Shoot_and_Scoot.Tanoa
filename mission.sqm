@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=5129;
+		nextID=5132;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=470;
+		nextID=475;
 	};
 	class Camera
 	{
-		pos[]={6957.7769,27.66,7226.9063};
-		dir[]={-0.0070009497,-0.61958653,-0.7849012};
-		up[]={-0.0055259503,0.78492594,-0.61956334};
-		aside[]={-0.99996239,-6.0897264e-008,0.0089190062};
+		pos[]={2135.6494,16.787895,3414.8608};
+		dir[]={0.55559939,-0.4429304,-0.70364904};
+		up[]={0.27448574,0.89655596,-0.34762752};
+		aside[]={-0.78483558,-1.4901161e-008,-0.61970401};
 	};
 };
 binarizationWanted=0;
@@ -114,13 +114,14 @@ addons[]=
 	"UK3CB_Factions_ION_B_Woodland",
 	"UK3CB_Factions_LDF_B",
 	"A3_Characters_F_Kart",
-	"A3_Characters_F_Orange_Headgear"
+	"A3_Characters_F_Orange_Headgear",
+	"UK3CB_Factions_CHC_C"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=60;
+		items=61;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -536,6 +537,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item60
+		{
+			className="UK3CB_Factions_CHC";
+			name="3CB Factions - CHC";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
 	};
 };
 dlcs[]=
@@ -568,7 +576,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -605,7 +613,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -663,7 +671,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=104;
+		items=106;
 		class Item0
 		{
 			dataType="Layer";
@@ -7418,7 +7426,6 @@ class Mission
 					};
 					id=4387;
 					type="UK3CB_CHD_O_Gaz66_Radio";
-					atlOffset=0.012584686;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7918,7 +7925,7 @@ class Mission
 				};
 			};
 			id=3655;
-			atlOffset=0.64121151;
+			atlOffset=0.64111233;
 		};
 		class Item60
 		{
@@ -11236,12 +11243,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2141.0681,12.770001,3407.5586};
+				position[]={2144.9185,12.77,3408.6951};
 			};
 			name="streamer_1";
 			id=3829;
 			type="ModuleCurator_F";
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23218,7 +23224,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2141.186,12.771441,3409.6475};
+						position[]={2143.123,12.77144,3411.165};
 						angles[]={0,5.5497108,0};
 					};
 					side="Independent";
@@ -23226,7 +23232,7 @@ class Mission
 					class Attributes
 					{
 						name="streamer1";
-						description="Streamer@Streamers";
+						description="Liru@Streamers";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23342,7 +23348,6 @@ class Mission
 					};
 					id=5112;
 					type="I_soldier_F";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23392,7 +23397,6 @@ class Mission
 			{
 			};
 			id=5111;
-			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23527,8 +23531,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2139.1609,12.771441,3400.6362};
-						angles[]={0,5.4695849,0};
+						position[]={2139.1609,12.77144,3400.636};
+						angles[]={0,5.4695826,0};
 					};
 					side="Civilian";
 					flags=5;
@@ -23536,8 +23540,8 @@ class Mission
 					{
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
 						name="zeus3";
+						presenceCondition="false";
 						description="Zeus / Referee";
-						isPlayable=1;
 						class Inventory
 						{
 							class uniform
@@ -23555,7 +23559,6 @@ class Mission
 					};
 					id=5116;
 					type="C_Marshal_F";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23643,6 +23646,220 @@ class Mission
 			id=5128;
 			type="Land_TTowerBig_2_F";
 			atlOffset=0.465909;
+		};
+		class Item104
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2139.866,12.77144,3408.824};
+						angles[]={0,5.5497108,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						name="streamer2";
+						description="SchmerzKeks@Streamers";
+						isPlayable=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="hgun_esd_01_F";
+								muzzle="muzzle_antenna_01_f";
+								firemode="hgun_esd_01_F:Single";
+							};
+							class uniform
+							{
+								typeName="UK3CB_CHC_C_U_CAN_01";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="UK3CB_LDF_B_V_TL_Vest_KKZ10_OLI";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Laserbatteries";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_artilleryTable";
+										count=1;
+									};
+									class Item2
+									{
+										name="muzzle_antenna_03_f";
+										count=1;
+									};
+									class Item3
+									{
+										name="crowsew_tfar_icom";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+						};
+					};
+					id=5130;
+					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male06GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="WhiteHead_01";
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5129;
+		};
+		class Item105
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2142.6904,12.77,3405.395};
+			};
+			name="streamer_2";
+			id=5131;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="streamer2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections

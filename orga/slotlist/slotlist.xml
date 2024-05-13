@@ -2,10 +2,11 @@
   <company side="civilian" natosymbol="inf" callsign="Zeus" vehicletype="">
     <slot shortcode="Z" description="Zeus" reserved-for=""/>
     <slot shortcode="Z" description="Zeus" reserved-for="tbd"/>
-    <slot shortcode="Z" description="Zeus" reserved-for="tbd"/>
+    <!-- <slot shortcode="Z" description="Zeus" reserved-for="tbd"/> -->
   </company>
 
   <company side="independent" natosymbol="inf" callsign="Streamer" vehicletype="">
+    <slot shortcode="STR" description="Streamer" reserved-for="tbd"/>
     <slot shortcode="STR" description="Streamer" reserved-for="tbd"/>
   </company>
 

@@ -27,7 +27,7 @@ enableSaving [false, false];
 // radio range booster towers
 fnc_TFAR_Boost_RadioTower_Loop = {
     private _isBackToNormal = player getVariable ["tf_sendingDistanceMultiplicator", 1] == 1;
-    private _radioTowersInRange = nearestObjects [player, ["Land_TTowerBig_2_F"], 10, true];
+    private _radioTowersInRange = nearestObjects [player, ["Land_TTowerBig_1_F", "Land_TTowerBig_2_F"], 15, true];
     if (count _radioTowersInRange > 0) then {
         // boost radio range by factor of 10
         if (_isBackToNormal) then {

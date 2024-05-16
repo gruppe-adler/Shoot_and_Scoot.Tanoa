@@ -44,8 +44,8 @@ class CSAT_Apex_Pacific {
         watch = "ItemWatch";
         addItemsToUniform[] = {
             MEDICITEMS_BASE,
-            LIST_2("ACE_Chemlight_HiWhite"),
-            LIST_2("Chemlight_green"),
+            // LIST_2("ACE_Chemlight_HiWhite"),
+            // LIST_2("Chemlight_green"),
             // LIST_1("ACE_Flashlight_MX991"),
             LIST_1("ACE_MapTools")
           };

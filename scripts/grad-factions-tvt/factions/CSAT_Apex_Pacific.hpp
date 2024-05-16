@@ -107,6 +107,9 @@ class CSAT_Apex_Pacific {
             handgunWeapon = "hgun_esd_01_F";    // spectrum device
             handgunWeaponMuzzle = "muzzle_antenna_03_f";    // jamming antenna
             handgunWeaponMagazine = "";
+            addItemsToUniform[] = {
+                LIST_1("crowsew_tfar_icom")                
+            };
             backpack = "B_FieldPack_ghex_F";
             addItemsToBackpack[] = {
                 LIST_1("ToolKit"),

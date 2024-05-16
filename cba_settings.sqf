@@ -77,7 +77,7 @@ force ace_cargo_carryAfterUnload = true;
 force ace_cargo_loadTimeCoefficient = 10;   // defaults to 5; increased to slow down mortar vehicles
 force ace_rearm_supply = 1; // rearm supply is limited (using credits)
 force ace_rearm_level = 1;  // rearm types of ammo separately (not entire vic at once)
-force ace_towing_addRopeToVehicleInventory = true;
+force ace_towing_addRopeToVehicleInventory = false;  // prevent towing arti with the towing rope
 
 // Artillery Sound Ranging
 force arsr_allowPlacedExplosives = false;

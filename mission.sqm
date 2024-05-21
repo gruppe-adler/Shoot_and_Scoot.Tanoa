@@ -12378,7 +12378,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Alpha";
+						description="SQL@Hunter-A";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12946,7 +12946,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha";
+							value="Hunter A";
 						};
 					};
 				};
@@ -13293,7 +13293,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Bravo";
+						description="SQL@Hunter-B";
 						isPlayable=1;
 						class Inventory
 						{
@@ -13860,7 +13860,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Bravo";
+							value="Hunter B";
 						};
 					};
 				};
@@ -14208,7 +14208,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Charlie";
+						description="SQL@Hunter-C";
 						isPlayable=1;
 						class Inventory
 						{
@@ -14777,7 +14777,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Charlie";
+							value="Hunter C";
 						};
 					};
 				};
@@ -15123,7 +15123,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Delta";
+						description="SQL@Hunter-D";
 						isPlayable=1;
 						class Inventory
 						{
@@ -15690,7 +15690,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Delta";
+							value="Hunter D";
 						};
 					};
 				};
@@ -15717,7 +15717,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-1";
+						description="TL@Arti-A";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16055,7 +16055,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti 1";
+							value="Arti A";
 						};
 					};
 				};
@@ -16082,7 +16082,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-2";
+						description="TL@Arti-B";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16420,7 +16420,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti 2";
+							value="Arti B";
 						};
 					};
 				};
@@ -16447,7 +16447,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-3";
+						description="TL@Arti-C";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16785,7 +16785,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti 3";
+							value="Arti C";
 						};
 					};
 				};
@@ -16812,7 +16812,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-4";
+						description="TL@Arti-D";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17150,7 +17150,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti 4";
+							value="Arti D";
 						};
 					};
 				};
@@ -17178,7 +17178,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-1";
+						description="UAV@Recon-A";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17295,7 +17295,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor-1";
+							value="Recon A";
 						};
 					};
 				};
@@ -17323,7 +17323,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-2";
+						description="UAV@Recon-B";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17440,7 +17440,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor-2";
+							value="Recon B";
 						};
 					};
 				};
@@ -17468,7 +17468,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-3";
+						description="UAV@Recon-C";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17585,7 +17585,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor-3";
+							value="Recon C";
 						};
 					};
 				};
@@ -17613,7 +17613,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-4";
+						description="UAV@Recon-D";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17730,7 +17730,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor-4";
+							value="Recon D";
 						};
 					};
 				};
@@ -18408,7 +18408,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Alpha";
+						description="SQL@Hunter-A";
 						isPlayable=1;
 						class Inventory
 						{
@@ -18900,7 +18900,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha-1";
+							value="Hunter-A";
 						};
 					};
 				};
@@ -19197,7 +19197,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Bravo";
+						description="SQL@Hunter-B";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19688,7 +19688,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Bravo-1";
+							value="Hunter-B";
 						};
 					};
 				};
@@ -19986,7 +19986,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Charlie";
+						description="SQL@Hunter-C";
 						isPlayable=1;
 						class Inventory
 						{
@@ -20481,7 +20481,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Charlie-1";
+							value="Hunter-C";
 						};
 					};
 				};
@@ -20778,7 +20778,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="SQL@Delta";
+						description="SQL@Hunter-D";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21271,7 +21271,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Delta-1";
+							value="Hunter-D";
 						};
 					};
 				};
@@ -21297,7 +21297,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-1";
+						description="TL@Arti-A";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21644,7 +21644,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti-1";
+							value="Arti-A";
 						};
 					};
 				};
@@ -21670,7 +21670,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-2";
+						description="TL@Arti-B";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22017,7 +22017,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti-2";
+							value="Arti-B";
 						};
 					};
 				};
@@ -22044,7 +22044,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-3";
+						description="TL@Arti-C";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22393,7 +22393,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti-3";
+							value="Arti-C";
 						};
 					};
 				};
@@ -22420,7 +22420,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="TL@Arti-4";
+						description="TL@Arti-D";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22769,7 +22769,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Arti-4";
+							value="Arti-D";
 						};
 					};
 				};
@@ -22797,7 +22797,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-1";
+						description="UAV@Recon-A";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22909,7 +22909,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor 1";
+							value="Recon-A";
 						};
 					};
 				};
@@ -22937,7 +22937,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-2";
+						description="UAV@Recon-B";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23051,7 +23051,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor 2";
+							value="Recon-B";
 						};
 					};
 				};
@@ -23079,7 +23079,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-3";
+						description="UAV@Recon-C";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23193,7 +23193,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor 3";
+							value="Recon-C";
 						};
 					};
 				};
@@ -23221,7 +23221,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="this setVariable [""arsr_receptionAllowed"", true]; " \n "";
-						description="UAV@Sensor-4";
+						description="UAV@Recon-D";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23335,7 +23335,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Sensor 4";
+							value="Recon-D";
 						};
 					};
 				};

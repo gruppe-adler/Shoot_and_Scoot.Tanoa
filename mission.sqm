@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5164;
+		nextID=5172;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=484;
+		nextID=502;
 	};
 	class Camera
 	{
-		pos[]={2121.9629,21.96792,3422.2727};
-		dir[]={0.61349845,-0.38119259,-0.69174421};
-		up[]={0.25299427,0.92444104,-0.28526387};
-		aside[]={-0.74820411,1.0421354e-006,-0.66357231};
+		pos[]={2056.2009,56.697491,4192.3169};
+		dir[]={0.10367223,-0.52276224,-0.84615123};
+		up[]={0.06357453,0.8524785,-0.51888216};
+		aside[]={-0.99257779,0,-0.12161271};
 	};
 };
 binarizationWanted=0;
@@ -686,7 +686,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=118;
+		items=123;
 		class Item0
 		{
 			dataType="Layer";
@@ -7758,13 +7758,13 @@ class Mission
 						class Attribute0
 						{
 							property="crowsEW_editormodules_addjammer_strength";
-							expression="_this setVariable ['Strength',_value,true];";
+							expression="_this setVariable ['FalloffRadius',_value,true];";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=700;
 								};
 							};
 						};
@@ -7810,7 +7810,7 @@ class Mission
 						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
-							expression="_this setVariable ['Radius',_value,true];";
+							expression="_this setVariable ['EffectiveRadius',_value,true];";
 							class Value
 							{
 								class data
@@ -7839,13 +7839,13 @@ class Mission
 						class Attribute0
 						{
 							property="crowsEW_editormodules_addjammer_strength";
-							expression="_this setVariable ['Strength',_value,true];";
+							expression="_this setVariable ['FalloffRadius',_value,true];";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=700;
 								};
 							};
 						};
@@ -7891,7 +7891,7 @@ class Mission
 						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
-							expression="_this setVariable ['Radius',_value,true];";
+							expression="_this setVariable ['EffectiveRadius',_value,true];";
 							class Value
 							{
 								class data
@@ -7965,7 +7965,7 @@ class Mission
 			name="BLUFOR base";
 			class Entities
 			{
-				items=52;
+				items=51;
 				class Item0
 				{
 					dataType="Object";
@@ -10942,13 +10942,13 @@ class Mission
 						class Attribute0
 						{
 							property="crowsEW_editormodules_addjammer_strength";
-							expression="_this setVariable ['Strength',_value,true];";
+							expression="_this setVariable ['FalloffRadius',_value,true];";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=700;
 								};
 							};
 						};
@@ -10994,7 +10994,7 @@ class Mission
 						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
-							expression="_this setVariable ['Radius',_value,true];";
+							expression="_this setVariable ['EffectiveRadius',_value,true];";
 							class Value
 							{
 								class data
@@ -11022,13 +11022,13 @@ class Mission
 						class Attribute0
 						{
 							property="crowsEW_editormodules_addjammer_strength";
-							expression="_this setVariable ['Strength',_value,true];";
+							expression="_this setVariable ['FalloffRadius',_value,true];";
 							class Value
 							{
 								class data
 								{
 									singleType="SCALAR";
-									value=50;
+									value=700;
 								};
 							};
 						};
@@ -11074,7 +11074,7 @@ class Mission
 						class Attribute4
 						{
 							property="crowsEW_editormodules_addjammer_radius";
-							expression="_this setVariable ['Radius',_value,true];";
+							expression="_this setVariable ['EffectiveRadius',_value,true];";
 							class Value
 							{
 								class data
@@ -11110,7 +11110,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2149.1292,12.780841,3418.9802};
-						angles[]={-0,2.4735646,0};
+						angles[]={0,2.4735646,0};
 					};
 					side="Empty";
 					flags=4;
@@ -11138,90 +11138,9 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item51
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={2150.8755,12.770001,3417.0542};
-						angles[]={-0,2.4730191,0};
-					};
-					id=5133;
-					type="crowsEW_editormodules_moduleAddJammer";
-					atlOffset=9.5367432e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="crowsEW_editormodules_addjammer_strength";
-							expression="_this setVariable ['Strength',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=50;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
-							expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
-							expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="crowsEW_editormodules_addjammer_isDroneJammer";
-							expression="_this setVariable ['IsDroneJammer',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="crowsEW_editormodules_addjammer_radius";
-							expression="_this setVariable ['Radius',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=500;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
 			};
 			id=3660;
-			atlOffset=34.515896;
+			atlOffset=17.120564;
 		};
 		class Item62
 		{
@@ -23980,83 +23899,6 @@ class Mission
 		};
 		class Item105
 		{
-			dataType="Layer";
-			name="BLUFOR supply station";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Layer";
-					name="BLUFOR supply station_1";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2083.4238,14.241055,3399.4045};
-								angles[]={6.2751846,3.4213161,6.2618566};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								health=0.60000002;
-							};
-							id=5135;
-							type="B_Slingload_01_Ammo_F";
-							atlOffset=9.5367432e-007;
-						};
-					};
-					id=5134;
-					atlOffset=9.5367432e-007;
-				};
-			};
-			id=5141;
-			atlOffset=9.5367432e-007;
-		};
-		class Item106
-		{
-			dataType="Layer";
-			name="OPFOR supply station";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Layer";
-					name="OPFOR supply station_1";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={2086.7737,13.511564,3381.2837};
-								angles[]={6.2511969,3.4638114,6.2698536};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								health=0.60000002;
-							};
-							id=5147;
-							type="Land_Pod_Heli_Transport_04_ammo_F";
-						};
-					};
-					id=5142;
-				};
-			};
-			id=5149;
-		};
-		class Item107
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -24071,7 +23913,7 @@ class Mission
 			id=5150;
 			type="CamoNet_ghex_big_F";
 		};
-		class Item108
+		class Item106
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24088,7 +23930,7 @@ class Mission
 			type="CamoNet_BLUFOR_big_F";
 			atlOffset=9.5367432e-007;
 		};
-		class Item109
+		class Item107
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -24132,7 +23974,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item110
+		class Item108
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -24177,29 +24019,47 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item111
+		class Item109
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2145.2927,14.833353,3407.7224};
-				angles[]={-0,3.9620564,0};
+				position[]={2145.293,14.833353,3407.7219};
+				angles[]={0,3.9620545,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				fuel=0;
 			};
 			id=5154;
 			type="UK3CB_C_Forklift";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[1]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item112
+		class Item110
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={2092.5654,12.564314,3374.7654};
-				angles[]={0,5.163218,-0};
+				angles[]={0,5.163218,0};
 			};
 			side="Empty";
 			flags=5;
@@ -24209,7 +24069,7 @@ class Mission
 			id=5158;
 			type="Banner_01_CSAT_F";
 		};
-		class Item113
+		class Item111
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24225,13 +24085,13 @@ class Mission
 			id=5159;
 			type="Banner_01_CSAT_F";
 		};
-		class Item114
+		class Item112
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={2090.5339,13.139698,3393.3335};
-				angles[]={0,5.1126299,-0};
+				angles[]={0,5.1126299,0};
 			};
 			side="Empty";
 			flags=5;
@@ -24241,13 +24101,13 @@ class Mission
 			id=5160;
 			type="Banner_01_NATO_F";
 		};
-		class Item115
+		class Item113
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={2088.8142,13.362993,3406.5347};
-				angles[]={0,3.8200133,-0};
+				angles[]={0,3.8200133,0};
 			};
 			side="Empty";
 			flags=5;
@@ -24257,13 +24117,13 @@ class Mission
 			id=5161;
 			type="Banner_01_NATO_F";
 		};
-		class Item116
+		class Item114
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={2091.8306,13.41855,3427.1479};
-				angles[]={0,6.0142622,-0};
+				angles[]={0,6.0142622,0};
 			};
 			side="Empty";
 			flags=5;
@@ -24273,13 +24133,13 @@ class Mission
 			id=5162;
 			type="Banner_01_NATO_F";
 		};
-		class Item117
+		class Item115
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2095.584,12.95,3427.4619};
-				angles[]={-0,4.5197573,0};
+				angles[]={0,4.5197573,0};
 			};
 			areaSize[]={1,0,4};
 			areaIsRectangle=1;
@@ -24316,6 +24176,323 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item116
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2150.8755,12.770001,3417.0542};
+				angles[]={0,2.4730191,0};
+			};
+			id=5133;
+			type="crowsEW_editormodules_moduleAddJammer";
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crowsEW_editormodules_addjammer_strength";
+					expression="_this setVariable ['FalloffRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=700;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crowsEW_editormodules_addjammer_isActiveAtMissionStart";
+					expression="_this setVariable ['IsActiveAtMissionStart',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="crowsEW_editormodules_addjammer_isVoiceCommsJammer";
+					expression="_this setVariable ['IsVoiceCommsJammer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crowsEW_editormodules_addjammer_isDroneJammer";
+					expression="_this setVariable ['IsDroneJammer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crowsEW_editormodules_addjammer_radius";
+					expression="_this setVariable ['EffectiveRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=500;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item117
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2086.7737,13.511564,3381.2837};
+				angles[]={6.2511969,3.4638114,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.60000002;
+			};
+			id=5147;
+			type="Land_Pod_Heli_Transport_04_ammo_F";
+			atlOffset=-0.00010871887;
+		};
+		class Item118
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2083.4238,14.241055,3399.4045};
+				angles[]={6.2751846,3.4213161,6.2618566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.60000002;
+			};
+			id=5135;
+			type="B_Slingload_01_Ammo_F";
+			atlOffset=-0.00019836426;
+		};
+		class Item119
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2058.5718,60.73341,4239.3901};
+						angles[]={6.0451221,3.0289841,6.2485409};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=5166;
+					type="B_UAV_AI";
+					atlOffset=-3.0517578e-005;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2058.5754,60.883385,4239.3784};
+						angles[]={6.0451221,3.0289841,6.2485409};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=5167;
+					type="B_UAV_AI";
+					atlOffset=0.15099335;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=5166;
+						item1=5165;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=5167;
+						item1=5165;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=5164;
+			atlOffset=-0.0019989014;
+		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2055.0488,54.818604,4188.9448};
+				angles[]={6.0451221,3.0289841,6.2485409};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				fuel=0.1;
+				init="(group this) setGroupId [""Jamming demonstrator""];";
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=5165;
+			type="B_UAV_01_F";
+			atlOffset=-0.0019989014;
+		};
+		class Item121
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2052.4485,59.501328,4225.3867};
+						angles[]={6.0451221,3.0444129,6.2485409};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=5170;
+					type="O_UAV_AI";
+					atlOffset=-1.9073486e-005;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2052.4363,59.651047,4225.3779};
+						angles[]={6.0451221,3.0444129,6.2485409};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=5171;
+					type="O_UAV_AI";
+					atlOffset=0.15122604;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=5170;
+						item1=5169;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=5171;
+						item1=5169;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=5168;
+		};
+		class Item122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2056.9348,55.057152,4190.189};
+				angles[]={6.0451221,3.0444129,6.2485409};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+				fuel=0.1;
+				init="(group this) setGroupId [""Jamming demonstrator""];";
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=5169;
+			type="O_UAV_01_F";
 		};
 	};
 	class Connections

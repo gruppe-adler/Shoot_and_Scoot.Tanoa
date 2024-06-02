@@ -6,7 +6,7 @@ params ["_container"];
 private _is_Zeus = !isNull (getAssignedCuratorLogic player);
 
 if (_is_Zeus) then {
-    _container addEventHandler ["Killed", {
+    _container addMPEventHandler ["MPKilled", {
         params ["_container", "_killer", "_instigator", "_useEffects"];
 
         // Update task & markers

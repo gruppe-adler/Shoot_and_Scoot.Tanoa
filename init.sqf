@@ -30,7 +30,7 @@
     params ["_vehicle"];
     _vehicle disableTIEquipment true;   // disable thermal imaging
     _vehicle disableNVGEquipment true;  // disable night vision imaging
-    _vehicle removeMagazinesTurret ["Laserbatteries", [0]];   // disable laser designator
+    // _vehicle removeMagazinesTurret ["Laserbatteries", [0]];   // disable laser designator
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
 ["UAV_01_base_F", "Engine",{

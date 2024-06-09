@@ -5,6 +5,7 @@ if !(hasInterface) exitWith {};
 ["arsr_drawData", arsr_fnc_handleDraw] call CBA_fnc_addEventHandler;
 
 
+/*
 // add eventhandler to radio transmission
 // gives params in format: ["_unit", "_radioclass", "_radioType", "_additionalChannel", "_buttonDown"];
 ["PushToTalk_EventHandler", "OnTangent", arsr_fnc_handleOnTangent, player] call TFAR_fnc_addEventHandler;
@@ -15,3 +16,4 @@ player addEventHandler ["Respawn", {
 	// reapply the TFAR eventhandler
    	["PushToTalk_EventHandler", "OnTangent", arsr_fnc_handleOnTangent, player] call TFAR_fnc_addEventHandler;
 }];
+*/

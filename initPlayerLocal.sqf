@@ -12,6 +12,25 @@ if (playerSide == independent) then {
 };
 
 
+// prevent non-commanders from using the cruise missile launcher
+private _rankId = rankId player;
+private _rankInfo = format ["%1 is a %2", name player, rank player];
+if (_rankId < 3) then {  // Lieutenants and higher ranks may use the VLS
+    diag_log (_rankInfo + " and may NOT use the VLS.");
+    ["loadout", {
+        params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
+        if (playerSide == west) then { 
+            player disableUAVConnectability [blufor_vls, true];
+        };
+        if (playerSide == east) then { 
+            player disableUAVConnectability [opfor_vls, true];
+        };
+    }] call CBA_fnc_addPlayerEventHandler;
+} else {
+    diag_log (_rankInfo + " and may use the VLS.");
+};
+
+
 // prevent use of enemy UAV terminals and radios
 ["loadout", {
     params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];

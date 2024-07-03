@@ -6,6 +6,12 @@ enableSaving [false, false];
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 
 
+// make Indfor slots ACE spectators
+if (playerSide == independent) then { 
+    [true, true, false] call ace_spectator_fnc_setSpectator;
+};
+
+
 // prevent use of enemy UAV terminals and radios
 ["loadout", {
     params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];

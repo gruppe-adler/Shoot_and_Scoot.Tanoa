@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5172;
+		nextID=5175;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=502;
+		nextID=507;
 	};
 	class Camera
 	{
-		pos[]={2056.2009,56.697491,4192.3169};
-		dir[]={0.10367223,-0.52276224,-0.84615123};
-		up[]={0.06357453,0.8524785,-0.51888216};
-		aside[]={-0.99257779,0,-0.12161271};
+		pos[]={2171.9514,22.181133,3445.1101};
+		dir[]={0.91683912,-0.34143797,0.20694481};
+		up[]={0.33305907,0.93990427,0.075176604};
+		aside[]={0.22017646,7.4505806e-009,-0.97545999};
 	};
 };
 binarizationWanted=0;
@@ -118,13 +118,14 @@ addons[]=
 	"A3_Characters_F_Orange_Headgear",
 	"A3_Structures_F_Exp_Military_Camonets",
 	"A3_Structures_F_Mil_Shelters",
-	"UK3CB_Factions_Vehicles_Forklift"
+	"UK3CB_Factions_Vehicles_Forklift",
+	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=63;
+		items=64;
 		class Item0
 		{
 			className="UK3CB_Factions_CHD_W";
@@ -559,6 +560,13 @@ class AddonsMetaData
 			className="UK3CB_Factions_Vehicles_Forklift";
 			name="UK3CB_Factions_Vehicles_Forklift";
 		};
+		class Item63
+		{
+			className="A3_Data_F_Exp_A";
+			name="Arma 3 Nexus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -686,7 +694,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=123;
+		items=125;
 		class Item0
 		{
 			dataType="Layer";
@@ -24493,6 +24501,171 @@ class Mission
 			};
 			id=5169;
 			type="O_UAV_01_F";
+		};
+		class Item123
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2188.385,13.43337,3448.6321};
+				angles[]={0.069219761,0,0.18455112};
+			};
+			name="streamator1";
+			isPlayable=1;
+			description="Streamator1";
+			id=5173;
+			type="VirtualSpectator_F";
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item124
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2188.0195,13.448429,3447.4314};
+				angles[]={0.069222413,0,0.18454249};
+			};
+			name="streamator2";
+			isPlayable=1;
+			description="Streamator2";
+			id=5174;
+			type="VirtualSpectator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections

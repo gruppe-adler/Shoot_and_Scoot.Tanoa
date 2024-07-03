@@ -1,5 +1,11 @@
 // this will execute on ALL machines, no need to handle MP sync for basic things
 
+// Initialize Loading of Streamator
+if (isNil "CLib_fnc_loadModules") then {
+    diag_log "CLib_fnc_loadModules is Nil";
+} else { 
+    call CLib_fnc_loadModules; 
+};
 
 // make BLUFOR radio truck a listener
 ["UK3CB_CHD_W_B_Gaz66_Radio", "initPost",{

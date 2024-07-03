@@ -39,3 +39,7 @@ class Loadouts {
     };
 };
 
+// Streamator Loading Instructions
+class CLib {
+    Modules[] = {"CLib", "Streamator"};
+};

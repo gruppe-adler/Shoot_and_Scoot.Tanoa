@@ -72,6 +72,15 @@ fnc_TFAR_Boost_RadioTower_Loop = {
 [fnc_TFAR_Boost_RadioTower_Loop, 2] call CBA_fnc_addPerFrameHandler; 
 
 
+// store last unloaded Mk6 mortar 
+// (as workaround for https://github.com/acemod/ACE3/issues/10010)
+["ace_cargoUnloaded", {
+    params ["_item", "_vehicle", "_unloadType"];
+    if (_item isKindOf "Mortar_01_base_F") then {
+        localNamespace setVariable ["shootnscoot_lastUnloadedMortar", _item];
+    };    
+}] call CBA_fnc_addEventHandler;
+
 
 // prevent map markers because this would be too easy 
 // --> we want to foster teamplay through radio comms instead

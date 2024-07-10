@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5204;
+		nextID=5205;
 	};
 	class MarkerIDProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class LayerIndexProvider
 	{
-		nextID=512;
+		nextID=517;
 	};
 	class Camera
 	{
 		pos[]={2124.6045,38.265873,3413.7617};
-		dir[]={-0.056807715,-0.34645754,-0.93634409};
-		up[]={-0.0209809,0.93806565,-0.34582171};
-		aside[]={-0.99816477,-1.8626451e-009,0.060558356};
+		dir[]={-0.056807932,-0.34645751,-0.93634397};
+		up[]={-0.020980977,0.93806571,-0.34582165};
+		aside[]={-0.99816465,1.8626451e-009,0.060558591};
 	};
 };
 binarizationWanted=0;
@@ -616,7 +616,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -653,7 +653,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -711,7 +711,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=127;
+		items=128;
 		class Item0
 		{
 			dataType="Layer";
@@ -7994,7 +7994,7 @@ class Mission
 					};
 					id=5192;
 					type="B_Ship_MRLS_01_F";
-					atlOffset=38.685001;
+					atlOffset=38.684982;
 				};
 				class Item55
 				{
@@ -11346,7 +11346,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7178.252,9.8254681,6661.3115};
-						angles[]={0,0.22729327,-0};
+						angles[]={0,0.22729327,0};
 					};
 					side="Empty";
 					flags=1;
@@ -25002,7 +25002,22 @@ class Mission
 				};
 			};
 			id=5190;
-			atlOffset=38.685001;
+			atlOffset=38.684982;
+		};
+		class Item127
+		{
+			dataType="Marker";
+			position[]={2124.321,12.588,3396.6919};
+			name="common_briefing_area";
+			markerType="ELLIPSE";
+			type="";
+			colorName="ColorGrey";
+			fillName="SolidBorder";
+			a=70;
+			b=70;
+			drawBorder=1;
+			id=5204;
+			atlOffset=-0.00040149689;
 		};
 	};
 	class Connections

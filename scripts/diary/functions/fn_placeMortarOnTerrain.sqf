@@ -2,7 +2,7 @@
 Author: Bernhard
 			   
 File: fn_placeMortarOnTerrain.sqf
-Parameters: 
+Parameters: none
 Return: none
 
 This function is a workaround for a suspected ACE glitch.
@@ -23,5 +23,5 @@ if (!isNil "_mortar") then {
 	diag_log format ["fn_placeMortarOnTerrain.sqf: getPosATL=%1", _pos];	// logging output might help to narrow down the problem
 	_mortar setPosATL [_pos#0, _pos#1, 0];		// place at same x and y coordinate, but with z coordinate on the surface
 } else {
-	hint parseText "This restore function works on the last mortar that you've unloaded.<br/><t color='#ff0000'>You haven`t unloaded a mortar yet.</t>";
+	hint parseText "This restore function works on the last mortar that you've unloaded.<br/><t color='#ff0000'>You haven't unloaded a mortar yet.</t>";
 };

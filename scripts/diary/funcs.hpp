@@ -4,5 +4,6 @@ class diary {
         file = "scripts\diary\functions";
         class postInit{postInit = 1;};
         class placeMortarOnTerrain{};
+        class fixDroneAI{};
     };
 };

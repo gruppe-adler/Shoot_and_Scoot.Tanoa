@@ -33,6 +33,11 @@ if (!isNull _drone) then {
 	// delete old drone AI and create a new one
 	deleteVehicleCrew _drone;
 	createVehicleCrew _drone;
+
+	// prevent hacked drones to return to original side after applying this workaround;
+	private _group = createGroup playerSide;
+	{ [_x] joinSilent _group } forEach units (group _drone);
+
 	hint parseText "<t color='#00ffff'>Should be fixed.</t><br/>Try again!";
 } else {
 	hint parseText "This restore function works on the drone you are currently connected to.<br/><t color='#ff0000'>You are not connected to any drone though.</t>";

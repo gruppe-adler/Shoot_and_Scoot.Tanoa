@@ -82,6 +82,26 @@ fnc_TFAR_Boost_RadioTower_Loop = {
 }] call CBA_fnc_addEventHandler;
 
 
+// allow opening ingame documentation...
+private _openDocuCode = {
+    openMap true;
+    player selectDiarySubject "shootnscoot_diarySubject:Record-1"; 
+};
+// ...from Vanilla mouse-wheel menu
+player addAction ["Open <t color='#D18D1F'>Shoot and Scoot</t> docu", _openDocuCode, 
+nil,    // no arguments for inner script
+-100    // super low prio to always display at bottom of list
+];
+// ...from ACE self-action menu
+private _action = ["Open Docu",
+"Shoot and Scoot docu",
+"\A3\ui_f\data\map\markers\handdrawn\unknown_CA.paa",
+_openDocuCode,
+{true}    // always add this action (without condition)
+] call ace_interact_menu_fnc_createAction;
+[(typeOf player), 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToClass;
+
+
 // prevent map markers because this would be too easy 
 // --> we want to foster teamplay through radio comms instead
 0 enableChannel false;  // disable  global   channel

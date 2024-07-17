@@ -15,9 +15,21 @@ Using this function they are being reset to proper behaviour.
 
 *///////////////////////////////////////////////
 
+if !(hasInterface) exitWith {};
+
 private _drone = getConnectedUAV player;
 
 if (!isNull _drone) then {
+	// workaround for createVehicleCrew not being "global argument" and "global effect" for drones
+	// see https://discord.com/channels/105462288051380224/105465701543723008/1263215925042090004 for further details
+	if (!local _drone) then {
+		private _clientID = clientOwner;
+
+		private _ret_setOwner      = [      _drone, _clientID] remoteExec ["setOwner", 2];
+		private _ret_setGroupOwner = [group _drone, _clientID] remoteExec ["setGroupOwner", 2];
+		diag_log format ["fn_fixDroneAI.sqf: Change of drone ownership returned '%1' and '%2'."];
+	};	
+
 	// delete old drone AI and create a new one
 	deleteVehicleCrew _drone;
 	createVehicleCrew _drone;

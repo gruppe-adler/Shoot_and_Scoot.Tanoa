@@ -19,6 +19,10 @@ if !(hasInterface) exitWith {};
 
 private _drone = getConnectedUAV player;
 
+// write to server RPT when this workaround is used
+private _ServerLogEntry = format ["fn_fixDroneAI.sqf called by %1 while connected to '%2', which was local at the time? local=%3.", name player, _drone, local _drone];
+[_ServerLogEntry] remoteExec ["diag_log", 2];
+
 if (!isNull _drone) then {
 	// workaround for createVehicleCrew not being "global argument" and "global effect" for drones
 	// see https://discord.com/channels/105462288051380224/105465701543723008/1263215925042090004 for further details
@@ -27,7 +31,7 @@ if (!isNull _drone) then {
 
 		private _ret_setOwner      = [      _drone, _clientID] remoteExec ["setOwner", 2];
 		private _ret_setGroupOwner = [group _drone, _clientID] remoteExec ["setGroupOwner", 2];
-		diag_log format ["fn_fixDroneAI.sqf: Change of drone ownership returned '%1' and '%2'."];
+		diag_log format ["fn_fixDroneAI.sqf: Change of drone ownership returned '%1' and '%2'.", _ret_setOwner, _ret_setGroupOwner];
 	};	
 
 	[_drone] spawn {	// need to change to scheduled environment in order to use waitUntil

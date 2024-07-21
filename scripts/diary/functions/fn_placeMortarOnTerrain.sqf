@@ -18,10 +18,14 @@ See https://github.com/acemod/ACE3/issues/10010 for more information.
 
 private _mortar = localNamespace getVariable "shootnscoot_lastUnloadedMortar";
 
+// write to server RPT when this workaround is used
+private _ServerLogEntry = format ["fn_placeMortarOnTerrain.sqf called by %1 while 'shootnscoot_lastUnloadedMortar=%2' and 'getPosATL=%3'.", name player, _mortar, getPosATL _mortar];
+[_ServerLogEntry] remoteExec ["diag_log", 2];
+
 if (!isNil "_mortar") then {
 	private _pos = getPosATL _mortar;
-	diag_log format ["fn_placeMortarOnTerrain.sqf: getPosATL=%1", _pos];	// logging output might help to narrow down the problem
 	_mortar setPosATL [_pos#0, _pos#1, 0];		// place at same x and y coordinate, but with z coordinate on the surface
+	hint parseText "<t color='#00ffff'>Should be fixed.</t><br/>Check your surroundings for the mortar!";
 } else {
 	hint parseText "This restore function works on the last mortar that you've unloaded.<br/><t color='#ff0000'>You haven't unloaded a mortar yet.</t>";
 };

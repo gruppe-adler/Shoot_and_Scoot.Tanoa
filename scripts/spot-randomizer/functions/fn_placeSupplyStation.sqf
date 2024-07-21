@@ -3,7 +3,7 @@ params ["_side", "_stationid"];
 
 _position = getMarkerPos _stationid;
 
-// find me a good, flat spot at a distance of up t0 150m away from the marker position
+// find me a good, flat spot at a distance of up to 150m away from the marker position
 // don't be in the sea and if no such position is found default to the original provided position
 private _fuzzyPosition = [_position, 0,  150, 10, 0, 0.2, 0, [], [_position, _position]] call BIS_fnc_findSafePos;
 

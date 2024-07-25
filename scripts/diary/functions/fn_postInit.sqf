@@ -121,16 +121,20 @@ This sensor is a truck that starts operation <br/>
 - <font color='#00ffff'>as soon as mast is erected</font> <br/>
 - <font color='#00ffff'>as long as an operator sits inside</font> (can be any player) <br/>
 <br/>
-To erect the mast: <br/>
-1. take the <font color='#00ffff'>driver seat</font> <br/>
-2. use Vanilla mouse menu <br/>
-3. use menu entry <font color='#00ffff'>Deploy Mast</font> <br/>
 <img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_gaz66\data\ui\UK3CB_CHD_B_Gaz66_Radio.jpg' width='370' height='208' title='Blufor sound directionfinder truck (mast not deployed)' /> 
 <img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_gaz66\data\ui\UK3CB_CHD_O_Gaz66_Radio.jpg' width='370' height='208' title='Opfor sound directionfinder truck (mast not deployed)' /> <br/>
 <br/>
-<font color='#00ffff'>Only</font> %1 <font color='#00ffff'>operators and</font> %2 <font color='#00ffff'>of the faction can see directionfinding results</font> on the map. <br/>
+To erect the mast: <br/>
+1. take the <font color='#00ffff'>driver seat</font> <br/>
+2. use Vanilla mouse menu (<font color='#00ffff'>%5</font>) <br/>
+3. select menu entry <font color='#00ffff'>Deploy Mast</font> (<font color='#00ffff'>%6</font>) <br/>
+<img src='pics\deploy_mast_menu_entry.jpg' title='Select highlighted menu entry to erect the mast' /> <br/> 
 <br/>
+<br/>
+<font color='#D18D1F' size='14'>Result display</font> <br/>
+<img src='pics\directionfinder_results_on_map.jpg' width='370' height='370' title='Blufor will see blue lines, Opfor will see red lines' /> <br/> 
 Be aware that: <br/>
+- %1 operators and %2 are <font color='#00ffff'>the only roles that can see directionfinding results</font> on the map. <br/>
 - <font color='#00ffff'>Sound needs time to travel</font> from the shooter to your directionfinders. <br/>
   You won't see all bearing lines for all events instantaneously. <br/>
 - <font color='#00ffff'>Bearing lines have an error of up to %3°</font> from the real direction of the shooting %4. <br/>
@@ -141,7 +145,7 @@ Be aware that: <br/>
 Drone blabla<br/>
 <img src='\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg' width='370' height='208' title='Blufor UAV' /> 
 <img src='\A3\EditorPreviews_F\Data\CfgVehicles\O_UAV_01_F.jpg' width='370' height='208' title='Opfor UAV' /> <br/>
-", _ReconLink, _CommanderLink, arsr_angleError, _ArtiLink] + _DroneAIWorkaround + _back2IntroLink]];
+", _ReconLink, _CommanderLink, arsr_angleError, _ArtiLink, actionKeysNames "nextAction", actionKeysNames "ActionContext"] + _DroneAIWorkaround + _back2IntroLink]];
 
 
 // Hunter killer docu

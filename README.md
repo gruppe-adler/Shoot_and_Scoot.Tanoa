@@ -3,7 +3,7 @@
 
 Players of each side step into either of 3 roles:
 * artillery
-* signal intelligence and reconnaissance
+* reconnaissance
 * hunter-killer teams
 
 ![](pics/SnS_loadpic.png)
@@ -15,10 +15,8 @@ The task of the **artillery** crews is to destroy all enemy resupply stations an
 In order to find those stations they rely on targeting information from reconnaissance elements (e.g. UAV operators).
 
 
-### Signal intelligence
-The crews of the **signal intelligence** elements can use their vehicles as sensors that point into the direction of where
-* artillery has been fired from
-* TFAR radio calls have been started from
+### Reconnaissance
+The crews of the **reconnaissance** elements can use their vehicles as sensors that point into the direction of where enemy artillery has been fired from.
 
 They need to place these sensors wisely in order to enable accurate triangulation of enemy signal sources.
 
@@ -53,31 +51,9 @@ Click banner to watch the videos
 
 
 # Modset
-The following mods are recommended to play this game mode (not all of which are mandatory):
-```
-@3cb factions;
-@ace;
-@cba_a3;
-@Crows Electronic Warfare;
-@diwako_dui;
-@enhanced_movement;
-@Enhanced Movement Rework;
-@grad_D30_tweak;
-@grad_slinghelmet;
-@grad_trenches;
-@gruppe_adler_mod;
-@rhsafrf;
-@rhsgref;
-@rhssaf;
-@rhsusaf;
-@splendid_smoke;
-@tfar animations;
-@tfar;
-@vet_unflipping;
-@vurtuals_car_seat_n_stretcher;
-@zen;
-@zen_compat_ace;
-```
+The recommended modset can be found in folder [orga/modset/](orga/modset/) .
+
+(Note that not all of the mods listed there are mandatory to run the mission.)
 
 # Documentation
 * [Docu slide deck](https://docs.google.com/presentation/d/1BGDOxqqZw4T6js3oQ4mPr4E7f8NLZsPS85MUAAIYvco/edit?usp=sharing)

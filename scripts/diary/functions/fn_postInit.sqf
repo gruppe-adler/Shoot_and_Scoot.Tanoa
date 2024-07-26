@@ -76,19 +76,50 @@ To make spotting them more challenging they are <font color='#00ffff'>hidden und
 // Arti docu
 player setDiaryRecordText [["shootnscoot_diarySubject", _ArtiRecord], ["Artillery", format [
 "<font color='#D18D1F' size='16'>Artillery</font> <br/>
-Artillery requires intel from the %1 elements for targeting information.<br/>
-<img src='rhsafrf\addons\rhs_editorPreviews\data\rhs_D30_vdv.paa' width='370' height='208' title='artillery type is the same for both sides' /> <br/>
-The artillery piece is towed by a truck that also brings ammunition.
-<img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_ural\data\ui\UK3CB_CHD_B_Ural_Ammo.jpg' width='370' height='208' title='Blufor towing ammo truck' /> 
-<img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_ural\data\ui\UK3CB_CHD_O_Ural_Ammo.jpg' width='370' height='208' title='Opfor towing ammo truck' /> <br/>
-See the <font color='#00ffff'>Field Manual</font> section named <font color='#00ffff'>RHS: Towing</font> for how towing artillery pieces works. <br/>
-(available from the Escape menu) <br/>
+Artillery requires intel from the %1 elements for targeting information. <br/>
+<br/>
+It can be fired via <font color='#00ffff'>Artillery Computer</font> or <br/>
+via manual targeting using <font color='#00ffff'>Artillery Range Tables</font>. <br/>
+<br/>
+<img src='rhsafrf\addons\rhs_editorPreviews\data\rhs_D30_vdv.paa' width='256' height='144' title='artillery type is the same for both sides' /> <br/>
+<br/>
+<font color='#D18D1F' size='14'>Towing</font> <br/>
+The artillery piece is towed by a truck that also brings amsmunition. <br/>
+<img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_ural\data\ui\UK3CB_CHD_B_Ural_Ammo.jpg' width='256' height='144' title='Blufor towing ammo truck' /> 
+<img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_ural\data\ui\UK3CB_CHD_O_Ural_Ammo.jpg' width='256' height='144' title='Opfor towing ammo truck' /> <br/>
+See the <execute expression='[""RHS_Towing"", ""RHS_AFRF_Towing_Prepare"", nil, ""towing""] call BIS_fnc_openFieldManual'>Field Manual on towing</execute> for how towing artillery pieces works. <br/>
+<br/>
+<br/>
+<font color='#D18D1F' size='14'>Artillery Computer</font> <br/>
+When using the <execute expression='[""Tactics"", ""Ballistic""] call BIS_fnc_openFieldManual'>Artillery Computer</execute>, makes sure to wait for the FIRE button turn from <img src='pics\arti_fire_button_red.jpg' width='64' height='32' title='Do not shoot! Barrel is still moving' /> to <img src='pics\arti_fire_button_white.jpg' width='64' height='32' title='Barrel is aligned on target. You may fire now.' /> before clicking it. <br/>
+<br/>
+Only then will your barrel have stopped moving for shot alignment. <br/>
+<font color='#ff0000'>If you fire before that you will miss your target.</font> <br/>
+<br/>
+<br/>
+<font color='#D18D1F' size='14'>Manual aiming range tables</font> <br/>
+Using Artillery Range Tables comes with the following PROs and CONs: <br/>
+<br/>
+<font color='#00ff00'>PROs</font> <br/>
+<font color='#00ff00'>+</font> lower arc firing solutions possible <br/>
+<font color='#00ff00'>+</font> lower arcs can have <font color='#00ff00'>significantly shorter time on target</font>  <br/>
+   (e.g. <font color='#00ff00'>7s</font> vs. <font color='#ff0000'>40s</font> from <marker name='blufor_safespace'>Blufor base</marker> to center of map; effect cumulates with adjusting fire) <br/>
+<br/>
+<font color='#ff0000'>CONs</font> <br/>
+<font color='#ff0000'>-</font> for experienced players only <br/>
+<font color='#ff0000'>-</font> manual calculation takes time <br/>
+<br/>
 ", _ReconLink
 ] + _back2IntroLink]];
 
+// Or click the links below (once you are in-game). <br/>
+// - <execute expression='[[""RHS_Towing"",""RHS_AFRF_Towing_Prepare""],  15, false, 35, false, true, true, false, true] call BIS_fnc_advHint'>Prepare for towing</execute><br/>
+// - <execute expression='[[""RHS_Towing"",""RHS_AFRF_Towing_Attach""],   15, false, 35, false, true, true, false, true] call BIS_fnc_advHint'>Attach for towing</execute><br/>
+// - <execute expression='[[""RHS_Towing"",""RHS_AFRF_Towing_Detach""],   15, false, 35, false, true, true, false, true] call BIS_fnc_advHint'>Detach from towing</execute><br/>
+// - <execute expression='[[""RHS_Towing"",""RHS_AFRF_Towing_Dragging""], 15, false, 35, false, true, true, false, true] call BIS_fnc_advHint'>Drag after towing</execute><br/>
 
 // Mortar docu
-player setDiaryRecordText [["shootnscoot_diarySubject", _MortarRecord], ["- Mortar",
+player setDiaryRecordText [["shootnscoot_diarySubject", _MortarRecord], ["Mortar",
 "<font color='#D18D1F' size='16'>Mortar</font> <br/>
 The mortar is an alternative to the towed artillery. <br/>
 
@@ -128,7 +159,7 @@ To erect the mast: <br/>
 1. take the <font color='#00ffff'>driver seat</font> <br/>
 2. use Vanilla mouse menu (<font color='#00ffff'>%5</font>) <br/>
 3. select menu entry <font color='#00ffff'>Deploy Mast</font> (<font color='#00ffff'>%6</font>) <br/>
-<img src='pics\deploy_mast_menu_entry.jpg' title='Select highlighted menu entry to erect the mast' /> <br/> 
+<img src='pics\deploy_mast_menu_entry.jpg'  width='250' height='250' title='Select highlighted menu entry to erect the mast' /> <br/> 
 <br/>
 <br/>
 <font color='#D18D1F' size='14'>Result display</font> <br/>
@@ -165,40 +196,44 @@ Hunter killer teams also bring Electronic Warfare (EW in short) capabilities if 
 " + _back2IntroLink]];
 
 
+// Commander docu
 private _myVLS = nil;
 switch (playerSide) do
 {
     case west: { _myVLS = blufor_vls; };
-    case east: { _myVLS = opfor_vls; };
+    default    { _myVLS = opfor_vls; };
 };
-
-// Commander docu
 player setDiaryRecordText [["shootnscoot_diarySubject", _CommanderRecord], ["Commanders", format [
 "<font color='#D18D1F' size='16'>Commanders</font> <br/>
-The commanders are the <font color='#00ffff'>top-most leaders</font> their faction. <br/>
+The commanders are the <font color='#00ffff'>top-most leaders</font> of their faction. <br/>
 <br/>
-They are the only persons that are not a %1 operator but still <font color='#00ffff'>see the directionfinders bearings</font>. <br/>
+They are the only persons that are not %1 operators <br/>
+but still <font color='#00ffff'>see the directionfinder bearings</font>. <br/>
+<img src='pics\directionfinder_results_on_map.jpg' width='370' height='370' title='Blufor will see blue lines, Opfor will see red lines' /> <br/> 
 <br/>
 <font color='#D18D1F' size='14'>Cruise Missile strike</font> <br/>
-In addition they are the only ones authorized to <font color='#00ffff'>launch Cruise Missile strikes</font> from the destroyer near the own base. <br/>
+In addition they are the only ones authorized to <font color='#00ffff'>launch Cruise Missile strikes</font> <br/>
+from the destroyer near the own base. <br/>
 (lower ranking players can't connect their UAV terminal to this asset)
-<img src='\A3\EditorPreviews_F_Destroyer\Data\Cfgvehicles\Destroyer_01_assembled.jpg' width='370' height='208' title='Destroyer' /> <br/>
-<img src='\A3\EditorPreviews_F_Destroyer\Data\Cfgvehicles\B_Ship_MRLS_01_F.jpg' width='370' height='208' title='Cruise Missile launcher' /> <br/>
+<img src='\A3\EditorPreviews_F_Destroyer\Data\Cfgvehicles\Destroyer_01_assembled.jpg' width='256' height='144' title='Destroyer' /> <br/>
+<img src='\A3\EditorPreviews_F_Destroyer\Data\Cfgvehicles\B_Ship_MRLS_01_F.jpg' width='256' height='144' title='Cruise Missile launcher' /> <br/>
 How to strike? <br/>
 1. <font color='#00ffff'>provide a laser lock on target</font> from a drone <br/>
 2. open UAV terminal and connect to Cuise missile launcher <br/>
 3. go into the Gunner position <br/>
-4. check <font color='#00ffff'>sensor display</font> (right side of screen per default) for laser spots <br/>
+4. check <font color='#00ffff'>sensor display</font> (right side of screen per default) for laser spots <img src='A3\Ui_f\data\IGUI\RscCustomInfo\Sensors\Targets\LaserTarget_ca.paa'  color='#ff0000'width='16' height='16' title='Laser spot as indicated on the sensor display' /> <br/>
 5. <font color='#00ffff'>select the laser spot</font> you wish to shoot at <br/>
 5.1. by pressing your <font color='#00ffff'>%2</font> hotkey <font color='#00ffff'>%3</font> (once or more often) <br/>
+5.2. laser spot <img src='A3\Ui_f\data\IGUI\RscCustomInfo\Sensors\Targets\LaserTarget_ca.paa' color='#ff0000' width='16' height='16' title='Laser spot as indicated on the sensor display' /> should then show a mark around it <img src='A3\Ui_f\data\IGUI\RscCustomInfo\Sensors\Targets\MarkedTarget_ca.paa' width='16' height='16' title='Laser spot as indicated on the sensor display' /> <br/>
+<img src='pics\sensor_display_laser_target_selected.jpg' width='250' height='250' title='Sensor display with a selection box around a laser target' /> <br/>
 6. wait for laser lockon beeping sound to change from a lower to a higher pitch <br/>
-7. fire weapon <br/>
-<img src='\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg' width='256' height='144' title='Blufor UAV' /> 
-<img src='\A3\EditorPreviews_F\Data\CfgVehicles\O_UAV_01_F.jpg' width='256' height='144' title='Opfor UAV' /> <br/>
+7. fire weapon (<font color='#00ffff'>%5</font>) <br/>
+<br/>
+For more info on other icons shown in this display check the <execute expression='[""Vehicle"", ""SensorDisplay""] call BIS_fnc_openFieldManual'>Sensor Display Field Manual</execute>. <br/>
 <br/>
 Be aware that you only have <font color='#00ffff'>%4 missle(s)</font> available. <br/>
 So use them carefully for high-value targets. <br/>
-", _ReconLink, actionName "vehLockTargets", actionKeysNames "vehLockTargets", _myVLS ammo "weapon_VLS_01"] + _back2IntroLink]];
+", _ReconLink, actionName "vehLockTargets", actionKeysNames "vehLockTargets", _myVLS ammo "weapon_VLS_01", actionKeysNames "defaultAction"] + _back2IntroLink]];
 
 
 // Respawn docu

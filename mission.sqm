@@ -606,9 +606,9 @@ class ScenarioData
 {
 	author="Gruppe Adler and friends";
 	overviewText="TvT game mode - artillery vs. sound directionfinders vs. hunter-killer-teams";
-	overViewPicture="pics\SnS_loadpic.paa";
-	onLoadMission="Be aware that sound needs time to travel from the shooter to your directionfinders." \n "You won't see all bearing lines for all events instantaneously.";
-	loadScreen="pics\SnS_loadpic.paa";
+	overViewPicture="pics\SnS_loadpic.jpg";
+	onLoadMission="This game mode uses a lot of Arma's game mechanics <br/>and those of many mods. <br/><br/>If you need help: <br/>- check <t color='#00ffff'>ingame docu on the map</t> screen <br/>- write an admin message (see upper-left corner of the Escape screen)<br/>- ping Zeus";
+	loadScreen="pics\SnS_loadpic.jpg";
 	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;

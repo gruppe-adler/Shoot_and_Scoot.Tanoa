@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=517;
+		nextID=522;
 	};
 	class Camera
 	{
-		pos[]={2124.6045,38.265873,3413.7617};
-		dir[]={-0.056807932,-0.34645751,-0.93634397};
-		up[]={-0.020980977,0.93806571,-0.34582165};
-		aside[]={-0.99816465,1.8626451e-009,0.060558591};
+		pos[]={8062.0054,33.608437,13366.889};
+		dir[]={-0.80273187,-0.53491318,0.26361299};
+		up[]={-0.50821221,0.84490764,0.16689444};
+		aside[]={0.31200269,4.3248292e-008,0.95008349};
 	};
 };
 binarizationWanted=0;
@@ -2156,6 +2156,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 							class Value
@@ -2204,7 +2217,59 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item11
@@ -2690,6 +2755,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 							class Value
@@ -2738,7 +2816,59 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item20
@@ -5707,76 +5837,18 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
 							class Value
 							{
 								class data
 								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="fold_arty_handler";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
+									singleType="STRING";
+									value="rhs_mag_d462_2";
 								};
 							};
 						};
-						nAttributes=1;
-					};
-				};
-				class Item20
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8045.2729,10.529321,13373.224};
-						angles[]={0.16903779,3.4857528,0.021328852};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=782;
-					type="rhssaf_army_o_d30";
-					atlOffset=0.010505676;
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute1
 						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
@@ -5826,7 +5898,195 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8045.2729,10.529321,13373.224};
+						angles[]={0.16903779,3.4857528,0.021328852};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=782;
+					type="rhssaf_army_o_d30";
+					atlOffset=0.010505676;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="fold_arty_handler";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item21
@@ -6058,76 +6318,18 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
 							class Value
 							{
 								class data
 								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="fold_arty_handler";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
+									singleType="STRING";
+									value="rhs_mag_d462_2";
 								};
 							};
 						};
-						nAttributes=1;
-					};
-				};
-				class Item29
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8011.0322,10.451509,13384.749};
-						angles[]={0.10626491,3.4849758,6.2086577};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=780;
-					type="rhssaf_army_o_d30";
-					atlOffset=-0.0052852631;
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute1
 						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
@@ -6177,7 +6379,195 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item29
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8011.0322,10.451509,13384.749};
+						angles[]={0.10626491,3.4849758,6.2086577};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=780;
+					type="rhssaf_army_o_d30";
+					atlOffset=-0.0052852631;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="fold_arty_handler";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item30
@@ -6264,6 +6654,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 							class Value
@@ -6312,7 +6715,59 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item33
@@ -8269,76 +8724,18 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
 							class Value
 							{
 								class data
 								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="fold_arty_handler";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
+									singleType="STRING";
+									value="rhs_mag_d462_2";
 								};
 							};
 						};
-						nAttributes=1;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6939.5903,4.1777554,7173.0776};
-						angles[]={0,0.0055895625,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=793;
-					type="rhssaf_army_o_d30";
-					atlOffset=4.0531158e-006;
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute1
 						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
@@ -8388,7 +8785,195 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6939.5903,4.1777554,7173.0776};
+						angles[]={0,0.0055895625,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=793;
+					type="rhssaf_army_o_d30";
+					atlOffset=4.0531158e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="fold_arty_handler";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item5
@@ -9440,76 +10025,18 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="VehicleCustomization";
-							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
 							class Value
 							{
 								class data
 								{
-									singleType="ARRAY";
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="fold_arty_handler";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
+									singleType="STRING";
+									value="rhs_mag_d462_2";
 								};
 							};
 						};
-						nAttributes=1;
-					};
-				};
-				class Item28
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6957.6538,4.1777515,7172.168};
-						angles[]={0,0.014548479,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=795;
-					type="rhssaf_army_o_d30";
-					atlOffset=2.3841858e-007;
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute1
 						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
@@ -9559,7 +10086,195 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+				class Item28
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6957.6538,4.1777515,7172.168};
+						angles[]={0,0.014548479,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=795;
+					type="rhssaf_army_o_d30";
+					atlOffset=2.3841858e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="VehicleCustomization";
+							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+							class Value
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="ARRAY";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="STRING";
+															value="fold_arty_handler";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=1;
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item29
@@ -10518,6 +11233,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="rhs_ammoslot_2_type";
+							expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_d462_2";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="VehicleCustomization";
 							expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
 							class Value
@@ -10566,7 +11294,59 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="rhs_ammoslot_1_type";
+							expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of56_10";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="rhs_ammoslot_4_type";
+							expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_3of69m_2";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_ammoslot_3_type";
+							expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rhs_mag_s463_2";
+								};
+							};
+						};
+						nAttributes=6;
 					};
 				};
 				class Item39

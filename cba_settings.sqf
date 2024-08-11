@@ -98,4 +98,4 @@ force arsr_vicStationary = true;
 force crowsEW_spectrum_spectrumEnable = true;	// enable Spectrum Device
 force crowsEW_spectrum_selfTracking = true;		// show own radio emissions
 force crowsEW_spectrum_tfarSideTrack = true;	// show friendly radio emissions
-force crowsEW_spectrum_minJamSigStrength = -40;	// (in dBm); minimum signal strength necessary in Spectrum Device for jamming
+force crowsEW_spectrum_minJamSigStrength = -50;	// (in dBm); minimum signal strength necessary in Spectrum Device for jamming

@@ -6,6 +6,7 @@ player createDiarySubject ["shootnscoot_diarySubject","Shoot and Scoot"];
 // create empty diary records
 private _WorkaroundsRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _RespawnRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
+private _OmniJammerRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _CommanderRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _HunterRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _ReconRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
@@ -19,6 +20,7 @@ private _MortarLink = createDiaryLink ["shootnscoot_diarySubject", _MortarRecord
 private _ReconLink = createDiaryLink ["shootnscoot_diarySubject", _ReconRecord, "Reconnaissance"];
 private _HunterLink = createDiaryLink ["shootnscoot_diarySubject", _HunterRecord, "Hunter killer teams"];
 private _CommanderLink = createDiaryLink ["shootnscoot_diarySubject", _CommanderRecord, "Commanders"];
+private _OmniJammerLink = createDiaryLink ["shootnscoot_diarySubject", _OmniJammerRecord, "Drone jammer"];
 private _back2IntroLink = "<br/><br/>" + createDiaryLink ["shootnscoot_diarySubject", _IntroRecord, "back to Introduction"];
 
 
@@ -44,8 +46,17 @@ Using the link below you should be able to restore them. <br/>
 <executeClose expression='call diary_fnc_fixDroneAI'>Fix drone AI</executeClose><br/>
 <br/>
 Another way of fixing this manually for Darter drones is <br/>
-to <font color='#00ffff'>disassemble them (into a backpack) and then reassembling</font> them.
+to <font color='#00ffff'>disassemble them (into a backpack) and then reassembling</font> them. <br/>
 <br/>";
+
+private _ChangeSeatWorkaround = format ["<br/>
+------------------------------------------------------------------------------------------------ <br/>
+<font color='#ff00ff' size='14'>Change seat >> ejection bug</font> <br/>
+When you go fast in a vehicle, changing seats via the <font color='#ff0000'>Vanilla menu</font> can have you ejected from it. <br/>
+This mostly happens to %1. <br/>
+<br/>
+To play it save you should use the <font color='#00ff00'>ACE menu</font> for changing seats. <br/>
+<br/>", _HunterLink];
 
 
 // Introduction to game mode
@@ -89,7 +100,7 @@ via manual targeting using <font color='#00ffff'>Artillery Range Tables</font>. 
 <img src='rhsafrf\addons\rhs_editorPreviews\data\rhs_D30_vdv.paa' width='256' height='144' title='artillery type is the same for both sides' /> <br/>
 <br/>
 <font color='#D18D1F' size='14'>Towing</font> <br/>
-The artillery piece is towed by a truck that also brings amsmunition. <br/>
+The artillery piece is towed by a truck that also brings ammunition. <br/>
 <img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_ural\data\ui\UK3CB_CHD_B_Ural_Ammo.jpg' width='256' height='144' title='Blufor towing ammo truck' /> 
 <img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_ural\data\ui\UK3CB_CHD_O_Ural_Ammo.jpg' width='256' height='144' title='Opfor towing ammo truck' /> <br/>
 See the <execute expression='[""RHS_Towing"", ""RHS_AFRF_Towing_Prepare"", nil, ""towing""] call BIS_fnc_openFieldManual'>Field Manual on towing</execute> for how towing artillery pieces works. <br/>
@@ -227,8 +238,8 @@ Once they are in the general vicinity of enemy artillery they can hear artillery
 <br/>
 <br/>
 <font color='#D18D1F' size='14'>Electronic Warfare</font> <br/>
-Hunter killer teams also bring Electronic Warfare (EW in short) capabilities if the <font color='#00ffff'>Engineer / EW operator</font> slot is taken.
-" + _back2IntroLink]];
+Hunter killer teams also bring Electronic Warfare (EW in short) capabilities if the <font color='#00ffff'>Engineer / EW operator</font> slot is taken. <br/>
+" + _ChangeSeatWorkaround + _back2IntroLink]];
 
 
 // Commander docu
@@ -286,6 +297,41 @@ _myVLS ammo "weapon_VLS_01", actionKeysNames "defaultAction", _ArtiLink, _Mortar
 rank player, _VLSauthorized] + _back2IntroLink]];
 
 
+// Drone jammer
+private _JammerEffectiveRadius = demo_jammer getVariable "EffectiveRadius";
+private _JammerFalloffRadius = demo_jammer getVariable "FalloffRadius";
+player setDiaryRecordText [["shootnscoot_diarySubject", _OmniJammerRecord], ["Drone jammer", format [
+"<font color='#D18D1F' size='16'>Drone jammer (area denial)</font> <br/>
+The <font color='#00ffff'>area denial anti drone jammer</font> is a box that can be turned on and off. <br/>
+<img src='pics\omni_jammer_box.jpg' width='370' height='370' title='Drone jammer box' /> 
+(activate and de-activate via Vanilla mouse-scroll menu) <br/>
+<br/>
+When activated it <font color='#00ffff'>distorts the video feed</font> for the drone pilots in a <font color='#00ffff'>radius of %1m</font> around/above the jammer. <br/>
+<img src='pics\distorted_video_feed.jpg' width='370' height='370' title='Distorted video signal' /> 
+This makes aerial %2 difficult or impossible (dependent on how close the drone is to the jammer). <br/>
+<br/>
+The drone will suffer a <font color='#ff00ff'>softkill at a distance of &lt;%3m</font> to the jammer. <br/>
+- pilots get disconnected <br/>
+- drone is forced to stop moving and slowly land <br/>
+<br/>
+Note: <br/>
+- jammer <font color='#00ffff'>effects both enemy and friendly drones</font> <br/>
+- radiuses are 3D (meaning drone altitude also counts)<br/>
+- UGVs are also effected by the jammer <br/>
+<br/>
+Transportation: <br/>
+- <font color='#00ffff'>ACE carrying and vic loading are supported</font> <br/>
+- box deactivates when being loaded <br/>
+- takes 1x ACE cargo space  <br/>
+  (fits even into light vics of %4 when spare wheel is removed) <br/>
+<br/>
+Bugs: <br/>
+- unloading takes 3-6s before box appears <br/>
+- box is indestructible (but will die along with a vic when loaded) <br/>
+- not subject to gravity (when deployed off ground it stays in the air)<br/>
+", (_JammerEffectiveRadius + _JammerFalloffRadius), _ReconLink, _JammerEffectiveRadius, _HunterLink] + _back2IntroLink]];
+
+
 // Respawn docu
 player setDiaryRecordText [["shootnscoot_diarySubject", _RespawnRecord], ["Spawn and respawn",
 "<font color='#D18D1F' size='16'>Spawn</font> <br/>
@@ -305,7 +351,7 @@ After dying players will respawn in their own base. <br/>
 
 
 // Workarounds section (for quick and easy access)
-player setDiaryRecordText [["shootnscoot_diarySubject", _WorkaroundsRecord], ["Workarounds", _MortarUnloadWorkaround + _DroneAIWorkaround]];
+player setDiaryRecordText [["shootnscoot_diarySubject", _WorkaroundsRecord], ["Workarounds", _MortarUnloadWorkaround + _DroneAIWorkaround + _ChangeSeatWorkaround]];
 
 
 // select top-most entry at game start

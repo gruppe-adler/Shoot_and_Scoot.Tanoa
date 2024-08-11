@@ -90,7 +90,8 @@ private _openDocuCode = {
 // ...from Vanilla mouse-wheel menu
 player addAction ["Open <t color='#D18D1F'>Shoot and Scoot</t> docu", _openDocuCode, 
 nil,    // no arguments for inner script
--100    // super low prio to always display at bottom of list
+-100,   // super low prio to always display at bottom of list
+false   // don't show menu action on middle of the screen
 ];
 // ...from ACE self-action menu
 private _action = ["Open Docu",

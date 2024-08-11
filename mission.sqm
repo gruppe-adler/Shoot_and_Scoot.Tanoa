@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=522;
+		nextID=527;
 	};
 	class Camera
 	{
-		pos[]={8062.0054,33.608437,13366.889};
-		dir[]={-0.80273187,-0.53491318,0.26361299};
-		up[]={-0.50821221,0.84490764,0.16689444};
-		aside[]={0.31200269,4.3248292e-008,0.95008349};
+		pos[]={2143.2581,17.975052,3426.3569};
+		dir[]={0.71079338,-0.47926477,-0.51487511};
+		up[]={0.38813892,0.8776682,-0.2811555};
+		aside[]={-0.58663934,-1.7145067e-007,-0.80986208};
 	};
 };
 binarizationWanted=0;
@@ -607,7 +607,7 @@ class ScenarioData
 	author="Gruppe Adler and friends";
 	overviewText="TvT game mode - artillery vs. sound directionfinders vs. hunter-killer-teams";
 	overViewPicture="pics\SnS_loadpic.jpg";
-	onLoadMission="This game mode uses a lot of Arma's game mechanics <br/>and those of many mods. <br/><br/>If you need help: <br/>- check <t color='#00ffff'>ingame docu on the map</t> screen <br/>- write an admin message (see upper-left corner of the Escape screen)<br/>- ping Zeus";
+	onLoadMission="This game mode uses a lot of Arma's game mechanics <br/>and those of many mods. <br/><br/>If you need help: <br/>- check <t color='#00ffff'>ingame docu on the map</t> screen <br/>- write an admin message <br/>  (see upper-left corner of the Escape screen)<br/>- ping Zeus";
 	loadScreen="pics\SnS_loadpic.jpg";
 	respawnDialog=0;
 	disabledAI=1;
@@ -25199,12 +25199,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2150.8755,12.770001,3417.0542};
-				angles[]={0,2.4730191,0};
+				position[]={2150.875,12.77,3417.054};
+				angles[]={0,2.4730268,0};
 			};
+			name="demo_jammer";
 			id=5133;
 			type="crowsEW_editormodules_moduleAddJammer";
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0

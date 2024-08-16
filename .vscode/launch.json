@@ -9,8 +9,8 @@
             "type": "sqf",
             "request": "launch",
             "missionRoot": "${workspaceFolder}",
-            // "scriptPrefix": "C:\\Users\\Bernhard-WS\\Documents\\Arma 3 - Other Profiles\\Bernhard\\mpmissions\\Shoot_and_Scoot.Tanoa"    // path for client connected to locally hosted server
-            "scriptPrefix": "mpmissions\\__CUR_MP.tanoa"    // path for client connected to dedicated server
+            "scriptPrefix": "C:\\Users\\Bernhard-WS\\Documents\\Arma 3 - Other Profiles\\Bernhard\\mpmissions\\Shoot_and_Scoot.Tanoa"    // path for client connected to locally hosted server
+            // "scriptPrefix": "mpmissions\\__CUR_MP.tanoa"    // path for client connected to dedicated server
         }
     ]
 }

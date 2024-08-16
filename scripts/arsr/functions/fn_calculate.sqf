@@ -10,8 +10,8 @@ fnc_listenerOperatorNearby = {
     private _aliveCrew = (crew _this) select { alive _x };
     private _numAliveCrew = count _aliveCrew;
     
-    is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current player is a Zeus
-    if (is_Zeus) then { systemChat (str(_this) + " _numAliveCrew=" + str(_numAliveCrew)) }; // debug message
+    // is_Zeus = !isNull (getAssignedCuratorLogic player);    // check if current player is a Zeus
+    // if (is_Zeus) then { systemChat (str(_this) + " _numAliveCrew=" + str(_numAliveCrew)) }; // debug message
     
     _numAliveCrew > 0
 };

@@ -15,6 +15,7 @@ if (playerSide == independent) then {
 // prevent non-commanders from using the cruise missile launcher
 private _rankId = rankId player;
 private _rankInfo = format ["%1 is a %2", name player, rank player];
+private _missileTracking = false;   // shall player track launched cruise missiles?
 if (_rankId < 3) then {  // Lieutenants and higher ranks may use the VLS
     diag_log (_rankInfo + " and may NOT use the VLS.");
     ["loadout", {
@@ -28,6 +29,32 @@ if (_rankId < 3) then {  // Lieutenants and higher ranks may use the VLS
     }] call CBA_fnc_addPlayerEventHandler;
 } else {
     diag_log (_rankInfo + " and may use the VLS.");
+    _missileTracking = true;    // commanders shall track cruise missiles
+};  
+// enable cruise missile video feed and moving map marker after launch
+private _VLStoMonitor = [];     // list of missile launchers to monitor for events
+switch (playerSide) do
+{
+    case west: { _VLStoMonitor = [blufor_vls];  };
+    case east: { _VLStoMonitor = [opfor_vls];   };
+    default    { _missileTracking = true;
+                 _VLStoMonitor = [blufor_vls, opfor_vls];   };   // for Zeus and streamers monitor both missile launchers
+};
+if (_missileTracking) then {
+    {
+        _x addEventHandler ["Fired", {
+            params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+
+            // handling of video live feed
+            if (playerSide in [east, west]) then {  // video live feed only for normal players (causes problems with Zeus and spectator interface)
+                [_projectile, missileTarget _projectile, player, 0] call BIS_fnc_liveFeed;      // add video live feed when "Fired"
+                _projectile addEventHandler ["Deleted", { call BIS_fnc_liveFeedTerminate; }];   // terminate live feed when "Deleted"
+            };
+
+            // handling of moving map marker
+            [_projectile, _gunner, _magazine] call shelltracker_fnc_onFired; 
+        }];
+    } forEach _VLStoMonitor;
 };
 
 

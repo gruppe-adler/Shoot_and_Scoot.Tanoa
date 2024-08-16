@@ -13,9 +13,14 @@ private _radius = getNumber(configfile >> "CfgAmmo" >> _ammo >> "indirectHitRang
 private _markerName = [diag_tickTime, _magazine, name _gunner] joinString "";
 private _marker = createMarkerLocal [_markerName, _projectile];
 systemchat ((name _gunner) + " just fired " + _ammoname);
-_marker setMarkerTypeLocal "hd_start";
-_marker setMarkerDirLocal (getDir _projectile);
-_marker setMarkerSizeLocal [0.4, 0.4];
+if (["missile", _ammoname, false] call BIS_fnc_inString) then {
+    _marker setMarkerTextLocal _ammoname;
+    _marker setMarkerTypeLocal "mil_arrow";    // special marker for cruise missiles
+    _marker setMarkerSizeLocal [1.0, 1.0];
+} else {
+    _marker setMarkerTypeLocal "hd_start";      // default marker for arti shell
+    _marker setMarkerSizeLocal [0.4, 0.4];
+};
 _marker setMarkerColorLocal _markerColor;
 _projectile setVariable ["marker", _markerName];
 _projectile setVariable ["markerRadius", _radius];
@@ -28,6 +33,7 @@ _projectile setVariable ["markerRadius", _radius];
     };
     private _marker = _proj getVariable "marker";
     _marker setMarkerPosLocal _proj;
+    _marker setMarkerDirLocal (getDir _proj);
 }, 0, [_projectile]] call CBA_fnc_addPerFrameHandler;
 
 // When the projectile "dies", change to impact marker handling.

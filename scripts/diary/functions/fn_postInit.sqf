@@ -277,7 +277,8 @@ You, as a <font color='#00ffff'>%8</font>, are %9 to connect. <br/>
 <img src='\A3\EditorPreviews_F_Destroyer\Data\Cfgvehicles\Destroyer_01_assembled.jpg' width='256' height='144' title='Destroyer' /> <br/>
 <img src='\A3\EditorPreviews_F_Destroyer\Data\Cfgvehicles\B_Ship_MRLS_01_F.jpg' width='256' height='144' title='Cruise Missile launcher' /> <br/>
 How to strike? <br/>
-1. <font color='#00ffff'>provide a laser lock on target</font> from a drone <br/>
+1. <font color='#00ffff'>provide a laser lock on target</font> from a drone 
+<img src='pics\laser_spot_on_container.jpg' width='370' height='370' title='Laser spot (red icon @ upper right corner) on supply container' /> 
 2. open UAV terminal and connect to Cuise missile launcher <br/>
 3. go into the Gunner position <br/>
 4. check <font color='#00ffff'>sensor display</font> (right side of screen per default) for laser spots <img src='A3\Ui_f\data\IGUI\RscCustomInfo\Sensors\Targets\LaserTarget_ca.paa'  color='#ff0000'width='16' height='16' title='Laser spot as indicated on the sensor display' /> <br/>
@@ -287,8 +288,12 @@ How to strike? <br/>
 <img src='pics\sensor_display_laser_target_selected.jpg' width='250' height='250' title='Sensor display with a selection box around a laser target' /> <br/>
 6. wait for laser lockon beeping sound to change from a lower to a higher pitch <br/>
 7. fire weapon (<font color='#00ffff'>%5</font>) <br/>
+8. you will see a live video feed from the cruise missile <br/>
+<img src='pics\cruise_missile_mid_flight.jpg' width='256' height='256' title='Cruise missile mid-flight' /> <br/>
 <br/>
-For more info on other icons shown in this display check the <execute expression='[""Vehicle"", ""SensorDisplay""] call BIS_fnc_openFieldManual'>Sensor Display Field Manual</execute>. <br/>
+<img src='pics\cruise_missile_before_impact.jpg' width='256' height='256' title='Cruise missile shortly before impact' /> <br/>
+<br/>
+The <execute expression='[""Vehicle"", ""SensorDisplay""] call BIS_fnc_openFieldManual'>Sensor Display Field Manual</execute> has more info on other icons shown there. <br/>
 <br/>
 Be aware that you only have <font color='#00ffff'>%4 missle(s)</font> available. <br/>
 So use them carefully for high-value targets. <br/>

@@ -5,6 +5,7 @@ player createDiarySubject ["shootnscoot_diarySubject","Shoot and Scoot"];
 
 // create empty diary records
 private _WorkaroundsRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
+private _IFFRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _RespawnRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _OmniJammerRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _CommanderRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
@@ -189,8 +190,8 @@ This sensor is a truck that starts operation <br/>
 - <font color='#00ffff'>as soon as mast is erected</font> <br/>
 - <font color='#00ffff'>as long as an operator sits inside</font> (can be any player) <br/>
 <br/>
-<img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_gaz66\data\ui\UK3CB_CHD_B_Gaz66_Radio.jpg' width='370' height='208' title='Blufor sound directionfinder truck (mast not deployed)' /> 
-<img src='UK3CB_Factions\addons\UK3CB_Factions_Vehicles\wheeled\UK3CB_Factions_Vehicles_gaz66\data\ui\UK3CB_CHD_O_Gaz66_Radio.jpg' width='370' height='208' title='Opfor sound directionfinder truck (mast not deployed)' /> <br/>
+<img src='pics\blufor_DF.jpg' width='370' height='370' title='Blufor sound directionfinder truck' /> <br/>
+<img src='pics\opfor_DF.jpg' width='370' height='370' title='Opfor sound directionfinder truck' /> <br/>
 <br/>
 To erect the mast: <br/>
 1. take the <font color='#00ffff'>driver seat</font> <br/>
@@ -212,8 +213,8 @@ Be aware that: <br/>
 <font color='#D18D1F' size='16'>Aerial reconnaissance</font> <br/>
 For aerial reconnaissance Recon operators have <execute expression='[""VehicleList"", ""UAVrotor""] call BIS_fnc_openFieldManual'>Darter UAVs</execute> <br/>
 <font color='#00ffff'>in backpacks stored in their trucks</font>. <br/>
-<img src='\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg' width='370' height='208' title='Blufor UAV' /> 
-<img src='\A3\EditorPreviews_F\Data\CfgVehicles\O_UAV_01_F.jpg' width='370' height='208' title='Opfor UAV' /> <br/>
+<img src='pics\blufor_UAV.jpg' width='370' height='185' title='Blufor UAV' /> <br/>
+<img src='pics\opfor_UAV.jpg' width='370' height='185' title='Opfor UAV' /> <br/>
 Appart from doing recon, the UAVs are also used to provide <font color='#00ffff'>laser designation</font> on the request of the %2, to allow for cruise missile strikes. <br/>
 <br/>
 See the <execute expression='[""UAV"", ""Basics"", nil, ""uav""] call BIS_fnc_openFieldManual'>Field Manual on UAVs</execute> for further information. <br/>
@@ -335,6 +336,26 @@ Bugs: <br/>
 - box is indestructible (but will die along with a vic when loaded) <br/>
 - not subject to gravity (when deployed off ground it stays in the air)<br/>
 ", (_JammerEffectiveRadius + _JammerFalloffRadius), _ReconLink, _JammerEffectiveRadius, _HunterLink] + _back2IntroLink]];
+
+
+// IFF docu
+player setDiaryRecordText [["shootnscoot_diarySubject", _IFFRecord], ["Identify friend or foe", format [
+"<font color='#D18D1F' size='16'>Friend or foe</font> <br/>
+This is how the soldiers of either side look like. <br/>
+<img src='pics\blufor_soldiers.jpg' width='370' height='185' title='Blufor soldiers' /> <br/>
+<img src='pics\opfor_soldiers.jpg' width='370' height='185' title='Opfor soldiers' /> <br/> 
+
+And this is how the assets look like. <br/>
+<img src='pics\blufor_and_opfor_assets.jpg' width='370' height='185' title='Blufor (bottom) and Opfor (top) assets' /> <br/>
+
+Larger asset pictures are in the dedicated docu sections: <br/> 
+- %1 <br/> 
+- %2 <br/> 
+- %3 <br/> 
+- %4 <br/> 
+- %5 <br/> 
+", _ArtiLink, _MortarLink, _ReconLink, _HunterLink, _OmniJammerLink]]];
+
 
 
 // Respawn docu

@@ -5,14 +5,15 @@ player createDiarySubject ["shootnscoot_diarySubject","Shoot and Scoot"];
 
 // create empty diary records
 private _WorkaroundsRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
-private _IFFRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
-private _RespawnRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _OmniJammerRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _CommanderRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
+private _EWRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _HunterRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _ReconRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _MortarRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _ArtiRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
+private _IFFRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
+private _RespawnRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 private _IntroRecord = player createDiaryRecord ["shootnscoot_diarySubject", ["",""]];
 
 // create links to chapters
@@ -21,8 +22,10 @@ private _MortarLink = createDiaryLink ["shootnscoot_diarySubject", _MortarRecord
 private _ReconLink = createDiaryLink ["shootnscoot_diarySubject", _ReconRecord, "Reconnaissance"];
 private _HunterLink = createDiaryLink ["shootnscoot_diarySubject", _HunterRecord, "Hunter killer teams"];
 private _CommanderLink = createDiaryLink ["shootnscoot_diarySubject", _CommanderRecord, "Commanders"];
+private _EWLink = createDiaryLink ["shootnscoot_diarySubject", _EWRecord, "Electronic warfare"];
 private _OmniJammerLink = createDiaryLink ["shootnscoot_diarySubject", _OmniJammerRecord, "Drone jammer"];
 private _back2IntroLink = "<br/><br/>" + createDiaryLink ["shootnscoot_diarySubject", _IntroRecord, "back to Introduction"];
+private _CBAkeybindingsLink = createDiaryLink ["cba_help_docs", cba_help_DiaryRecordKeys, 'CBA keybindings (section "Crows Electronic Warfare")'];
 
 
 // create workaround functions (as a potential self-service for players)
@@ -88,6 +91,55 @@ to <font color='#00ffff'>develop a situation picture</font>. <br/>
 %3 perform <font color='#00ffff'>search and destroy</font> on the %1 teams. <br/>
 ", _ArtiLink, _ReconLink, _HunterLink, _MortarLink
 ]]];
+
+
+// Respawn docu
+player setDiaryRecordText [["shootnscoot_diarySubject", _RespawnRecord], ["- Spawn and respawn", format [
+"<font color='#D18D1F' size='16'>Spawn</font> <br/>
+At mission start players spawn together on a <marker name='common_briefing_area'>southern island</marker>. <br/>
+Zeus will give a quick introduction there. <br/>
+<br/>
+<font color='#00ffff'>Flag poles serve as teleporters</font> to get players to their base. 
+<img src='\A3\EditorPreviews_F\Data\CfgVehicles\Flag_NATO_F.jpg' width='256' height='144' title='Blufor teleporter' /> <br/>
+<br/>
+<img src='\A3\EditorPreviews_F\Data\CfgVehicles\Flag_CSAT_F.jpg' width='256' height='144' title='Opfor teleporter' /> <br/>
+<br/>
+<font color='#D18D1F' size='16'>Respawn</font> <br/>
+After dying players will respawn in their own base. <br/>
+- <marker name='blufor_safespace'>Blufor base</marker> <br/>
+- <marker name='opfor_safespace'>Opfor base</marker> <br/>
+<br/>
+<font color='#D18D1F' size='14'>Radio towers</font> <br/>
+Near the respawn location there is a large radio tower. <br/>
+If you <font color='#00ffff'>stand close to this radio tower, your radio range will be increased by a factor of 10x</font>. <br/>
+This is meant to help with re-grouping after respawn. <br/>
+But also %1 might find this useful to reach troops. <br/>
+<br/>
+Note that any large red and white radio tower on the map will do the same job. <br/>
+<img src='\A3\EditorPreviews_F\Data\CfgVehicles\Land_TTowerBig_1_F.jpg' width='256' height='144' title='Radio tower 1' /> <br/>
+<br/>
+<img src='\A3\EditorPreviews_F\Data\CfgVehicles\Land_TTowerBig_2_F.jpg' width='256' height='144' title='Radio tower 2' /> <br/>
+Those towers are usually indicated with a transmitter symbol <img src='\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa' width='25' height='25' title='Transmitter map symbol' /> on the map. <br/>
+", _CommanderLink] + _back2IntroLink]];
+
+
+// IFF docu
+player setDiaryRecordText [["shootnscoot_diarySubject", _IFFRecord], ["- Identify friend or foe", format [
+"<font color='#D18D1F' size='16'>Friend or foe</font> <br/>
+This is how the soldiers of either side look like. <br/>
+<img src='pics\blufor_soldiers.jpg' width='370' height='185' title='Blufor soldiers' /> <br/>
+<img src='pics\opfor_soldiers.jpg' width='370' height='185' title='Opfor soldiers' /> <br/> 
+
+And this is how the assets look like. <br/>
+<img src='pics\blufor_and_opfor_assets.jpg' width='370' height='185' title='Blufor (bottom) and Opfor (top) assets' /> <br/>
+
+Larger asset pictures are in the dedicated docu sections: <br/> 
+- %1 <br/> 
+- %2 <br/> 
+- %3 <br/> 
+- %4 <br/> 
+- %5 <br/> 
+", _ArtiLink, _MortarLink, _ReconLink, _HunterLink, _OmniJammerLink] + _back2IntroLink]];
 
 
 // Arti docu
@@ -227,7 +279,7 @@ in a 1min long YouTube video. <br/>
 
 
 // Hunter killer docu
-player setDiaryRecordText [["shootnscoot_diarySubject", _HunterRecord], ["Hunter killer",
+player setDiaryRecordText [["shootnscoot_diarySubject", _HunterRecord], ["Hunter killer", format [
 "<font color='#D18D1F' size='16'>Hunter killer teams</font> <br/>
 are small fire teams with just enough people to easily overwhelm artillery teams. <br/>
 They are highly mobile with their light strike vehicles (LSV). <br/>
@@ -239,8 +291,80 @@ Once they are in the general vicinity of enemy artillery they can hear artillery
 <br/>
 <br/>
 <font color='#D18D1F' size='14'>Electronic Warfare</font> <br/>
-Hunter killer teams also bring Electronic Warfare (EW in short) capabilities if the <font color='#00ffff'>Engineer / EW operator</font> slot is taken. <br/>
-" + _ChangeSeatWorkaround + _back2IntroLink]];
+Hunter killer teams also bring Electronic Warfare (EW in short) capabilities if the <font color='#00ffff'>Engineer / EW operator</font> slot is taken. 
+See %1 for more details. <br/>
+", _EWLink] + _ChangeSeatWorkaround + _back2IntroLink]];
+
+
+// Electronic warfare docu
+player setDiaryRecordText [["shootnscoot_diarySubject", _EWRecord], ["- Electronic warfare", format [
+"
+<font color='#D18D1F' size='16'>Electronic warfare</font> <br/>
+Electronic warfare (EW in short) is about <font color='#00ffff'>measuring radio signals</font> that the enemy emits 
+and <font color='#00ffff'>interfering with those radio signals</font> (also called electronic attack). <br/>
+<br/>
+<font color='#D18D1F' size='14'>Measuring radio signals</font> <br/>
+Imagine the first process as being able to 'hear' enemy radio transmissions like you are able to hear enemy fire. <br/>
+It allows you to detect and locate enemies that you have no chance of seeing yet. <br/>
+<br/>
+When the enemy has competent EW operators themselves, radio discipline becomes just as important as trigger discipline with your gun. <br/>
+Every time you use your radio, there could be an enemy picking up on that transmission. Just as if you fire your gun and an enemy hears it. <br/>
+<br/>
+Remote controlled assets like 
+<execute expression='[""VehicleList"", ""UAVrotor""] call BIS_fnc_openFieldManual'>UAVs</execute>
+ and 
+<execute expression='[""VehicleList"", ""UGV""] call BIS_fnc_openFieldManual'>UGVs</execute> 
+ have no way of showing this radio discipline. 
+They <font color='#00ffff'>constantly broadcast their video feed signal</font> and thus are permanently detectable this way.<br/>
+The screenshot below shows such video signals for 3x Stompers. <br/>
+<img src='pics\ew_stomper_signals.jpg' width='370' height='185' title='UGV radio signals' /> 
+The Stomper in the middle has the EW operator's antenna pointed directly at it. This is why it has the strongest signal in the spectrum device (leftmost peak). <br/>
+<br/>
+The screenshot below shows how your own radio signal would look like in the spectrum device if you were an EW operator. <br/>
+<img src='pics\ew_detecting_own_emission.jpg' width='370' height='185' title='Own radio emission shown in spectrum device' />
+If EW operators have a signal in their <font color='#499ED0'>selected frequency band</font>, they can decide to listen in to that signal by <font color='#00ffff'>clicking and holding the left mouse button</font>. <br/>
+<br/>
+<font color='#D18D1F' size='14'>Selecting radio signals</font> <br/>
+The spectrum device uses your handgun slot. You can use it just as you would use your handgun. 
+<font color='#00ffff'>%1 opens the spectrum analyzer display.</font> <br/> 
+<img src='pics\ew_spectrum_analyzer.jpg' width='370' height='370' title='Spectrum analyzer display' /> 
+- <font color='#00ffff'>Mouse-wheel up/down</font> will change the <font color='#499ED0'>selected frequency band</font> <br/>
+- <font color='#00ffff'>Mid. Mouse Btn.</font> will <font color='#ff00ff'>zoom in</font> to the <font color='#499ED0'>selected frequency band</font> <br/>
+- <font color='#00ffff'>Shift + Mid. Mouse Btn</font> will <font color='#ff00ff'>unzoom</font> <br/>
+  (back to maximum range of mounted antenna) <br/>
+<br/>
+<font color='#D18D1F' size='14'>Antennas</font> <br/>
+Antennas use the muzzle attachment slot of your 'handgun' (most commonly used for suppressors). <br/>
+<br/>
+EW operators are equipped with <font color='#00ffff'>2x types of antennas</font>. <br/>
+<img src='\a3\Weapons_F_Enoch\Pistols\ESD_01\data\ui\gear_muzzle_antenna_01_ca.paa'  width='150' height='150' title='%2' /> <br/>
+The <font color='#00ffff'>%2</font> has a <font color='#00ff00'>wide frequency range</font> in which it can detect signals and is able to support <font color='#00ff00'>listening in to voice communication signals</font>. But it <font color='#ff0000'>can not be used to disable drones</font>. <br/>
+<img src='\a3\Weapons_F_Enoch\Pistols\ESD_01\data\ui\gear_muzzle_antenna_03_ca.paa'  width='150' height='150' title='%3' /> <br/>
+The <font color='#00ffff'>%3</font>  has a <font color='#ff0000'>narrower frequency range</font> but <font color='#00ff00'>can both detect and disable/jam drones</font> (details below). <font color='#ff0000'>Listening in to signals is not possible</font> with this antenna though. <br/>
+<br/>
+<font color='#D18D1F' size='14'>Interfering with radio signals</font> <br/>
+This is how you can jam drones: <br/>
+1. put the %3 on your spectrum device <br/>
+2. put the drone signal you wish to jam into the <font color='#499ED0'>selected frequency band</font> (using the mouse-wheel) <br/> 
+3. press and hold <font color='#00ffff'>Left Mouse Btn.</font> <br/>
+<br/>
+Consequences for jammed drone: <br/>
+1. Human pilots are disconnected instantly. <br/> 
+2. <execute expression='[""VehicleList"", ""UAVrotor""] call BIS_fnc_openFieldManual'>Darter UAVs</execute> will <font color='#00ffff'>decent down to 30m and hover there for ~10s</font> after which they land. <br/> 
+3. Once drone landed you don't need to continue jamming. <br/> 
+<br/>
+The %4 is another way of interfering with radio signals necessary to control <execute expression='[""VehicleList"", ""UAVrotor""] call BIS_fnc_openFieldManual'>UAVs</execute>. <br/>
+<br/>
+<font color='#D18D1F' size='14'>Bearing lines on map</font> <br/>
+To help with locating enemy transmissions the spectrum device can log its current position, current frequency and direction the antenna is pointing towards on the map. <br/>
+This looks similar to how the sound directionfinder works. <br/>
+<img src='pics\directionfinder_results_on_map.jpg' width='370' height='370' title='Blufor will see blue lines, Opfor will see red lines' /> 
+The keybindings for this feature can be found in <br/>
+%5 <br/>
+", actionKeysNames "optics", 
+getText (configFile >> "CfgWeapons" >> "muzzle_antenna_01_f" >> "displayName"),   // monitoring antenna
+getText (configFile >> "CfgWeapons" >> "muzzle_antenna_03_f" >> "displayName"),   // jamming antenna
+_OmniJammerLink, _CBAkeybindingsLink] + _back2IntroLink]];
 
 
 // Commander docu
@@ -303,7 +427,7 @@ _myVLS ammo "weapon_VLS_01", actionKeysNames "defaultAction", _ArtiLink, _Mortar
 rank player, _VLSauthorized] + _back2IntroLink]];
 
 
-// Drone jammer
+// Drone jammer docu
 private _JammerEffectiveRadius = demo_jammer getVariable "EffectiveRadius";
 private _JammerFalloffRadius = demo_jammer getVariable "FalloffRadius";
 player setDiaryRecordText [["shootnscoot_diarySubject", _OmniJammerRecord], ["Drone jammer", format [
@@ -336,44 +460,6 @@ Bugs: <br/>
 - box is indestructible (but will die along with a vic when loaded) <br/>
 - not subject to gravity (when deployed off ground it stays in the air)<br/>
 ", (_JammerEffectiveRadius + _JammerFalloffRadius), _ReconLink, _JammerEffectiveRadius, _HunterLink] + _back2IntroLink]];
-
-
-// IFF docu
-player setDiaryRecordText [["shootnscoot_diarySubject", _IFFRecord], ["Identify friend or foe", format [
-"<font color='#D18D1F' size='16'>Friend or foe</font> <br/>
-This is how the soldiers of either side look like. <br/>
-<img src='pics\blufor_soldiers.jpg' width='370' height='185' title='Blufor soldiers' /> <br/>
-<img src='pics\opfor_soldiers.jpg' width='370' height='185' title='Opfor soldiers' /> <br/> 
-
-And this is how the assets look like. <br/>
-<img src='pics\blufor_and_opfor_assets.jpg' width='370' height='185' title='Blufor (bottom) and Opfor (top) assets' /> <br/>
-
-Larger asset pictures are in the dedicated docu sections: <br/> 
-- %1 <br/> 
-- %2 <br/> 
-- %3 <br/> 
-- %4 <br/> 
-- %5 <br/> 
-", _ArtiLink, _MortarLink, _ReconLink, _HunterLink, _OmniJammerLink]]];
-
-
-
-// Respawn docu
-player setDiaryRecordText [["shootnscoot_diarySubject", _RespawnRecord], ["Spawn and respawn",
-"<font color='#D18D1F' size='16'>Spawn</font> <br/>
-At mission start players spawn together on a <marker name='common_briefing_area'>southern island</marker>. <br/>
-Zeus will give a quick introduction there. <br/>
-<br/>
-<font color='#00ffff'>Flag poles serve as teleporters</font> to get players to their base. 
-<img src='\A3\EditorPreviews_F\Data\CfgVehicles\Flag_NATO_F.jpg' width='256' height='144' title='Blufor teleporter' /> <br/>
-<br/>
-<img src='\A3\EditorPreviews_F\Data\CfgVehicles\Flag_CSAT_F.jpg' width='256' height='144' title='Opfor teleporter' /> <br/>
-<br/>
-<font color='#D18D1F' size='16'>Respawn</font> <br/>
-After dying players will respawn in their own base. <br/>
-- <marker name='blufor_safespace'>Blufor base</marker> <br/>
-- <marker name='opfor_safespace'>Opfor base</marker> <br/>
-"]];
 
 
 // Workarounds section (for quick and easy access)

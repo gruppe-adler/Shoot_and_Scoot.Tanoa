@@ -4,7 +4,7 @@
 
 **Artillery** vs.  **Reconnaissance** vs.  **Hunter killer teams**
 
-## Date: <t:1715623200:F>
+## Date: <t:1729533600:F>
 
 ## __General information__
 ***Game server:*** `arma.gruppe-adler.de:2502`
@@ -34,7 +34,7 @@ Instant fatal damage allowed
 DM @bernhard.mayr for slots
 
 ### Links
- [Event on Gruppe Adler forum](https://forum.gruppe-adler.de/topic/3244/2024-05-13-mo-tvt-shoot-and-scoot-electronic-warfare-edition)
+ [Event on Gruppe Adler forum](https://forum.gruppe-adler.de/topic/3267/2024-10-21-mo-tvt-shoot-and-scoot)
  [Docu slide deck](https://docs.google.com/presentation/d/1BGDOxqqZw4T6js3oQ4mPr4E7f8NLZsPS85MUAAIYvco/edit?usp=sharing)
  [Gruppe Adler discord](https://discord.gg/ZDqp45q)
 
@@ -42,7 +42,7 @@ DM @bernhard.mayr for slots
 
 
 <!-- 
-What the gameplay is actually like can be seen in Lirus previous stream.
+What the gameplay is actually like can be seen in this stream of Liru.
 (Timestamps for those that want to jump right into the action are in the comments)
 https://www.youtube.com/watch?v=PfVHyE1Ipxg 
 -->

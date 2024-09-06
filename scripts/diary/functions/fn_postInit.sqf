@@ -267,7 +267,6 @@ For aerial reconnaissance Recon operators have <execute expression='[""VehicleLi
 <font color='#00ffff'>in backpacks stored in their trucks</font>. <br/>
 <img src='pics\blufor_UAV.jpg' width='370' height='185' title='Blufor UAV' /> <br/>
 <img src='pics\opfor_UAV.jpg' width='370' height='185' title='Opfor UAV' /> <br/>
-Appart from doing recon, the UAVs are also used to provide <font color='#00ffff'>laser designation</font> on the request of the %2, to allow for cruise missile strikes. <br/>
 <br/>
 See the <execute expression='[""UAV"", ""Basics"", nil, ""uav""] call BIS_fnc_openFieldManual'>Field Manual on UAVs</execute> for further information. <br/>
 <br/>
@@ -276,6 +275,7 @@ in a 1min long YouTube video. <br/>
 1. <execute expression='copyToClipboard ""https://www.youtube.com/watch?v=8vF_b2aJ12s"";'>copy URL of video</execute> <br/>
 2. then press <font color='#00ffff'>Ctrl+V</font> into browser address bar <br/>
 ", _ReconLink, _CommanderLink, arsr_angleError, _ArtiLink, actionKeysNames "nextAction", actionKeysNames "ActionContext"] + _DroneAIWorkaround + _back2IntroLink]];
+// Appart from doing recon, the UAVs are also used to provide <font color='#00ffff'>laser designation</font> on the request of the %2, to allow for cruise missile strikes. <br/>
 
 
 // Hunter killer docu
@@ -368,6 +368,7 @@ _OmniJammerLink, _CBAkeybindingsLink] + _back2IntroLink]];
 
 
 // Commander docu
+/*
 private _myVLS = nil;
 switch (playerSide) do
 {
@@ -375,6 +376,7 @@ switch (playerSide) do
     default    { _myVLS = opfor_vls; };
 };
 private _VLSauthorized = ["<font color='#ff0000'>NOT authorized</font>", "<font color='#00ff00'>authorized</font>"] select (rankId player >= 3);
+*/
 player setDiaryRecordText [["shootnscoot_diarySubject", _CommanderRecord], ["Commanders", format [
 "<font color='#D18D1F' size='16'>Commanders</font> <br/>
 The commanders are the <font color='#00ffff'>top-most leaders</font> of their faction. <br/>
@@ -388,10 +390,12 @@ but still <font color='#00ffff'>see the directionfinder bearings</font>. <br/>
 Remote controlled logistics can be done with unarmed <execute expression='[""VehicleList"", ""UGV""] call BIS_fnc_openFieldManual'>Stomper UGVs</execute>. <br/>
 They allow for: <br/>
 - transporting people <br/>
-- rearming any %6 and %7 <br/>
+- rearming any %2 and %3 <br/>
    (but not as much ammo as truck has) <br/>
 <br/>
 Use of the UGVs is open for anyone with a UAV terminal (not limited to just Commanders).<br/>
+", _ReconLink, _ArtiLink, _MortarLink] + _back2IntroLink]];
+/*
 <br/>
 <br/>
 <font color='#D18D1F' size='14'>Cruise Missile strike</font> <br/>
@@ -425,6 +429,7 @@ So use them carefully for high-value targets. <br/>
 ", _ReconLink, actionName "vehLockTargets", actionKeysNames "vehLockTargets", 
 _myVLS ammo "weapon_VLS_01", actionKeysNames "defaultAction", _ArtiLink, _MortarLink, 
 rank player, _VLSauthorized] + _back2IntroLink]];
+*/
 
 
 // Drone jammer docu

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=527;
+		nextID=537;
 	};
 	class Camera
 	{
-		pos[]={2143.2581,17.975052,3426.3569};
-		dir[]={0.71079338,-0.47926477,-0.51487511};
-		up[]={0.38813892,0.8776682,-0.2811555};
-		aside[]={-0.58663934,-1.7145067e-007,-0.80986208};
+		pos[]={7170.417,35.186222,6715.5947};
+		dir[]={-0.07730265,-0.59624624,-0.79907358};
+		up[]={-0.057412952,0.80280083,-0.59347618};
+		aside[]={-0.99535465,-7.1609975e-008,0.096290894};
 	};
 };
 binarizationWanted=0;
@@ -8435,7 +8435,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7744.6079,13.729782,14104.188};
+						position[]={7744.6079,13.729803,14104.188};
 						angles[]={0.0040491638,2.9892428,6.2555919};
 					};
 					side="West";
@@ -8443,13 +8443,14 @@ class Mission
 					class Attributes
 					{
 						ammo=0.029999999;
-						init="[this] joinSilent (createGroup east);" \n "(group this) setGroupId [""Cruise Missile launcher""];" \n "this removeMagazinesTurret [""magazine_Missiles_Cruise_01_Cluster_x18"",[0]];" \n "";
+						init="[this] joinSilent (createGroup east);" \n "(group this) setGroupIdGlobal [""Cruise Missile launcher""];" \n "this removeMagazinesTurret [""magazine_Missiles_Cruise_01_Cluster_x18"",[0]];" \n "";
 						name="opfor_vls";
+						presenceCondition="false";
 						receiveRemoteTargets=1;
 					};
 					id=5192;
 					type="B_Ship_MRLS_01_F";
-					atlOffset=38.684982;
+					atlOffset=38.685001;
 				};
 				class Item55
 				{
@@ -8501,37 +8502,39 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7832.729,0,14117.418};
-						angles[]={0,1.4250339,0};
+						position[]={7832.729,0.00027275085,14117.418};
+						angles[]={0,1.4250264,0};
 					};
 					side="Empty";
 					class Attributes
 					{
+						presenceCondition="false";
 					};
 					id=5194;
 					type="Land_Destroyer_01_base_F";
-					atlOffset=26.133726;
+					atlOffset=26.133999;
 				};
 				class Item57
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7817.292,9.6769161,14098.709};
-						angles[]={0,3.0704501,0};
+						position[]={7817.292,9.6769886,14098.71};
+						angles[]={0,3.0704529,0};
 					};
 					side="Empty";
 					class Attributes
 					{
 						init="this setObjectScale 10;";
+						presenceCondition="false";
 					};
 					id=5195;
 					type="Banner_01_CSAT_F";
-					atlOffset=35.834976;
+					atlOffset=35.834999;
 				};
 			};
 			id=3655;
-			atlOffset=32.661381;
+			atlOffset=32.661533;
 		};
 		class Item60
 		{
@@ -12114,49 +12117,52 @@ class Mission
 						ammo=0.029999999;
 						init="(group this) setGroupId [""Cruise Missile launcher""];" \n "this removeMagazinesTurret [""magazine_Missiles_Cruise_01_Cluster_x18"",[0]];";
 						name="blufor_vls";
+						presenceCondition="false";
 						receiveRemoteTargets=1;
 					};
 					id=5177;
 					type="B_Ship_MRLS_01_F";
-					atlOffset=0.001537323;
+					atlOffset=0.0012731552;
 				};
 				class Item53
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7178.252,9.8254681,6661.3115};
-						angles[]={0,0.22729327,0};
+						position[]={7178.252,9.8259764,6661.312};
+						angles[]={0,0.22729422,0};
 					};
 					side="Empty";
 					flags=1;
 					class Attributes
 					{
 						init="this setObjectScale 10;";
+						presenceCondition="false";
 					};
 					id=5182;
 					type="Banner_01_NATO_F";
-					atlOffset=25.228546;
+					atlOffset=25.229;
 				};
 				class Item54
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7159.0874,0,6648.4951};
-						angles[]={0,4.8839073,0};
+						position[]={7159.0869,0.00024795532,6648.4951};
+						angles[]={0,4.8839025,0};
 					};
 					side="Empty";
 					class Attributes
 					{
+						presenceCondition="false";
 					};
 					id=5175;
 					type="Land_Destroyer_01_base_F";
-					atlOffset=17.877758;
+					atlOffset=17.877998;
 				};
 			};
 			id=3660;
-			atlOffset=22.344818;
+			atlOffset=22.345076;
 		};
 		class Item62
 		{
@@ -25699,7 +25705,7 @@ class Mission
 					};
 					id=5178;
 					type="B_UAV_AI";
-					atlOffset=4.6447091;
+					atlOffset=4.6444612;
 				};
 			};
 			class Attributes
@@ -25728,7 +25734,7 @@ class Mission
 				};
 			};
 			id=5176;
-			atlOffset=0.001537323;
+			atlOffset=0.0012731552;
 		};
 		class Item126
 		{
@@ -25782,7 +25788,7 @@ class Mission
 				};
 			};
 			id=5190;
-			atlOffset=38.684982;
+			atlOffset=38.685001;
 		};
 		class Item127
 		{

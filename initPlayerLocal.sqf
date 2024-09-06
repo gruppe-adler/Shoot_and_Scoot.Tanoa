@@ -11,7 +11,7 @@ if (playerSide == independent) then {
     [true, true, false] call ace_spectator_fnc_setSpectator;
 };
 
-
+/*
 // prevent non-commanders from using the cruise missile launcher
 private _rankId = rankId player;
 private _rankInfo = format ["%1 is a %2", name player, rank player];
@@ -56,6 +56,7 @@ if (_missileTracking) then {
         }];
     } forEach _VLStoMonitor;
 };
+*/
 
 
 // prevent use of enemy UAV terminals and radios

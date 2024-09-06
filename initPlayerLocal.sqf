@@ -46,32 +46,14 @@ if (_missileTracking) then {
             params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 
             // handling of video live feed
-            if (playerSide in [east, west]) then   // video live feed only for normal players (causes problems with Zeus and spectator interface)
-            {
-                diag_log format ["initPlayerLocal.sqf: missileTarget _projectile = '%1'", missileTarget _projectile];
-
-                // choose camera pointing target
-                private _cameraTarget = missileTarget _projectile;
-                if (isNull _cameraTarget) then { 
-                    _cameraTarget = getMarkerPos "demarkation_line";    // fallback target in the center of the map
-                } else {
-                    ["cruise_missile_target_event", [_cameraTarget]] call CBA_fnc_globalEvent;  // send target coordinates to other machines
-                };
-
-                [_projectile, _cameraTarget, player, 0] call BIS_fnc_liveFeed;                  // add video live feed when "Fired"
+            if (playerSide in [east, west]) then {  // video live feed only for normal players (causes problems with Zeus and spectator interface)
+                [_projectile, missileTarget _projectile, player, 0] call BIS_fnc_liveFeed;      // add video live feed when "Fired"
                 _projectile addEventHandler ["Deleted", { call BIS_fnc_liveFeedTerminate; }];   // terminate live feed when "Deleted"
             };
 
             // handling of moving map marker
             [_projectile, _gunner, _magazine] call shelltracker_fnc_onFired; 
         }];
-
-        ["cruise_missile_target_event", {
-            params ["_cruise_missile_target"];
-            diag_log format ["initPlayerLocal.sqf: new _cruise_missile_target = '%1'", _cruise_missile_target];
-            _cruise_missile_target call BIS_fnc_liveFeedSetTarget;  // update video live feed target
-        }] call CBA_fnc_addEventHandler;
-
     } forEach _VLStoMonitor;
 };
 

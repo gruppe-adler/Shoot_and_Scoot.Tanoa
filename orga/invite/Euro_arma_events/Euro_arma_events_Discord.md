@@ -12,9 +12,12 @@
 ***TS server:*** `ts.gruppe-adler.de`
 ***Scenario type:*** TvT, unlimited respawn (with time penalty)
 ***Map:*** Tanoa
-***Main mods:*** ACE, TFAR, CrowsEW (managed via A3sync)
-***A3sync config:*** `http://a3s.gruppe-adler.de/mods/.a3s/autoconfig` (Event modset named **Gruppe Adler Shoot and Scoot**)
 ***Player count:*** max. 60
+
+### __Mods__
+***Main mods:*** ACE, TFAR, CrowsEW
+***Arma3Sync config:*** `http://a3s.gruppe-adler.de/mods/.a3s/autoconfig` (Event modset named **Gruppe Adler Shoot and Scoot**)
+***Vanilla Launcher config:*** https://github.com/gruppe-adler/Shoot_and_Scoot.Tanoa/tree/main/orga/modset
 
 
 ### __Mission Makers__

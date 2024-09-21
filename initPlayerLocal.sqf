@@ -8,7 +8,9 @@ enableSaving [false, false];
 
 // make Indfor slots ACE spectators
 if (playerSide == independent) then { 
-    [true, true, false] call ace_spectator_fnc_setSpectator;
+    {
+        [true, true, false] call ace_spectator_fnc_setSpectator;    // this will call TFAR funcs...
+    } call CBA_fnc_directCall;  // ...which shall only be called in unscheduled environment
 };
 
 /*

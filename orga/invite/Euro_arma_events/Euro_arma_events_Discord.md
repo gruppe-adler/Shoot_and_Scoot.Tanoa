@@ -13,6 +13,7 @@
 ***Scenario type:*** TvT, unlimited respawn (with time penalty)
 ***Map:*** Tanoa
 ***Player count:*** max. 60
+***Duration:*** shouldn't take us longer than **3h** (number of targets will be reduced if it appears like the round would take too long)
 
 ### __Mods__
 ***Main mods:*** ACE, TFAR, CrowsEW

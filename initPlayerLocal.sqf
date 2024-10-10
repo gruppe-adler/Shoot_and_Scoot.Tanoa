@@ -13,7 +13,7 @@ if (playerSide == independent) then {
     } call CBA_fnc_directCall;  // ...which shall only be called in unscheduled environment
 };
 
-/*
+
 // prevent non-commanders from using the cruise missile launcher
 private _rankId = rankId player;
 private _rankInfo = format ["%1 is a %2", name player, rank player];
@@ -46,9 +46,15 @@ if (_missileTracking) then {
     {
         _x addEventHandler ["Fired", {
             params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-
+            
             // handling of video live feed
             if (playerSide in [east, west]) then {  // video live feed only for normal players (causes problems with Zeus and spectator interface)
+                if (isNull _projectile) then {
+                    _projectile = (getPos _unit) nearestObject _ammo;
+                };
+
+                diag_log format ["initPlayerLocal.sqf Fired_EH: missileTarget _projectile = '%1'", missileTarget _projectile];
+
                 [_projectile, missileTarget _projectile, player, 0] call BIS_fnc_liveFeed;      // add video live feed when "Fired"
                 _projectile addEventHandler ["Deleted", { call BIS_fnc_liveFeedTerminate; }];   // terminate live feed when "Deleted"
             };
@@ -58,7 +64,6 @@ if (_missileTracking) then {
         }];
     } forEach _VLStoMonitor;
 };
-*/
 
 
 // prevent use of enemy UAV terminals and radios

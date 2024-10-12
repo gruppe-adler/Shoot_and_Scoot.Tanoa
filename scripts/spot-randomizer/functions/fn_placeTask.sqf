@@ -31,6 +31,6 @@ switch (_side) do
     _position,
     "CREATED",
     -1,
-    true,
+    false,  // don't show popup notification to players when task is created
     "defend"
 ] call BIS_fnc_taskCreate;

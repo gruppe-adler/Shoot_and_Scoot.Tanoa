@@ -422,6 +422,7 @@ The <execute expression='[""Vehicle"", ""SensorDisplay""] call BIS_fnc_openField
 <br/>
 Be aware that you only have <font color='#00ffff'>%4 missle(s)</font> available. <br/>
 So use them carefully for high-value targets. <br/>
+(e.g. on supply containers which can be one-shot with this missile) <br/>
 ", _ReconLink, actionName "vehLockTargets", actionKeysNames "vehLockTargets", 
 _myVLS ammo "weapon_VLS_01", actionKeysNames "defaultAction", _ArtiLink, _MortarLink, 
 rank player, _VLSauthorized] + _back2IntroLink]];

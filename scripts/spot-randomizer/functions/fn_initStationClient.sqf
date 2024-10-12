@@ -15,12 +15,17 @@ _container addMPEventHandler ["MPKilled", {
     //          Must be extra cautious with initialization order, though!
     private _station = (_container getVariable "shootnscoot_stationid");
     private _taskID = (str playerSide) + _station;
-    if ([_taskID] call BIS_fnc_taskExists) then { // task might not exist, e.g. for streamers
-        [_taskID, "FAILED", false] call BIS_fnc_taskSetState;
+    private _markerText = markerText _station;
+    private _stationAlreadyDestroyed = ["destroyed", _markerText] call BIS_fnc_inString;
+    if (!_stationAlreadyDestroyed) then
+    {
+        if ([_taskID] call BIS_fnc_taskExists) then { // task might not exist, e.g. for streamers
+            [_taskID, "FAILED", false] call BIS_fnc_taskSetState;
+        };
+        _station setMarkerTypeLocal "mil_objective";    // change marker icon from ? to X
+        systemChat format ["%1 has been destroyed by %2", _markerText, _container getVariable "shootnscoot_lastDamageDealer"];
+        _station setMarkerTextLocal (_markerText + " destroyed");
     };
-    _station setMarkerTypeLocal "mil_objective";
-    systemchat ([markerText _station, "has been destroyed by", _container getVariable "shootnscoot_lastDamageDealer"] joinString " ");
-    _station setMarkerTextLocal ((markerText _station) + " destroyed");
 }];
 
 

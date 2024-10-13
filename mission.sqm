@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=562;
+		nextID=572;
 	};
 	class Camera
 	{
-		pos[]={2066.5647,71.235092,4165.5166};
-		dir[]={-0.2458718,-0.55982453,0.79129797};
-		up[]={-0.16611445,0.82861108,0.5346123};
-		aside[]={0.95496708,1.3234967e-08,0.29672682};
+		pos[]={6916.229,68.928474,7109.3794};
+		dir[]={-1.2363449e-07,-0.70710683,0.70710683};
+		up[]={-1.2363449e-07,0.70710671,0.70710683};
+		aside[]={1,0,1.7484557e-07};
 	};
 };
 binarizationWanted=0;
@@ -5124,6 +5124,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=931;
 					type="O_T_LSV_02_unarmed_F";
@@ -5171,6 +5172,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=934;
 					type="O_T_LSV_02_unarmed_F";
@@ -5218,6 +5220,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=935;
 					type="O_T_LSV_02_unarmed_F";
@@ -5265,6 +5268,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=936;
 					type="O_T_LSV_02_unarmed_F";
@@ -5312,6 +5316,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=937;
 					type="O_T_LSV_02_unarmed_F";
@@ -5359,6 +5364,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=938;
 					type="O_T_LSV_02_unarmed_F";
@@ -5406,6 +5412,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=939;
 					type="O_T_LSV_02_unarmed_F";
@@ -5453,6 +5460,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=940;
 					type="O_T_LSV_02_unarmed_F";
@@ -5500,6 +5508,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=941;
 					type="O_T_LSV_02_unarmed_F";
@@ -5547,6 +5556,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=942;
 					type="O_T_LSV_02_unarmed_F";
@@ -5594,6 +5604,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=943;
 					type="O_T_LSV_02_unarmed_F";
@@ -5641,6 +5652,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=944;
 					type="O_T_LSV_02_unarmed_F";
@@ -5688,6 +5700,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=945;
 					type="O_T_LSV_02_unarmed_F";
@@ -5735,6 +5748,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=946;
 					type="O_T_LSV_02_unarmed_F";
@@ -5782,6 +5796,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=947;
 					type="O_T_LSV_02_unarmed_F";
@@ -7754,7 +7769,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4019;
 					type="O_T_MRAP_02_ghex_F";
@@ -7789,7 +7804,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4020;
 					type="O_T_MRAP_02_ghex_F";
@@ -7824,7 +7839,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4021;
 					type="O_T_MRAP_02_ghex_F";
@@ -7859,7 +7874,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4022;
 					type="O_T_MRAP_02_ghex_F";
@@ -7894,7 +7909,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4023;
 					type="O_T_MRAP_02_ghex_F";
@@ -9037,6 +9052,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=948;
 					type="B_T_LSV_01_unarmed_F";
@@ -9083,6 +9099,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=949;
 					type="B_T_LSV_01_unarmed_F";
@@ -9129,6 +9146,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=950;
 					type="B_T_LSV_01_unarmed_F";
@@ -9175,6 +9193,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=951;
 					type="B_T_LSV_01_unarmed_F";
@@ -9221,6 +9240,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=952;
 					type="B_T_LSV_01_unarmed_F";
@@ -9267,6 +9287,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=953;
 					type="B_T_LSV_01_unarmed_F";
@@ -9306,13 +9327,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6916.2402,4.8361511,7180.8364};
+						position[]={6916.2402,4.8361511,7180.8359};
 						angles[]={0,1.5998212,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=954;
 					type="B_T_LSV_01_unarmed_F";
@@ -9359,6 +9381,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=955;
 					type="B_T_LSV_01_unarmed_F";
@@ -9405,6 +9428,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=956;
 					type="B_T_LSV_01_unarmed_F";
@@ -9451,6 +9475,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=957;
 					type="B_T_LSV_01_unarmed_F";
@@ -9497,6 +9522,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=958;
 					type="B_T_LSV_01_unarmed_F";
@@ -9543,6 +9569,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=959;
 					type="B_T_LSV_01_unarmed_F";
@@ -9589,6 +9616,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=960;
 					type="B_T_LSV_01_unarmed_F";
@@ -9635,6 +9663,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=961;
 					type="B_T_LSV_01_unarmed_F";
@@ -9681,6 +9710,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=962;
 					type="B_T_LSV_01_unarmed_F";
@@ -11361,7 +11391,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4014;
 					type="B_T_MRAP_01_F";
@@ -11396,7 +11426,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4015;
 					type="B_T_MRAP_01_F";
@@ -11431,7 +11461,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4016;
 					type="B_T_MRAP_01_F";
@@ -11466,7 +11496,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4017;
 					type="B_T_MRAP_01_F";
@@ -11501,7 +11531,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setCruiseControl [90, false];";
+						init="this setCruiseControl [90, false];" \n "if (isServer) then {" \n "  [{ clearWeaponCargoGlobal _this; }, this, 10] call CBA_fnc_waitAndExecute;" \n "};";
 					};
 					id=4018;
 					type="B_T_MRAP_01_F";
@@ -25692,14 +25722,14 @@ class Mission
 						angles[]={0.0047647487,0.18268362,0.027488936};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						name="blufor_vlsG";
 					};
 					id=5178;
 					type="B_UAV_AI";
-					atlOffset=0.0012731552;
+					atlOffset=4.6444612;
 				};
 			};
 			class Attributes
@@ -25753,7 +25783,7 @@ class Mission
 					};
 					id=5191;
 					type="B_UAV_AI";
-					atlOffset=38.685001;
+					atlOffset=37.887772;
 				};
 			};
 			class Attributes

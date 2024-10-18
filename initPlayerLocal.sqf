@@ -39,29 +39,34 @@ switch (playerSide) do
 {
     case west: { _VLStoMonitor = [blufor_vls];  };
     case east: { _VLStoMonitor = [opfor_vls];   };
-    default    { _missileTracking = true;
-                 _VLStoMonitor = [blufor_vls, opfor_vls];   };   // for Zeus and streamers monitor both missile launchers
+    // default    { _missileTracking = true;
+    //              _VLStoMonitor = [blufor_vls, opfor_vls];   };   // for Zeus and streamers monitor both missile launchers
 };
 if (_missileTracking) then {
+    // start video live feed when event with video source and target is received
+    ["cruise_missile_live_feed_event", {
+        params ["_projectile", "_gunner", "_magazine"];
+        
+        private _cameraTarget = missileTarget _projectile;
+        diag_log format ["initPlayerLocal.sqf cruise_missile_live_feed_event: local _projectile ? '%1', _cameraTarget = '%2'", local _projectile, _cameraTarget];
+        if ( local _projectile && !isNull _cameraTarget ) then {    // if this is not a given the remaining calls aren't without residual problems
+        // if (playerSide == side _gunner || playerSide in [independent, civilian]) then {
+            // if (isNull _cameraTarget) then { 
+            //     _cameraTarget = getMarkerPos "demarkation_line";    // fallback target in the center of the map
+            // };
+            [_projectile, _cameraTarget, player, 0] call BIS_fnc_liveFeed;                  // add video live feed when "Fired"
+            _projectile addEventHandler ["Deleted", { call BIS_fnc_liveFeedTerminate; }];   // terminate live feed when "Deleted"            
+            [_projectile, _gunner, _magazine] call shelltracker_fnc_onFired;                // handling of moving map marker
+        };
+    }] call CBA_fnc_addEventHandler;
+
     {
+        // add "Fired" event handler to send cruise_missile_live_feed_event
         _x addEventHandler ["Fired", {
             params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-            
-            // handling of video live feed
-            if (playerSide in [east, west]) then {  // video live feed only for normal players (causes problems with Zeus and spectator interface)
-                if (isNull _projectile) then {
-                    _projectile = (getPos _unit) nearestObject _ammo;
-                };
-
-                diag_log format ["initPlayerLocal.sqf Fired_EH: missileTarget _projectile = '%1'", missileTarget _projectile];
-
-                [_projectile, missileTarget _projectile, player, 0] call BIS_fnc_liveFeed;      // add video live feed when "Fired"
-                _projectile addEventHandler ["Deleted", { call BIS_fnc_liveFeedTerminate; }];   // terminate live feed when "Deleted"
-            };
-
-            // handling of moving map marker
-            [_projectile, _gunner, _magazine] call shelltracker_fnc_onFired; 
-        }];
+            diag_log format ["initPlayerLocal.sqf Fired_EH: _projectile = '%1', _gunner = '%2', _magazine = '%3'", _projectile, _gunner, _magazine];
+            ["cruise_missile_live_feed_event", [_projectile, _gunner, _magazine]] call CBA_fnc_globalEvent;     // send video source and target to other machines
+        }];        
     } forEach _VLStoMonitor;
 };
 
